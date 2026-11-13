@@ -1,0 +1,145 @@
+[
+  {
+    "id": "openai",
+    "name": "OpenAI",
+    "chineseName": "OpenAI",
+    "country": "US",
+    "type": "AI Research Lab / Tech Giant",
+    "openSourceStrategy": "Closed API (早期开源基座，后全面闭源商业化)",
+    "flagshipModels": ["GPT-1", "GPT-2", "GPT-3", "ChatGPT", "GPT-4", "GPT-4o", "o1", "o3"],
+    "coreStrengths": "尺度定律拓荒者、逻辑推理强化学习、多模态端到端、前沿研究资本化与商业生态",
+    "computeEcosystem": "微软 Azure 深度绑定、数万张 NVIDIA A100/H100/GB200 集群"
+  },
+  {
+    "id": "google-deepmind",
+    "name": "Google DeepMind",
+    "chineseName": "谷歌 DeepMind",
+    "country": "US",
+    "type": "Tech Giant",
+    "openSourceStrategy": "Hybrid (Gemini 主力闭源 API + Gemma 系列轻量开源)",
+    "flagshipModels": ["Transformer (2017)", "BERT", "T5", "LaMDA", "Bard (防御性对话)", "PaLM 2", "Gemini 1.0/1.5/2.0", "Gemma 1/2"],
+    "coreStrengths": "现代深度学习基础设施奠基者、全栈自研 TPU 芯片独立性、百万 Token 级长上下文、原生音视频多模态",
+    "computeEcosystem": "自研 TPU v4 / TPU v5p / TPU v6e (Trillium) 超算集群"
+  },
+  {
+    "id": "microsoft",
+    "name": "Microsoft",
+    "chineseName": "微软",
+    "country": "US",
+    "type": "Tech Giant / Cloud Infrastructure",
+    "openSourceStrategy": "Hybrid (自研 Phi 开源小语言模型 + Azure 闭源 Copilot 商业生态)",
+    "flagshipModels": ["New Bing (Prometheus 架构)", "Microsoft 365 Copilot", "Phi-1 / Phi-1.5", "Phi-2 / Phi-3 / Phi-4", "GitHub Copilot"],
+    "coreStrengths": "全球领先的企业级软件与操作系统分发渠道、Prometheus 实时检索编排、教科书级高质量合成数据小模型 (SLM) 开创者",
+    "computeEcosystem": "全球微软 Azure 超级 AI 计算网络、自研 Maia 100 芯片与深度绑定 OpenAI 集群"
+  },
+  {
+    "id": "meta",
+    "name": "Meta AI",
+    "chineseName": "Meta (原 Facebook)",
+    "country": "US",
+    "type": "Tech Giant",
+    "openSourceStrategy": "Open Weights Champion (坚定开源生态领导者)",
+    "flagshipModels": ["RoBERTa", "LLaMA 1", "LLaMA 2", "LLaMA 3", "LLaMA 3.1 405B", "LLaMA 3.2"],
+    "coreStrengths": "开源基础设施事实标准提供者、极高质量海量预训练、400B+ 超大尺寸开源攻坚、全球社区繁荣度",
+    "computeEcosystem": "NVIDIA H100 万卡分布式训练集群 (最高超 24,000 张 GPU 单一集群)"
+  },
+  {
+    "id": "anthropic",
+    "name": "Anthropic",
+    "chineseName": "Anthropic",
+    "country": "US",
+    "type": "AI Unicorn / Safety Lab",
+    "openSourceStrategy": "Closed API (专注企业级安全与前沿智能体协议)",
+    "flagshipModels": ["Claude 1/2", "Claude 3 (Opus/Sonnet/Haiku)", "Claude 3.5 Sonnet", "Claude 3.7", "MCP 协议"],
+    "coreStrengths": "宪政 AI (Constitutional AI)、全球最强编程与推理评测表现、Computer Use 操作系统操控、MCP 标准协议",
+    "computeEcosystem": "亚马逊 AWS (Trainium / EC2) 与 Google Cloud 深度算力合作"
+  },
+  {
+    "id": "deepseek",
+    "name": "DeepSeek",
+    "chineseName": "深度求索 (幻方量化旗下)",
+    "country": "CN",
+    "type": "AI Pioneer / Independent Lab",
+    "openSourceStrategy": "Full Open Weights & Distillations (全尺寸权重、蒸馏生态与技术报告无保留开源)",
+    "flagshipModels": ["DeepSeek-Coder", "DeepSeek-Math", "DeepSeek-V2", "DeepSeek-V3", "DeepSeek-R1 / R1-Zero"],
+    "coreStrengths": "第一性原理架构重构、MLA 压缩显存 93.3%、DeepSeekMoE 细粒度路由、FP8 全流程训练、纯 RL 顿悟涌现、极致性价比",
+    "computeEcosystem": "中等规模 NVIDIA H800 集群 (工程极致调优，突破算力外部限制)"
+  },
+  {
+    "id": "alibaba",
+    "name": "Alibaba Cloud / Qwen Team",
+    "chineseName": "阿里巴巴 (通义千问团队)",
+    "country": "CN",
+    "type": "Tech Giant / Cloud Provider",
+    "openSourceStrategy": "Full Matrix Open Weights (全尺寸 0.5B-72B 开源 + 闭源 Max 商业旗舰)",
+    "flagshipModels": ["Qwen-7B/14B/72B", "Qwen 2", "Qwen 2.5 (Coder/Math)", "QwQ-32B", "Qwen 2.5-Max"],
+    "coreStrengths": "全球尺寸覆盖最全的开源模型库、18T 顶级多语言清洗语料、代码与数学专业基座标杆、阿里云全球算力支撑",
+    "computeEcosystem": "阿里云异构超算、自研倚天/含光芯片与英伟达混合算力集群"
+  },
+  {
+    "id": "zhipu-ai",
+    "name": "Zhipu AI",
+    "chineseName": "智谱 AI (清华大学 KEG 衍生)",
+    "country": "CN",
+    "type": "AI Unicorn",
+    "openSourceStrategy": "Dual-Track (学术与社区高频开源 + 企业级 GLM-4 闭源商业化)",
+    "flagshipModels": ["GLM-130B", "ChatGLM-6B (1/2/3)", "GLM-4 / 4V", "CogVideoX", "GLM-4-Voice", "GLM-Zero"],
+    "coreStrengths": "中国大模型普及启蒙者、GLM 双向自回归特色架构、单卡消费级 GPU 友好、全模态（文本/代码/多模态/语音/视频）全栈覆盖",
+    "computeEcosystem": "国产算力适配 (华为昇腾/天数智芯等) 与英伟达算力混合调度"
+  },
+  {
+    "id": "moonshot-ai",
+    "name": "Moonshot AI",
+    "chineseName": "月之暗面 (杨植麟团队)",
+    "country": "CN",
+    "type": "AI Unicorn",
+    "openSourceStrategy": "Closed Application & API (以 C 端超级生产力产品与前沿长推理为重心)",
+    "flagshipModels": ["Kimi Chat (20万字)", "Kimi 200万字无损上下文", "Kimi k1.5 (多模态强化推理)"],
+    "coreStrengths": "超长上下文注意力架构优化、白领级生产力文档交互体验、多模态长程强化逻辑推理",
+    "computeEcosystem": "主流公有云大规模弹性算力集群"
+  },
+  {
+    "id": "baidu",
+    "name": "Baidu",
+    "chineseName": "百度",
+    "country": "CN",
+    "type": "Tech Giant",
+    "openSourceStrategy": "Closed Proprietary (深度绑定百度智能云与飞桨生态)",
+    "flagshipModels": ["ERNIE 1.0/2.0/3.0", "文心一言 3.5", "文心大模型 4.0 / 4.0 Turbo"],
+    "coreStrengths": "中国首个对话商业大模型、知识增强预训练、飞桨深度学习平台端到端协同、百度全线业务生态深度重构",
+    "computeEcosystem": "百度智能云百舸集群、自研昆仑芯 (Kunlunxin) 与混合算力"
+  },
+  {
+    "id": "bytedance",
+    "name": "ByteDance",
+    "chineseName": "字节跳动",
+    "country": "CN",
+    "type": "Tech Giant",
+    "openSourceStrategy": "Closed Application & API (火山引擎对外赋能 + 豆包国民级 App)",
+    "flagshipModels": ["云雀大模型", "豆包通用大模型", "豆包 1.5 Pro", "即梦 (Jimeng AI)"],
+    "coreStrengths": "国民级超级流量入口与应用落地、日均数万亿级 Token 吞吐处理、极低企业调用成本、音视频多模态生成",
+    "computeEcosystem": "国内最大规模内部异构 GPU 计算资源池之一"
+  },
+  {
+    "id": "tencent",
+    "name": "Tencent",
+    "chineseName": "腾讯",
+    "country": "CN",
+    "type": "Tech Giant",
+    "openSourceStrategy": "Hybrid (开源 Hunyuan-Large 389B MoE + 混元闭源矩阵)",
+    "flagshipModels": ["混元大模型 (Hunyuan)", "Hunyuan-Large (389B MoE)", "混元 3D / 图像生成"],
+    "coreStrengths": "自研千亿/万亿稀疏混合专家架构、深度嵌入微信与数字内容生态、高保真 3D 生成与多模态",
+    "computeEcosystem": "腾讯云星脉网络高性能分布式计算平台"
+  },
+  {
+    "id": "mistral-ai",
+    "name": "Mistral AI",
+    "chineseName": "Mistral AI",
+    "country": "EU",
+    "type": "AI Unicorn",
+    "openSourceStrategy": "Apache 2.0 Open Weights + Le Chat 闭源商业版",
+    "flagshipModels": ["Mistral 7B", "Mixtral 8x7B", "Mixtral 8x22B", "Mistral Large", "Codestral"],
+    "coreStrengths": "欧洲 AI 希望之星、稀疏 MoE 架构先行者、SWA 滑动窗口注意力、极高能效比与严谨工程规范",
+    "computeEcosystem": "欧洲超算中心与 Snowflake / 微软 Azure 全球云伙伴"
+  }
+]
