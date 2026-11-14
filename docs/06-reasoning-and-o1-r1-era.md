@@ -30,7 +30,7 @@
 
 ## 2. 破冰之作：OpenAI o1 与 o3 (2024.09 - 12)
 
-2024 年 9 月 12 日，OpenAI 正式发布代号为 **Strawberry（草莓）** 的推理模型系列：**o1-preview 与 o1-mini**，随后在 12 月发布更强的 **o3 / o3-mini**。
+2024 年 9 月 12 日，OpenAI 正式发布代号为 **Strawberry（草莓）** 的推理模型系列：**o1-preview 与 o1-mini**；2024 年 12 月推出 o1 正式版并**宣布** o3，o3 的完整版本直到 2025 年 4 月才与 o4-mini 一同上线。
 
 ### 2.1 核心理论：推理期计算扩展法则 (Test-Time Compute Scaling)
 
@@ -158,6 +158,10 @@ DeepSeek-R1-Zero 彻底跳过了传统的“监督微调冷启动（Supervised F
 | **QwQ-32B** | 阿里巴巴 (中) | 2024.11 | 开源可商用 | 32B 推理分支架构 | 中国首个高质量开源慢思考推理尝试 |
 | **Gemini 2.0 Flash**| Google (美) | 2024.12 | 闭源 API | 原生多模态 + 实时流式响应 | 毫秒级端到端音视频多模态 Agent 体验 |
 | **DeepSeek-V3** | DeepSeek (中) | 2024.12 | 权重开源 | 671B MoE (激活 37B), FP8 | 557 万美元极低预训练成本挑战万亿算力神话，DualPipe/MTP 标杆 |
-| **OpenAI o3** | OpenAI (美) | 2024.12 | 闭源 API | 极致推理期强化搜索 | AIME 96.7% 近乎满分，前沿数学与代码天花板 |
+| **OpenAI o3** | OpenAI (美) | 2025.04 | 闭源 API | 极致推理期强化搜索 | AIME 96.7% 近乎满分，前沿数学与代码天花板 |
 | **DeepSeek-R1** | DeepSeek (中) | 2025.01 | 权重/蒸馏全开源 | 671B MoE, GRPO 纯强化探索 | 证实纯 RL 自主涌现反思与思维链，彻底引发全球算力与技术平权震动 |
 | **Kimi k1.5** | 月之暗面 (中) | 2025.01 | 闭源 API | 多模态长程强化推理 | 兼顾超长文本记忆与复杂多步多模态逻辑规划 |
+
+---
+
+> 📚 本章引用与一手来源见 [references.md](references.md)；数据字段规范见 [schema.md](../data/schema.md)。

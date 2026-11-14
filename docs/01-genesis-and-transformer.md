@@ -117,3 +117,7 @@ $$L_1(\mathcal{U}) = \sum_{i} \log P(u_i \mid u_{i-k}, \dots, u_{i-1}; \Theta)$$
 
 1. **Decoder-Only 的长期远见**：BERT 在判别任务上的短期统治遮蔽了许多机构的视线，但 OpenAI 敏锐意识到，语言的本质是概率自回归生成，只有 Decoder-only 能实现开放世界的无界生成与推理。
 2. **算力与数据的初步觉醒**：从 BERT 的 16GB 语料到 GPT-2 的 40GB WebText，再到 T5 的 750GB C4，语料规模的指数级扩张直接开启了下一阶段的 Scaling Laws（尺度定律）。
+
+---
+
+> 📚 本章引用与一手来源见 [references.md](references.md)；数据字段规范见 [schema.md](../data/schema.md)。

@@ -108,3 +108,7 @@ $$\max_{\phi} \mathbb{E}_{(x, y)\sim D_{\pi_\phi}}\left[r_\psi(x, y) - \beta D_{
 | **Minerva** | Google | 2022.06 | 闭源 | 专攻数学推理，验证思维链（Chain of Thought）力量 |
 | **ChatGPT** | OpenAI | 2022.11 | 闭源应用 | 对话式大模型消费级引爆点，拉开全球生成式 AI 狂潮 |
 | **Constitutional AI** | Anthropic | 2022.12 | 论文/闭源 | 提出 RLAIF 与宪政 AI，为 Claude 模型家族奠基 |
+
+---
+
+> 📚 本章引用与一手来源见 [references.md](references.md)；数据字段规范见 [schema.md](../data/schema.md)。

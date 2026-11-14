@@ -262,3 +262,7 @@ timeline
 | **2025.02** | **Claude Code** | Anthropic | 美 | 终端自主智能体 | 扎根 Bash 命令行，自主查错、编译、测试并提交 PR |
 | **2025.04** | **Google A2A 协议** | Google | 美 | 智能体协作协议 | 标准化 Agent 之间的任务委托、身份鉴权与协作结算 |
 | **2025.11** | **Google Antigravity**| Google DeepMind | 美 | 智能体平台/IDE | 支持多 Subagents 层级协作、Native Swarm 异步总线、动态 Artifact 画布 |
+
+---
+
+> 📚 本章引用与一手来源见 [references.md](references.md)；数据字段规范见 [schema.md](../data/schema.md)。

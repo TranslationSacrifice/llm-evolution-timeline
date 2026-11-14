@@ -39,13 +39,13 @@ OpenAI 经历了从“非营利学术实验室”到“科技商业巨无霸”�
   - `GPT-4o (2024.05)`：原生端到端统一文本、音频、视觉，实时低延迟语音交互。
   - `GPT-4o mini (2024.07)`：极致性价比小模型，全面取代 GPT-3.5 Turbo。
   - `o1-preview / o1-mini (2024.09)`：首批公开预览版推理模型，公开验证 Test-Time Compute 慢思考。
-  - `o1 / o3 系列 (2024.12 - 2025.01)`：正式版完整 o1 与 o3-mini（三档推理力度），刷新数学与竞技编程记录。
+  - `o1 / o3 系列 (2024.12 - 2025.04)`：o1 正式版（2024-12）与 o3-mini（2025-01）先行，完整版 o3 于 2025-04 上线。
   - `GPT-4.1 / mini (2025.04)`：百万 Token（1M context）长程编码工程专精版。
   - `o3-pro (2025.06)`：ChatGPT Pro 专属最高推理版本，解决高难度学术与科学攻关。
   - `GPT-5 (2025.08)`：推理与对话内生大一统，根据任务隐式复杂度自适应触发思考。
   - `gpt-oss (2025.08)`：通过 Ollama 等渠道开放的部分本地部署蒸馏权重 (20b/120b)。
   - `GPT-5.6 (2026.07)`：确立 Luna（轻量）、Terra（主力）、Sol（科研推理）三档家族。
-  - `GPT-6 / 6.1 (2026.10)`：跨模态因果演化与自主智能体深度重构。
+  - `GPT-6 / 6.1 (2026.09 - 10)`：跨模态因果演化与自主智能体深度重构（GPT-6 于 2026-09 发布）。
 - **商业模式**：与微软深度绑定（Microsoft Azure 独家云合作与 Office Copilot 赋能），通过 ChatGPT Plus 订阅与开发者 API 变现。
 
 ### 2.2 Google / DeepMind：Transformer 的发源地与全栈反攻者
@@ -62,8 +62,8 @@ Google 是现代深度学习底座（Transformer, Attention, T5, BERT, TPU 芯�
   - `Gemini 2.0 (2024.12)`：Flash / Thinking 多模态 Agent 新旗舰。
   - `Gemini 3 Pro / Flash (2026)`：能效比与推理吞吐大幅升级。
   - `Gemini 4 系列 (2026 GA)`：推出 Hydrogen（超轻）、Carbon（主力）、Argon（重型科研）三态化算力矩阵。
-  - `Gemini Omni 1.2 Flash (2026.11)`：原生超低延迟多模态视频交互。
-  - `Gemini Robotics 2 (2026.07)`：全身协调具身智能（Whole-Body Intelligence）通用基座。
+  - `Gemini Omni (2026.05)`：任意模态输入生成视频的原生全模态模型；具体版本号以官方发布为准。
+  - `Gemini Robotics ER 2 (2026.07)`：具身推理升级（实时视频理解、任务进度跟踪、多机器人协作）。
 - **核心优势**：自研 TPU（TPU v4/v5p/v6e）算力独立自主，无需受制于外部芯片供应链；具备搜索、YouTube、Android 等无可比拟的丰富多模态语料库。
 
 ### 2.3 Meta：全球开源大模型领袖及其历史性路线分化
@@ -77,7 +77,7 @@ Google 是现代深度学习底座（Transformer, Attention, T5, BERT, TPU 芯�
   - `LLaMA 3.1 (2024.07)`：405B，首个匹敌闭源顶流的超大规模开源权重。
   - `LLaMA 3.2 (2024.09)`：轻量级多模态（1B/3B 端侧 + 11B/90B 视觉）。
   - `Llama 4 (Scout / Maverick, 2025 - 2026)`：维持开放权重，作为开源阵营中坚主力。
-  - `★ 历史性大转折：Avocado (2026 Q1)`：作为原定 Llama 5 继任者，Meta 面对高昂算力成本与回报压力，**正式将 Avocado 转向闭源商业化 API 模式**，引发全球开源生态对单一商业巨头依赖的反思。
+  - `★ 路线转向：Muse Spark（内部代号 Avocado，2026.04）`：作为原定 Llama 5 继任者，Meta 面对高昂算力成本与回报压力，**把旗舰线转向闭源商业化 API**（内部代号 Avocado 见诸 2025-12 至 2026-03 的媒体报道，最终以 Muse Spark 发布），引发全球开源生态对单一商业巨头依赖的反思。
 - **战略演进**：从单纯的模型层商品化（Commoditization），演进至开源防御与核心前沿闭源变现双轨运行。
 
 ### 2.4 Anthropic：AI 安全、代码编程与企业级信誉之王
@@ -113,7 +113,7 @@ Google 是现代深度学习底座（Transformer, Attention, T5, BERT, TPU 芯�
   - `Grok-2 & Grok-2 mini (2024.08)`：LMSYS 排行前列，集成 FLUX 实时图像生成。
   - `Grok 3 (2025.02)`：基于田纳西州孟菲斯建立的“Colossus（巨人）”超算集群（10 万张 H100/H200 GPU），直连 X 平台实时数据，推出 DeepSearch 与 Think 模式。
   - `Grok 4 / 4 Fast (2025.07)`：工具调用标杆，上下文扩展至 200 万 Token。
-  - `Grok 4.6 (2026)`：引入 `low / medium / high / xhigh` 四档显式推理计算开关，在终端 Agentic 自动化操作（CLI / OS 自动化执行）上具备极强统治力。
+  - `Grok 4.5 / 4.6 (2026.07 - 08)`：终端 Agentic 自动化操作（CLI / OS 自动化执行）是其主打场景；推理档位（low / medium / high / xhigh）在多代产品中逐步形成。
 - **战略定位**：追求对世界底层真实规律的无偏见探寻（Truth-seeking AI），拥有全球单集群物理算力的最高纪录之一。
 
 ### 2.7 TypeSafe AI：System 1 纯决策模型与“智能 if 语句”开创者
@@ -123,7 +123,7 @@ Google 是现代深度学习底座（Transformer, Attention, T5, BERT, TPU 芯�
 - **核心产品与范式突破**：
   - `Jev (2026.09.15)`：彻底跳出自回归自然语言生成的束缚，开创了 **System 1 纯决策模型（Decision Models）** 新品类。
   - **核心机制**：接收任意非结构化环境状态（文本、日志、多模态元数据），在 **70ms - 500ms** 内直接输出带有严格贝叶斯校准概率的离散决策（Typed Decisions / Enums）。
-  - **历史定位**：充当现代自动化流水线与代码工程中的“智能 if 语句”，解决了用千亿参数大模型处理简单逻辑判断时成本高昂、延迟巨大且破坏格式的痛点，引爆随后的开源决策克隆潮（如 vLLM-SR 的 Decision 3.0 系列、One Gemma、SemIf 等）。
+  - **历史定位**：充当现代自动化流水线与代码工程中的“智能 if 语句”，解决了用千亿参数大模型处理简单逻辑判断时成本高昂、延迟巨大且破坏格式的痛点，引爆随后的开源决策克隆潮（如 vLLM Semantic Router 的 Decision 3.0 系列；部分社区克隆型号尚无一手来源，见第九章 3.2 节）。
 
 ### 2.8 欧洲独立先锋 Mistral AI 与企业级标杆 Cohere
 
@@ -174,7 +174,7 @@ Google 是现代深度学习底座（Transformer, Attention, T5, BERT, TPU 芯�
 - **完整迭代谱系**：
   - `云雀大模型 (2023.08)`：首批通过国内大模型备案的自研语言模型。
   - `豆包通用模型 (2024.05)`：火山引擎以“0.0008元/千Token”打响“厘时代”价格战，推动国内大模型全面走向平民化消费。
-  - `豆包 1.5 Pro (2024.10)`：百万上下文全功能旗舰，支撑日均万亿 Token 流量分发。
+  - `豆包 1.5 Pro (2025.01)`：百万上下文全功能旗舰，支撑日均万亿 Token 流量分发。
   - `Seed 2.0 (2025)`：全新自研多模态统一基座，跨文本、视觉与具身指令。
   - `Seed-TTS (2024.06)`：接近真人的高质量零样本语音克隆与韵律自适应。
   - `Seedream & Seedance (2024-2025)`：高保真文生图（即梦 AI 核心引擎）与舞蹈/物理动作高一致性视频生成。
@@ -275,9 +275,9 @@ graph TD
 | :--- | :---: | :--- | :--- | :--- | :--- |
 | **OpenAI** | 美 | GPT-1~4o, o1, o3, GPT-5/6, gpt-oss | 闭源 API (早期与蒸馏开源) | NVIDIA / Azure 超算 | 前沿尺度定律拓荒者，逻辑推理与强化学习领航 |
 | **Google** | 美 | T5, PaLM, Bard, Gemini 1.5/2/3/4, Gemma | 闭源 API + 开放权重 | 自研 TPU v4/v5/v6 | Transformer 发明者，自研全栈硬件，原生多模态 |
-| **Meta** | 美 | LLaMA 1~3.3, Llama 4, Avocado | 开源权重 -> 旗舰转向闭源 | NVIDIA GPU 万卡集群 | 全球开源领袖，Avocado 成为闭源转折关键节点 |
+| **Meta** | 美 | LLaMA 1~3.3, Llama 4, Muse Spark（代号 Avocado） | 开源权重 -> 旗舰转向闭源 | NVIDIA GPU 万卡集群 | 全球开源领袖，Muse Spark 成为闭源转折关键节点 |
 | **Anthropic**| 美 | Claude 1~3.7, Claude 4/5, Mythos | 闭源 API | AWS Trainium / NVIDIA | 宪政 AI，代码生成、混合推理与 MCP 标准制定者 |
-| **xAI** | 美 | Grok-1 (开源), Grok-2/3/4, Grok 4.6 | 开源+闭源 | 10万卡 Colossus 集群 | 拥有单集群最大卡数，实时社交数据驱动，四档推理开关 |
+| **xAI** | 美 | Grok-1 (开源), Grok-2/3/4, Grok 4.5/4.6 | 开源+闭源 | 10万卡 Colossus 集群 | 拥有单集群最大卡数，实时社交数据驱动，四档推理开关 |
 | **Microsoft**| 美 | New Bing, Copilot, Phi-1~4 | 开源小模型 + 闭源服务 | Azure / 自研 Maia / NVIDIA | Prometheus 搜索编排，商业 RAG 标杆，高质量合成数据 SLM 先驱 |
 | **TypeSafe AI**| 美 | Jev (System 1 纯决策模型) | 专有决策 API | 专用低延迟推理架构 | 70-500ms 纯类型化离散决策，打破自回归文本范式 |
 | **Mistral AI**| 欧 | Mistral 7B, Mixtral 8x7B/8x22B, Mistral Large | 开源权重 + 商业闭源 | 欧洲主权云 / NVIDIA | 欧洲主权大模型领袖，MoE 架构与企业级 Agent 矩阵 |
@@ -295,3 +295,7 @@ graph TD
 | **商汤科技** | 中 | 日日新 SenseNova 1.0~5.5 | 商业服务 + 云 API | 商汤大装置 SenseCore | 视觉大厂底蕴，万卡集群软硬协同，全模态实时交互 |
 | **科大讯飞** | 中 | 讯飞星火 SparkDesk 1.0~4.0 | 闭源服务 + 私有化一体机 | 国产自主算力底座 | 认知智能全国重点实验室，政务/教育央国企私有化部署标杆 |
 | **上海 AI Lab**| 中 | 书生·浦语 (InternLM), 书生·万象 (InternVL) | 开放权重 (Open Source) | 国家级科研算力 | 顶级开源学术基准，覆盖语言、多模态全技术栈 |
+
+---
+
+> 📚 本章引用与一手来源见 [references.md](references.md)；数据字段规范见 [schema.md](../data/schema.md)。

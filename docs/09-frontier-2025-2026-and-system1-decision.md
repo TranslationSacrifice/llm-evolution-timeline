@@ -1,6 +1,6 @@
 # 第九章：前沿裂变与范式重构 (2025 - 2026) —— 通用旗舰大一统、Meta 闭源转向、System 1 决策模型 Jev 与物理/具身生态
 
-> **核心主题**：GPT-5/6 与 Claude 5/Mythos 旗舰演进、Meta Avocado 闭源大转向、开源权重许可分化、System 1 决策模型（Jev 开创的“智能 if 语句”与生态克隆潮）、领域特化模型、具身智能与世界模型分流、编码 Agent Harness 层。
+> **核心主题**：GPT-5/6 与 Claude 5/Mythos 旗舰演进、Meta 前沿线转向闭源（Muse Spark，内部代号 Avocado）、开源权重许可分化、System 1 决策模型（Jev 开创的“智能 if 语句”与生态克隆潮）、领域特化模型、具身智能与世界模型分流、编码 Agent Harness 层。
 
 ---
 
@@ -37,7 +37,7 @@ graph TD
   - **Luna**：轻量高频档，针对低延迟日常会话与简单任务；
   - **Terra**：主力均衡档，兼顾深度代码构建与复杂知识分析；
   - **Sol**：顶级超算档，专供科学定理证明、跨学科突破与复杂多智能体编排。
-- **GPT-6 / GPT-6.1 (2026.10 下旬)**：
+- **GPT-6 / GPT-6.1 (2026.09 - 10)**：
   - 延续 Terra / Sol 架构分层，在跨模态因果推演与自主智能体自我演进方面取得突破。
 
 ### 1.2 Anthropic：编码统治力、自适应思考与 Claude 5 体系
@@ -46,23 +46,24 @@ graph TD
   - 确立“全球最佳编码模型”行业共识的起点，SWE-bench Verified 基准再次大幅刷新纪录。
 - **Claude Sonnet 4.5 / Opus 4.5 (2025.09 - 11)**：
   - 巩固长程复杂软件工程与跨文件重构能力。
-- **Claude 5 家族 (2026.06 - 07) —— 自适应思考与分层矩阵**：
-  - 推出 **Fable 5 / Opus 5 / Sonnet 5**，全线标配 **100 万（1M）上下文**；
-  - 引入**自适应思考机制（Adaptive Thinking）**，支持开发者精确调节思考精力与 Token 消耗上限。
+- **Claude 5 代际 (2026.06 - 09) —— 分层矩阵与自适应思考**：
+  - **Fable 5 / Mythos 5（2026-06-09）**：Fable 5 面向公众；Mythos 5 通过 Project Glasswing 仅向受信任机构开放网络安全能力；
+  - **Opus 5（2026-07-24）**：补齐常规 Opus 档位，主打长程软件工程与智能体任务；
+  - 引入**自适应思考机制（Adaptive Thinking）**，支持调节思考预算与 Token 消耗上限。
 - **Claude 5.x 细化矩阵 (2026 下半年)**：
-  - **Claude Mythos 5.2**：面向**网络安全攻防与生命科学（蛋白质/药物分子机理推导）**的极高壁垒专业特化旗舰；
-  - **Fable 5.2 / Opus 5.5 / Sonnet 5.5 / Haiku 5.5**：形成覆盖端侧极速响应（Haiku）到终极智能体决策（Opus）的完备闭源生态。
+  - **Opus 5.5 / Sonnet 5.5（2026.09）/ Haiku 5.5（2026.10）**：覆盖端侧极速响应到重载 Agentic 决策；
+  - **Fable 5.2 / Mythos 5.2（2026.11）**：Fable 5.2 面向公众并内置高风险域降级，Mythos 5.2 继续走受限访问。
 
 ### 1.3 Google DeepMind：Gemini 3/4 与全模态流式交互
 
 - **Gemini 3 Pro / 3.x Flash (2026 上半年)**：
   - 在自研 TPU 算力集群上实现能耗比与推理吞吐的阶跃。
-- **Gemini 4 矩阵 (2026 GA) —— Hydrogen / Carbon / Argon 三态化**：
-  - 采用元素代号划分算力梯队：**Hydrogen（超轻高速）、Carbon（主力综合）、Argon（重型科研）**。
-- **Gemini Omni 1.2 Flash (2026.11)**：
-  - 原生多模态视频流与全双工音视觉协同新旗舰，为实时环境感知与可穿戴硬件注入新动力。
+- **Gemini 4 矩阵 (2026.09 - 11) —— Argon / Carbon / Hydrogen 三档**：
+  - **Argon（2026-09-30 起）**：重型科研与长程推理；**Carbon（2026-10）**：主力综合档；**Hydrogen（2026-11）**：超轻高速档。
+- **Gemini Omni (2026.05)**：
+  - 任意模态输入生成视频的原生全模态模型，为实时环境感知与可穿戴硬件铺路；流传的 `1.2 Flash` 版本号暂无一手来源，以官方发布为准。
 
-### 1.4 Meta 的历史性路线大逆转：从开源领袖到 Avocado 闭源商业化
+### 1.4 Meta 的路线大转向：从开源领袖到 Muse Spark 闭源商业化
 
 长期以来，Meta 被公认为全球开放权重生态的最强灯塔。然而在 2025 至 2026 年，这一战略格局发生了震惊业界的剧烈震荡：
 
@@ -74,19 +75,19 @@ graph TD
   LLaMA 1 (7B-65B) 开源平权                 Llama 4 Scout / Maverick (2025-2026 开放主力)
   LLaMA 2 (GQA商用化)                                       │
   LLaMA 3 / 3.1 (405B 万卡超算开源)                          ▼
-                                          ★ 2026 Q1 重大转折: Avocado ★
-                                          (Llama 5 继任者彻底转向闭源商业化模式)
+                                     ★ 2026 重大转折: Muse Spark（代号 Avocado）★
+                                     (Llama 5 继任者转向闭源商业线，开放权重线收缩)
 ```
 
 1. **Llama 4 Scout / Maverick (2025 - 2026)**：
    - 维持开放权重传统，作为开源社区抵抗商业闭源大厂的顶梁柱；
-2. **战略急转弯：Avocado (2026 Q1)**：
-   - 作为 Llama 5 原定继任项目，Meta 核心层基于算力巨额摊销、资本回报率（ROI）考核以及前沿对齐安全的综合考量，**正式决定将 Avocado 转向闭源专有商业化 API 路线**；
+2. **路线转向：Muse Spark（内部代号 Avocado，2026.04）**：
+   - 作为 Llama 5 原定继任项目，Meta 核心层基于算力摊销、资本回报率（ROI）与前沿对齐安全的综合考量，**把旗舰线转向闭源专有商业化 API**。代号 Avocado 在 2025-12 至 2026-03 的媒体报道中广泛出现，最终以 Muse Spark 之名发布；
    - 这一事件标志着“硅谷科技巨头无偿用数十亿美元反哺全球开放权重”的理想主义时代出现重大裂痕，开源世界自此更加倚重以中国机构（Qwen、DeepSeek）以及新型去中心化联盟为主导的力量。
 
 ### 1.5 xAI 与月之暗面 (Moonshot AI)
 
-- **xAI Grok 4.6**：
+- **xAI Grok 4.5 / 4.6（2026.07 - 08）**：
   - 基于孟菲斯持续扩容的超算中心，提供 `low / medium / high / xhigh` 四档显式推理计算开关，在终端 Agentic 自动化操作（CLI / OS 自动化执行）上具备极强统治力。
 - **月之暗面 Kimi K3**：
   - 总参数达 **2.8 万亿（2.8T MoE）**，兼顾超长文本记忆、原生多模态 Agent 规划与持续数小时的长程自主代码工程。
@@ -154,29 +155,18 @@ graph LR
 - **极速响应与确定性**：单次推理延迟稳定在 **70ms - 500ms**，可直接无缝嵌入高并发交易系统、智能路由网关、内容风控防火墙或自动化控制流水线；
 - **行业震动**：开发者第一次意识到，过去用臃肿的 70B/400B 巨模来做“判断用户是否意图退款”、“挑选调用哪个 API 工具”这类决策，是严重的算力浪费与架构错位。Jev 开创了“**用 System 1 决策特化模型彻底接管系统逻辑分支**”的全新时代。
 
-### 3.2 48 小时生态大裂变与对手竞品
+### 3.2 生态接力：可核实的开源对应物
 
-Jev 的爆火引发了全球开源社区在短短 48 小时内的病毒式技术裂变：
+Jev 之后，"决策模型"迅速成为一个独立品类。可以核实的部分是：开源社区在一周内出现了克隆项目
+（其中 Databricks 的 open-Jev 有媒体报道），vLLM 语义路由项目也发布了面向同一场景的
+Decision 3.0 系列。但流传较广的若干轻量型号名——`Laya`、`DiffusionGemmaJev`、
+`Bespoke Nimble`、`SemIf`、`THX-01`、`One Gemma`——在公开检索与本地 Wikipedia 语料中
+均未找到痕迹，本仓库暂不收录，列此待证（欢迎补充一手来源后恢复）。
 
-```mermaid
-graph TD
-    Jev[TypeSafe AI: Jev 2026.09<br/>System 1 决策模型开山之作] --> D3[vLLM-SR: Decision 3.0 系列<br/>d3 / d3-flash / d3-nano 0.6B-27B 开源]
-    Jev --> Clone1[Laya: ModernBERT 骨干决策微调]
-    Jev --> Clone2[DiffusionGemmaJev: 扩散概率决策机制]
-    Jev --> Clone3[Bespoke Nimble: LoRA 微调 Qwen3.5-9B]
-    Jev --> Clone4[SemIf / OpenJev: 社区通用语义分支模型]
-    Jev --> UltraLow[极致超轻延迟先锋<br/>THX-01 322M / One Gemma 270M 10ms]
-```
-
-1. **开源正统劲敌：Decision 3.0 系列 (vLLM-SR, 2026.10)**：
-   - 包含 **d3 / d3-flash / d3-mini / d3-nano / d3-lite / d3-edge** 全矩阵，覆盖 0.6B 至 27B 尺寸，全量权重开源于 Hugging Face，成为工业界低成本替换 Jev API 的首选开源方案。
-2. **社区裂变与变种架构**：
-   - **Laya**：基于 ModernBERT 双向编码器构建的轻量快速判决器；
-   - **DiffusionGemmaJev**：引入去噪扩散概率建模的决策打分网络；
-   - **Bespoke Nimble & SemIf / OpenJev**：基于 Qwen3.5 骨干演变出的开源指令决策器。
-3. **极小微延迟路线（~10ms 边缘级）**：
-   - **THX-01 (N1N AI)**：仅 322M 参数，端到端延迟杀入 **10 毫秒** 级别；
-   - **One Gemma**：仅 270M 参数，利用 Gemma 3 基础层转换的单步判决器。
+1. **开源对应物：Decision 3.0 系列（vLLM Semantic Router，2026.10）**：
+   - 覆盖 d3 / d3-flash / d3-mini 等尺寸，权重开源于 Hugging Face；
+   - 定位与 Jev 一致：把"该调哪个工具 / 该走哪个分支"从通用 LLM 中剥离，交给更小、更确定、更低延迟的模型完成。
+2. **设计取向收敛**：非自回归单步输出、强类型枚举、校准置信度——这三条正在成为"决策模型"的事实标准。
 
 ### 3.3 双系统演进大闭环：从慢思考到快决断
 
@@ -192,8 +182,7 @@ graph TD
 
 ### 4.1 蛋白质、DNA 与生命科学计算
 
-- **Venus / VenusPLM (上海交通大学)**：
-  - 基于百亿参数规模的蛋白质通用表征大模型，依托自建的 **VenusPod（包含近 150 亿条非冗余生物序列数据）**，在跨物种蛋白质功能注释与构象预测上表现出色。
+<!-- 2026-11-14 注：VenusPLM / VenusPod 在公开检索与本地语料中均无痕迹，暂不入库，待补一手来源。 -->
 - **ESM2 (Meta) 与 EVO2 (Arc Institute)**：
   - Meta ESM2 作为 650M 掩码蛋白质语言模型依然是全球结构生物学任务的基础特征提取经典基线；
   - Arc Institute 的 **Evo2 (evo2_40b)** 拥有 400 亿参数，专攻长基因组跨尺度变异与 DNA 序列生成。
@@ -226,9 +215,9 @@ graph TD
 
 ### 5.1 具身智能基础模型：从视觉语言到动作（VLA）与流匹配（Flow Matching）
 
-- **Google DeepMind: Gemini Robotics 2 (2026.07)**：
-  - 具备端到端“全身协调智能（Whole-Body Intelligence）”，将上肢双臂精密操作与下肢四足/双足复杂地形步态动态规划合二为一。
-- **NVIDIA: GR00T N1.7 / N2 (2026.04)**：
+- **Google DeepMind: Gemini Robotics ER 2 (2026.07)**：
+  - 具身推理升级：实时视频理解、任务进度跟踪、低延迟编排（Gemini Live API）与多机器人协作，首次通过 API 向开发者开放。
+- **NVIDIA: GR00T N1 (2025.03)**：
   - 依托 Isaac Sim 物理仿真平台与数万台人形机器人实时遥操作数据预训练，成为全球机器人厂商通用大脑的标杆平台。
 - **Physical Intelligence (π): π₀ / π₀.₅ / π₀-FAST / π0.7**：
   - 彻底抛弃低频的离散动作 Token 化，采用**流匹配（Flow Matching）连续动态扩散机制**，实现了机器人机械手的高频（50Hz+）丝滑控制，在折衣服、洗碗、装箱等非结构化家政场景展现出惊人泛化力。
@@ -259,7 +248,7 @@ graph TD
   - **Runway Gen-4.5 / Aleph**：专攻分镜一致性与专业影视级精准局部重绘（Inpainting）；
   - **Pika 2.5**：主打 5 秒极速渲染与病毒式社交特效；
   - **中国视频模型梯队**：快手 **可灵 (Kling 3.0)**、MiniMax **海螺 (Hailuo 02)**、阿里 **万相 (Wan 2.7)** 与字节跳动 **即梦 AI** 在运镜控制、物理刚体运动与人物面部真实度上在全球消费市场稳居领先席位；
-  - **Google Veo 3.1 & Gemini Omni 1.2 Flash**：融合 YouTube 高清多模态语料，推动多模态实时交互创作。
+  - **Google Veo 3.1 & Gemini Omni**：融合 YouTube 高清多模态语料，推动多模态实时交互创作。
 
 ---
 
@@ -294,3 +283,7 @@ graph TD
    - **OpenAI Codex CLI / Cloud** 与 **GitHub Copilot CLI / Cloud Agent**；
    - **全自动软件工程师产品**：Cursor / Cursor Cloud Agent、Devin、Jules；
    - **开源智能体框架**：OpenCode、OpenHands、Cline。
+
+---
+
+> 📚 本章引用与一手来源见 [references.md](references.md)；数据字段规范见 [schema.md](../data/schema.md)。

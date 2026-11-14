@@ -1,0 +1,23 @@
+name: validate
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  data:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # 结构 / 枚举 / 排序 / docLink 是否存在的校验都在 validate.py 里
+      - name: 校验数据结构与枚举
+        run: python tools/validate.py
+
+      - name: 校验 timeline.js 与 timeline.json 同步
+        run: python tools/build_timeline_js.py --check

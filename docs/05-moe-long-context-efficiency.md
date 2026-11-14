@@ -137,3 +137,7 @@ DeepSeek 将其超高吞吐效率直接反馈至商业定价：
 | **Claude 3.5 Sonnet**| Anthropic (美) | 2024.06 | 闭源 API | 顶级推理与编程密集体 | 登顶全球 Coding/Agent 第一宝座，推出 Artifacts 画布 |
 | **LLaMA 3.1 405B** | Meta (美) | 2024.07 | 权重开源 | 405B 密集型 (1.6万卡训练) | 开源史上首个匹敌闭源 Frontier 的 400B+ 旗舰基石 |
 | **Qwen 2.5 系列** | 阿里巴巴 (中) | 2024.09 | 开源可商用 | 0.5B - 72B, Coder/Math 专精 | 覆盖全尺寸全场景的全球最强开源模型家族之一 |
+
+---
+
+> 📚 本章引用与一手来源见 [references.md](references.md)；数据字段规范见 [schema.md](../data/schema.md)。

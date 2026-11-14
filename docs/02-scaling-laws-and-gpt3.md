@@ -135,3 +135,7 @@ $$N_{\text{opt}} \propto C^{0.5}, \quad D_{\text{opt}} \propto C^{0.5}$$
 | **推理延迟与内存显存** | 极高（需 4-8 张 A100） | 高 | **仅需 1-2 张 A100 即可部署** |
 
 > **战略意义**：从此，学术界与开源界彻底转向 **“小尺寸、深训练（Over-training small models on massive data）”** 的路线，为 2023 年 Meta LLaMA（7B/13B 训练在 1T+ token 上）的降维打击埋下了最为关键的理论种子。
+
+---
+
+> 📚 本章引用与一手来源见 [references.md](references.md)；数据字段规范见 [schema.md](../data/schema.md)。
