@@ -814,7 +814,7 @@
       "AI Infrastructure"
     ],
     "source": "https://en.wikipedia.org/wiki/Stargate_LLC",
-    "docLink": "docs/09-agentic-supermodel-era.md",
+    "docLink": "docs/09-frontier-2025-2026-and-system1-decision.md",
     "era": "推理革命与智能体 2024Q4–2025"
   },
   {
@@ -835,7 +835,7 @@
       "Legacy Model"
     ],
     "source": "https://en.wikipedia.org/wiki/GPT-4.5",
-    "docLink": "docs/09-agentic-supermodel-era.md",
+    "docLink": "docs/09-frontier-2025-2026-and-system1-decision.md",
     "era": "推理革命与智能体 2024Q4–2025"
   },
   {
@@ -855,7 +855,7 @@
       "Low-level Control"
     ],
     "source": "https://en.wikipedia.org/wiki/Gemini_Robotics",
-    "docLink": "docs/09-agentic-supermodel-era.md",
+    "docLink": "docs/09-frontier-2025-2026-and-system1-decision.md",
     "era": "推理革命与智能体 2024Q4–2025"
   },
   {
@@ -876,7 +876,7 @@
       "MoE"
     ],
     "source": "https://en.wikipedia.org/wiki/Llama_4",
-    "docLink": "docs/09-agentic-supermodel-era.md",
+    "docLink": "docs/09-frontier-2025-2026-and-system1-decision.md",
     "era": "推理革命与智能体 2024Q4–2025"
   },
   {
@@ -896,7 +896,7 @@
       "RL Scaling"
     ],
     "source": "https://en.wikipedia.org/wiki/OpenAI_o3",
-    "docLink": "docs/09-agentic-supermodel-era.md",
+    "docLink": "docs/09-frontier-2025-2026-and-system1-decision.md",
     "era": "推理革命与智能体 2024Q4–2025"
   },
   {
@@ -917,8 +917,27 @@
       "Apache 2.0"
     ],
     "source": "https://en.wikipedia.org/wiki/Qwen",
-    "docLink": "docs/09-agentic-supermodel-era.md",
+    "docLink": "docs/09-frontier-2025-2026-and-system1-decision.md",
     "era": "推理革命与智能体 2024Q4–2025"
+  },
+  {
+    "id": "gpt41-2025",
+    "date": "2025-04",
+    "name": "GPT-4.1",
+    "company": "OpenAI",
+    "country": "US",
+    "license": "Proprietary / Closed API",
+    "category": "Dense LLM",
+    "parameters": "未公开",
+    "contextWindow": "1,000,000",
+    "highlight": "OpenAI 针对长程软件工程与大代码仓库推出的百万 Token 编码专精版，为 GPT-4 时代的工业级落地画上圆满句号。",
+    "keyTech": [
+      "1M Context",
+      "Coding Specialization",
+      "Repository Refactoring"
+    ],
+    "docLink": "docs/09-frontier-2025-2026-and-system1-decision.md",
+    "era": "前沿演进 2025"
   },
   {
     "id": "claude4-2025",
@@ -938,7 +957,7 @@
       "ASL-3"
     ],
     "source": "https://en.wikipedia.org/wiki/Claude_(AI)",
-    "docLink": "docs/09-agentic-supermodel-era.md",
+    "docLink": "docs/09-frontier-2025-2026-and-system1-decision.md",
     "era": "推理革命与智能体 2024Q4–2025"
   },
   {
@@ -959,7 +978,7 @@
       "Low-cost Serving"
     ],
     "source": "https://en.wikipedia.org/wiki/GLM_(AI)",
-    "docLink": "docs/09-agentic-supermodel-era.md",
+    "docLink": "docs/09-frontier-2025-2026-and-system1-decision.md",
     "era": "推理革命与智能体 2024Q4–2025"
   },
   {
@@ -980,7 +999,7 @@
       "Modified MIT"
     ],
     "source": "https://en.wikipedia.org/wiki/Kimi_(chatbot)",
-    "docLink": "docs/09-agentic-supermodel-era.md",
+    "docLink": "docs/09-frontier-2025-2026-and-system1-decision.md",
     "era": "推理革命与智能体 2024Q4–2025"
   },
   {
@@ -1001,7 +1020,7 @@
       "MIT"
     ],
     "source": "https://en.wikipedia.org/wiki/DeepSeek",
-    "docLink": "docs/09-agentic-supermodel-era.md",
+    "docLink": "docs/09-frontier-2025-2026-and-system1-decision.md",
     "era": "推理革命与智能体 2024Q4–2025"
   },
   {
@@ -1022,7 +1041,7 @@
       "Tool Use"
     ],
     "source": "https://en.wikipedia.org/wiki/GPT-5",
-    "docLink": "docs/09-agentic-supermodel-era.md",
+    "docLink": "docs/09-frontier-2025-2026-and-system1-decision.md",
     "era": "推理革命与智能体 2024Q4–2025"
   },
   {
@@ -1043,7 +1062,7 @@
       "Single-GPU Deployment"
     ],
     "source": "https://en.wikipedia.org/wiki/GPT-OSS",
-    "docLink": "docs/09-agentic-supermodel-era.md",
+    "docLink": "docs/09-frontier-2025-2026-and-system1-decision.md",
     "era": "推理革命与智能体 2024Q4–2025"
   },
   {
@@ -1063,7 +1082,7 @@
       "720p Real-time"
     ],
     "source": "https://en.wikipedia.org/wiki/Genie_(world_model)",
-    "docLink": "docs/09-agentic-supermodel-era.md",
+    "docLink": "docs/09-frontier-2025-2026-and-system1-decision.md",
     "era": "推理革命与智能体 2024Q4–2025"
   },
   {
@@ -1084,8 +1103,28 @@
       "Computer Use"
     ],
     "source": "https://en.wikipedia.org/wiki/Claude_(AI)",
-    "docLink": "docs/09-agentic-supermodel-era.md",
+    "docLink": "docs/09-frontier-2025-2026-and-system1-decision.md",
     "era": "推理革命与智能体 2024Q4–2025"
+  },
+  {
+    "id": "sora2-2025",
+    "date": "2025-10",
+    "name": "OpenAI Sora 2",
+    "company": "OpenAI",
+    "country": "US",
+    "license": "Proprietary / Closed API",
+    "category": "文生视频",
+    "parameters": "未公开",
+    "contextWindow": "60s 视频",
+    "highlight": "OpenAI 新一代视频世界模型，突破 60 秒 1080p 多镜头连贯叙事，并首次实现原生环境音效与唇形台词端到端音画同步生成。",
+    "keyTech": [
+      "60s 1080p Video",
+      "Native Audio Sync",
+      "Multi-shot Consistency",
+      "World Physics"
+    ],
+    "docLink": "docs/09-frontier-2025-2026-and-system1-decision.md",
+    "era": "前沿演进 2025"
   },
   {
     "id": "claude-opus45-2025",
@@ -1105,7 +1144,7 @@
       "Extended Thinking"
     ],
     "source": "https://en.wikipedia.org/wiki/Claude_(AI)",
-    "docLink": "docs/09-agentic-supermodel-era.md",
+    "docLink": "docs/09-frontier-2025-2026-and-system1-decision.md",
     "era": "推理革命与智能体 2024Q4–2025"
   },
   {
@@ -1126,7 +1165,7 @@
       "1M Context"
     ],
     "source": "https://en.wikipedia.org/wiki/Gemini_(language_model)",
-    "docLink": "docs/09-agentic-supermodel-era.md",
+    "docLink": "docs/09-frontier-2025-2026-and-system1-decision.md",
     "era": "推理革命与智能体 2024Q4–2025"
   },
   {
@@ -1147,7 +1186,7 @@
       "MIT"
     ],
     "source": "https://en.wikipedia.org/wiki/DeepSeek",
-    "docLink": "docs/09-agentic-supermodel-era.md",
+    "docLink": "docs/09-frontier-2025-2026-and-system1-decision.md",
     "era": "推理革命与智能体 2024Q4–2025"
   },
   {
@@ -1168,7 +1207,7 @@
       "400K Context"
     ],
     "source": "https://en.wikipedia.org/wiki/GPT-5.2",
-    "docLink": "docs/09-agentic-supermodel-era.md",
+    "docLink": "docs/09-frontier-2025-2026-and-system1-decision.md",
     "era": "推理革命与智能体 2024Q4–2025"
   },
   {
@@ -1189,8 +1228,28 @@
       "Open Standard"
     ],
     "source": "https://en.wikipedia.org/wiki/Model_Context_Protocol",
-    "docLink": "docs/09-agentic-supermodel-era.md",
+    "docLink": "docs/09-frontier-2025-2026-and-system1-decision.md",
     "era": "推理革命与智能体 2024Q4–2025"
+  },
+  {
+    "id": "vibethinker-aescoder-2025",
+    "date": "2025-12",
+    "name": "VibeThinker / AesCoder (小特化先锋)",
+    "company": "WeiboAI / 开源社区",
+    "country": "CN",
+    "license": "Open Weights",
+    "category": "领域特化",
+    "parameters": "7B - 14B",
+    "contextWindow": "64K",
+    "highlight": "2025 年底小特化模型趋势代表：通过 GRPO 强化学习针对 Web 界面美学与前端设计展开定向调优，以小博大证明垂直领域极致精细化潜力。",
+    "keyTech": [
+      "Small Specialized Model",
+      "GRPO Optimization",
+      "Web Aesthetics",
+      "Efficient Fine-Tuning"
+    ],
+    "docLink": "docs/09-frontier-2025-2026-and-system1-decision.md",
+    "era": "前沿演进 2025"
   },
   {
     "id": "claude-opus46-2026",
@@ -1210,7 +1269,7 @@
       "Cowork"
     ],
     "source": "https://en.wikipedia.org/wiki/Claude_(AI)",
-    "docLink": "docs/09-agentic-supermodel-era.md",
+    "docLink": "docs/09-frontier-2025-2026-and-system1-decision.md",
     "era": "超级模型与具身 2026"
   },
   {
@@ -1231,7 +1290,7 @@
       "Coding Plan"
     ],
     "source": "https://en.wikipedia.org/wiki/GLM_(AI)",
-    "docLink": "docs/09-agentic-supermodel-era.md",
+    "docLink": "docs/09-frontier-2025-2026-and-system1-decision.md",
     "era": "超级模型与具身 2026"
   },
   {
@@ -1252,7 +1311,87 @@
       "Apache 2.0"
     ],
     "source": "https://en.wikipedia.org/wiki/Qwen",
-    "docLink": "docs/09-agentic-supermodel-era.md",
+    "docLink": "docs/09-frontier-2025-2026-and-system1-decision.md",
+    "era": "超级模型与具身 2026"
+  },
+  {
+    "id": "meta-avocado-2026",
+    "date": "2026-02",
+    "name": "Meta Avocado (Llama 5 继任闭源转向)",
+    "company": "Meta AI",
+    "country": "US",
+    "license": "Proprietary / Closed API",
+    "category": "Dense LLM",
+    "parameters": "未公开",
+    "contextWindow": "1M",
+    "highlight": "Meta 大模型战略的重大历史性转折：原定作为 Llama 5 继任者的 Avocado 于 2026 Q1 全面转向闭源商业化，标志着硅谷巨头无偿资助前沿开源时代的战略裂变。",
+    "keyTech": [
+      "Route Pivot",
+      "Closed Commercialization",
+      "Avocado",
+      "Llama 5 Successor"
+    ],
+    "docLink": "docs/09-frontier-2025-2026-and-system1-decision.md",
+    "era": "超级模型与具身 2026"
+  },
+  {
+    "id": "venus-plm-2026",
+    "date": "2026-03",
+    "name": "Venus / VenusPLM (蛋白质通用大模型)",
+    "company": "上海交通大学",
+    "country": "CN",
+    "license": "Academic / Open Weights",
+    "category": "领域特化",
+    "parameters": "百亿参数级",
+    "contextWindow": "蛋白质全长序列",
+    "highlight": "上海交大发布的百亿参数蛋白质通用语言模型，依托近 150 亿条非冗余序列的 VenusPod 数据集，在跨物种蛋白质功能注释与结合能表征上达 SOTA。",
+    "keyTech": [
+      "VenusPod 15B Dataset",
+      "Protein Language Model",
+      "Structural Biology",
+      "Zero-shot Mutation"
+    ],
+    "docLink": "docs/09-frontier-2025-2026-and-system1-decision.md",
+    "era": "超级模型与具身 2026"
+  },
+  {
+    "id": "pi0-2026",
+    "date": "2026-03",
+    "name": "π₀ / π₀-FAST (Physical Intelligence)",
+    "company": "Physical Intelligence",
+    "country": "US",
+    "license": "Proprietary / API",
+    "category": "具身智能",
+    "parameters": "连续流匹配架构",
+    "contextWindow": "连续动作流",
+    "highlight": "采用流匹配（Flow Matching）连续动态扩散机制替代离散 Token，实现 50Hz 高频多任务双臂丝滑控制，泛化至折叠、组装等复杂家政与工业场景。",
+    "keyTech": [
+      "Flow Matching",
+      "Continuous Action Space",
+      "50Hz Control",
+      "Universal Dexterity"
+    ],
+    "docLink": "docs/09-frontier-2025-2026-and-system1-decision.md",
+    "era": "超级模型与具身 2026"
+  },
+  {
+    "id": "cosmos3-2026",
+    "date": "2026-03",
+    "name": "NVIDIA Cosmos / Cosmos 3",
+    "company": "NVIDIA",
+    "country": "US",
+    "license": "Open Weights / Commercial",
+    "category": "世界模型",
+    "parameters": "MoT 架构",
+    "contextWindow": "高维物理时空流",
+    "highlight": "NVIDIA 专为物理 AI 设计的全模态物理世界模型，采用混合训练器 (MoT) 架构，精准仿真刚体动力学、流体力学与自动驾驶极限 Corner Case。",
+    "keyTech": [
+      "Mixture of Trainers (MoT)",
+      "Physical AI",
+      "World Simulation",
+      "Autonomous Driving"
+    ],
+    "docLink": "docs/09-frontier-2025-2026-and-system1-decision.md",
     "era": "超级模型与具身 2026"
   },
   {
@@ -1273,7 +1412,7 @@
       "Native Multimodal"
     ],
     "source": "https://en.wikipedia.org/wiki/DeepSeek",
-    "docLink": "docs/09-agentic-supermodel-era.md",
+    "docLink": "docs/09-frontier-2025-2026-and-system1-decision.md",
     "era": "超级模型与具身 2026"
   },
   {
@@ -1294,7 +1433,67 @@
       "Muse Code"
     ],
     "source": "https://en.wikipedia.org/wiki/Muse_Spark",
-    "docLink": "docs/09-agentic-supermodel-era.md",
+    "docLink": "docs/09-frontier-2025-2026-and-system1-decision.md",
+    "era": "超级模型与具身 2026"
+  },
+  {
+    "id": "gr00t-n2-2026",
+    "date": "2026-04",
+    "name": "NVIDIA GR00T N1.7 / N2",
+    "company": "NVIDIA",
+    "country": "US",
+    "license": "Commercial SDK / NIM",
+    "category": "具身智能",
+    "parameters": "双足/人形通用大模型",
+    "contextWindow": "Isaac 仿真实时流",
+    "highlight": "NVIDIA 人形机器人通用基础模型重大升级，依托 Isaac Sim 与数万台机器人真实遥操作数据预训练，支持全球主流双足与轮臂机器人快速适配。",
+    "keyTech": [
+      "Isaac Sim Pretraining",
+      "Humanoid Generalist",
+      "NVIDIA NIM",
+      "Simulation-to-Real"
+    ],
+    "docLink": "docs/09-frontier-2025-2026-and-system1-decision.md",
+    "era": "超级模型与具身 2026"
+  },
+  {
+    "id": "minimax-m3-2026",
+    "date": "2026-04",
+    "name": "MiniMax M3 / M3.1-Flash",
+    "company": "MiniMax (稀宇科技)",
+    "country": "CN",
+    "license": "Open Weights",
+    "category": "MoE",
+    "parameters": "428B（激活 23B）",
+    "contextWindow": "512K",
+    "highlight": "428B 总参数、23B 激活的多模态 MoE 开放权重模型，专长于 Agent 自主规划、长程代码工程与网络安全漏洞分析。",
+    "keyTech": [
+      "428B MoE",
+      "23B Active",
+      "Multimodal Agent",
+      "Cyber Defense"
+    ],
+    "docLink": "docs/09-frontier-2025-2026-and-system1-decision.md",
+    "era": "超级模型与具身 2026"
+  },
+  {
+    "id": "chinese-embodied-2026",
+    "date": "2026-05",
+    "name": "中国具身智能先锋矩阵 (智元 GO-2 / 自变量 WALL-A)",
+    "company": "智元机器人 / 自变量机器人 / 智平方 / 星海图",
+    "country": "CN",
+    "license": "Commercial / Ecosystem",
+    "category": "具身智能",
+    "parameters": "多模态本体协同",
+    "contextWindow": "机器人多传感器时序",
+    "highlight": "以智元 GO-2、自变量 WALL-A、智平方 GOVLA、星海图 G0 Plus 为代表的中国具身大模型矩阵，在工业装配、商用清洁与柔性作业中实现软硬协同规模化落地。",
+    "keyTech": [
+      "GO-2 / WALL-A",
+      "Embodied Foundation Model",
+      "Domestic Hardware Grounding",
+      "Industrial Assembly"
+    ],
+    "docLink": "docs/09-frontier-2025-2026-and-system1-decision.md",
     "era": "超级模型与具身 2026"
   },
   {
@@ -1315,7 +1514,27 @@
       "Safety Routing"
     ],
     "source": "https://en.wikipedia.org/wiki/Claude_(AI)",
-    "docLink": "docs/09-agentic-supermodel-era.md",
+    "docLink": "docs/09-frontier-2025-2026-and-system1-decision.md",
+    "era": "超级模型与具身 2026"
+  },
+  {
+    "id": "claude5-2026",
+    "date": "2026-06",
+    "name": "Claude 5 家族 (Fable 5 / Opus 5 / Sonnet 5)",
+    "company": "Anthropic",
+    "country": "US",
+    "license": "Proprietary / Closed API",
+    "category": "Reasoning",
+    "parameters": "未公开",
+    "contextWindow": "1,000,000",
+    "highlight": "Anthropic 推出全线标配 100 万上下文与自适应思考（Adaptive Thinking）的 Claude 5 家族，在复杂长程软件工程与自省推理中独占鳌头。",
+    "keyTech": [
+      "Adaptive Thinking",
+      "1M Context",
+      "Fable-Opus-Sonnet",
+      "Agent Harness Integration"
+    ],
+    "docLink": "docs/09-frontier-2025-2026-and-system1-decision.md",
     "era": "超级模型与具身 2026"
   },
   {
@@ -1336,7 +1555,7 @@
       "Real-time Video"
     ],
     "source": "https://en.wikipedia.org/wiki/Gemini_Robotics",
-    "docLink": "docs/09-agentic-supermodel-era.md",
+    "docLink": "docs/09-frontier-2025-2026-and-system1-decision.md",
     "era": "超级模型与具身 2026"
   },
   {
@@ -1357,7 +1576,7 @@
       "Low Price"
     ],
     "source": "https://en.wikipedia.org/wiki/Grok_(chatbot)",
-    "docLink": "docs/09-agentic-supermodel-era.md",
+    "docLink": "docs/09-frontier-2025-2026-and-system1-decision.md",
     "era": "超级模型与具身 2026"
   },
   {
@@ -1378,7 +1597,7 @@
       "Open Weights"
     ],
     "source": "https://en.wikipedia.org/wiki/Kimi_(chatbot)",
-    "docLink": "docs/09-agentic-supermodel-era.md",
+    "docLink": "docs/09-frontier-2025-2026-and-system1-decision.md",
     "era": "超级模型与具身 2026"
   },
   {
@@ -1399,7 +1618,7 @@
       "Agent Governance"
     ],
     "source": "https://en.wikipedia.org/wiki/2026_cyberattacks_by_rogue_OpenAI_agents",
-    "docLink": "docs/09-agentic-supermodel-era.md",
+    "docLink": "docs/09-frontier-2025-2026-and-system1-decision.md",
     "era": "超级模型与具身 2026"
   },
   {
@@ -1420,7 +1639,47 @@
       "Revenue-share License"
     ],
     "source": "https://en.wikipedia.org/wiki/Qwen",
-    "docLink": "docs/09-agentic-supermodel-era.md",
+    "docLink": "docs/09-frontier-2025-2026-and-system1-decision.md",
+    "era": "超级模型与具身 2026"
+  },
+  {
+    "id": "gemini-robotics2-2026",
+    "date": "2026-07",
+    "name": "Gemini Robotics 2",
+    "company": "Google DeepMind",
+    "country": "US",
+    "license": "Proprietary / Embodied",
+    "category": "具身智能",
+    "parameters": "未公开",
+    "contextWindow": "多模态流",
+    "highlight": "Google DeepMind 针对全身协调具身智能（Whole-Body Intelligence）发布的基础模型，打通精密双手操作与复杂地形步态动力学闭环。",
+    "keyTech": [
+      "Whole-body Intelligence",
+      "Loco-manipulation",
+      "Real-time Vision-Action",
+      "TPU Edge"
+    ],
+    "docLink": "docs/09-frontier-2025-2026-and-system1-decision.md",
+    "era": "超级模型与具身 2026"
+  },
+  {
+    "id": "gpt56-2026",
+    "date": "2026-07",
+    "name": "GPT-5.6 (Luna / Terra / Sol 家族)",
+    "company": "OpenAI",
+    "country": "US",
+    "license": "Proprietary / Closed API",
+    "category": "Reasoning",
+    "parameters": "三档阶梯家族",
+    "contextWindow": "1M",
+    "highlight": "OpenAI 正式确立三档家族：Luna（轻量极速）、Terra（主力通用）、Sol（顶级科学推理），实现算力与任务复杂度的精细分层映射。",
+    "keyTech": [
+      "Three-tier Hierarchy",
+      "Luna-Terra-Sol",
+      "Adaptive Scaling",
+      "Science Reasoning"
+    ],
+    "docLink": "docs/09-frontier-2025-2026-and-system1-decision.md",
     "era": "超级模型与具身 2026"
   },
   {
@@ -1441,7 +1700,7 @@
       "Domestic Chips"
     ],
     "source": "https://en.wikipedia.org/wiki/GLM_(AI)",
-    "docLink": "docs/09-agentic-supermodel-era.md",
+    "docLink": "docs/09-frontier-2025-2026-and-system1-decision.md",
     "era": "超级模型与具身 2026"
   },
   {
@@ -1462,7 +1721,7 @@
       "Enterprise"
     ],
     "source": "https://en.wikipedia.org/wiki/Claude_(AI)",
-    "docLink": "docs/09-agentic-supermodel-era.md",
+    "docLink": "docs/09-frontier-2025-2026-and-system1-decision.md",
     "era": "超级模型与具身 2026"
   },
   {
@@ -1483,7 +1742,7 @@
       "Cyber Capability"
     ],
     "source": "https://en.wikipedia.org/wiki/GPT-6",
-    "docLink": "docs/09-agentic-supermodel-era.md",
+    "docLink": "docs/09-frontier-2025-2026-and-system1-decision.md",
     "era": "超级模型与具身 2026"
   },
   {
@@ -1504,7 +1763,48 @@
       "Agentic System"
     ],
     "source": "https://en.wikipedia.org/wiki/Gemini_(language_model)",
-    "docLink": "docs/09-agentic-supermodel-era.md",
+    "docLink": "docs/09-frontier-2025-2026-and-system1-decision.md",
+    "era": "超级模型与具身 2026"
+  },
+  {
+    "id": "jev-2026",
+    "date": "2026-09",
+    "name": "Jev (System 1 决策模型开山之作)",
+    "company": "TypeSafe AI",
+    "country": "US",
+    "license": "Proprietary / API",
+    "category": "System 1 / 决策特化",
+    "parameters": "未公开",
+    "contextWindow": "N/A",
+    "highlight": "TypeSafe AI 于 2026 年 9 月 15 日发布的 System 1 决策模型开创者。不生成任何自然语言文本，输入非结构化状态直接输出带校准概率的强类型结构化决策（70-500ms），定义了智能 if 语句新范式。",
+    "keyTech": [
+      "System 1",
+      "Decision Model",
+      "Typed Decisions",
+      "Calibrated Probability",
+      "Intelligent If-Statement"
+    ],
+    "docLink": "docs/09-frontier-2025-2026-and-system1-decision.md",
+    "era": "超级模型与具身 2026"
+  },
+  {
+    "id": "thx01-onegemma-2026",
+    "date": "2026-09",
+    "name": "THX-01 / One Gemma (微延迟 System 1)",
+    "company": "N1N AI / 开源社区",
+    "country": "US",
+    "license": "Open Weights",
+    "category": "System 1 / 决策特化",
+    "parameters": "270M - 322M",
+    "contextWindow": "N/A",
+    "highlight": "Jev 爆火后 48 小时生态裂变的极端代表：THX-01 (322M, ~10ms) 与 One Gemma (270M) 探索微型参数与超低延迟在硬件网关中的极致落地。",
+    "keyTech": [
+      "Ultra-low Latency 10ms",
+      "Small Decision Model",
+      "Hardware Gateway",
+      "Gemma 3 Backbone"
+    ],
+    "docLink": "docs/09-frontier-2025-2026-and-system1-decision.md",
     "era": "超级模型与具身 2026"
   },
   {
@@ -1525,7 +1825,27 @@
       "Robot Training"
     ],
     "source": "https://en.wikipedia.org/wiki/Genie_(world_model)",
-    "docLink": "docs/09-agentic-supermodel-era.md",
+    "docLink": "docs/09-frontier-2025-2026-and-system1-decision.md",
+    "era": "超级模型与具身 2026"
+  },
+  {
+    "id": "decision3-2026",
+    "date": "2026-10",
+    "name": "Decision 3.0 系列 (d3 / d3-flash / d3-mini)",
+    "company": "vLLM-SR",
+    "country": "US",
+    "license": "Open Weights (Apache 2.0)",
+    "category": "System 1 / 决策特化",
+    "parameters": "0.6B - 27B 全矩阵",
+    "contextWindow": "N/A",
+    "highlight": "Hugging Face 全面开源的 Jev 对手模型矩阵，涵盖 d3/d3-flash/d3-mini/d3-nano/d3-lite/d3-edge，推动 System 1 结构化决策能力开源普及化。",
+    "keyTech": [
+      "Open Source Decision Model",
+      "vLLM-SR",
+      "Calibrated Output",
+      "d3 Series"
+    ],
+    "docLink": "docs/09-frontier-2025-2026-and-system1-decision.md",
     "era": "超级模型与具身 2026"
   },
   {
@@ -1545,7 +1865,27 @@
       "Cyber Defense"
     ],
     "source": "https://en.wikipedia.org/wiki/GPT-6",
-    "docLink": "docs/09-agentic-supermodel-era.md",
+    "docLink": "docs/09-frontier-2025-2026-and-system1-decision.md",
+    "era": "超级模型与具身 2026"
+  },
+  {
+    "id": "gemini-omni12-2026",
+    "date": "2026-11",
+    "name": "Gemini Omni 1.2 Flash",
+    "company": "Google DeepMind",
+    "country": "US",
+    "license": "Proprietary / Closed API",
+    "category": "Multimodal",
+    "parameters": "未公开",
+    "contextWindow": "实时音视频流",
+    "highlight": "Google DeepMind 于 2026 年 11 月发布的超低延迟原生音视频生成与交互大模型，面向穿戴设备与下一代端侧人机共存。",
+    "keyTech": [
+      "Real-time Video Gen",
+      "Full-duplex Omni",
+      "Low Latency Flash",
+      "Wearable AI"
+    ],
+    "docLink": "docs/09-frontier-2025-2026-and-system1-decision.md",
     "era": "超级模型与具身 2026"
   }
 ]

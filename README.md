@@ -37,9 +37,11 @@
  │
 2023: GPT-4 开启万亿 MoE 时代; New Bing 与 Bard 打响搜索入口战; LLaMA 点燃全球开源浪潮; 中国开启“百模大战”
  │
-2024: 百万长上下文突破 (Gemini 1.5); 原生多模态 (GPT-4o); DeepSeek-V2 提出 MLA 架构
+2024: 百万长上下文突破 (Gemini 1.5); 原生多模态 (GPT-4o); DeepSeek-V2 提出 MLA 架构; OpenAI o1 确立慢思考
  │
-2025+: 推理期算力扩展 (o1/o3); DeepSeek-R1 纯强化学习涌现顿悟; 智能体与具身物理世界
+2025: 推理期算力扩展与纯 RL 平权 (DeepSeek-R1); GPT-5 统一内生推理; 智能体工具层 (MCP / Claude Code)
+ │
+2026: Meta Avocado 转向闭源路线; Jev 掀起 System 1 决策模型范式革命; 具身智能 (π₀/GR00T/GO-2) 与世界模型 (Cosmos/Genie 3) 全面分流
 ```
 
 ---
@@ -53,9 +55,10 @@
 | [第三章：对齐革命与 ChatGPT (2022)](docs/03-chatgpt-and-alignment.md) | InstructGPT, RLHF, PPO, ChatGPT, Claude 原型 | 语言概率续写与人类意图对齐、3H原则、RLAIF 宪政自省 |
 | [第四章：寒武纪大爆发与搜索战 (2023)](docs/04-cambrian-explosion-2023.md) | GPT-4, LLaMA 1/2, New Bing, Bard, Phi, ChatGLM, 文心, 通义 | 搜索入口白刃战、Prometheus RAG、万亿 MoE、小模型 SLM、百模大战 |
 | [第五章：架构能效与长上下文 (2023末-2024中)](docs/05-moe-long-context-efficiency.md) | Gemini 1.5, GPT-4o, Claude 3.5, LLaMA 3.1, DeepSeek-V2 | 百万 Token 大海捞针、端到端语音交互、MLA 低显存压缩与降本 |
-| [第六章：深度推理与后训练强化 (2024末-2025+)](docs/06-reasoning-and-o1-r1-era.md) | OpenAI o1/o3, DeepSeek-V3, DeepSeek-R1, QwQ | 数据墙危机、Test-Time Compute 慢思考、GRPO 与纯 RL 顿悟涌现 |
+| [第六章：深度推理与后训练强化 (2024末-2025)](docs/06-reasoning-and-o1-r1-era.md) | OpenAI o1/o3, DeepSeek-V3, DeepSeek-R1, QwQ | 数据墙危机、Test-Time Compute 慢思考、GRPO 与纯 RL 顿悟涌现 |
 | [第七章：中美双雄与开源/闭源演进矩阵](docs/07-us-cn-and-open-closed-matrix.md) | 中美科技企业战略阵型、全尺寸企业级矩阵 | 算力供给差异下的系统工程突破、代差收敛周期、私有化落地 |
 | [第八章：未来展望与未解挑战](docs/08-future-horizons-and-challenges.md) | SSM/Mamba, MCP 智能体, 具身世界模型, 能源墙 | 后 Transformer 骨干网络、通用工具协议、物理模拟与合成数据陷阱 |
+| [第九章：前沿裂变与范式重构 (2025-2026)](docs/09-frontier-2025-2026-and-system1-decision.md) | GPT-5/6, Claude 5/Mythos, Avocado, Jev, Decision 3.0, 具身/世界模型 | 旗舰内生统一、Meta闭源转向、Jev“智能 if 语句”决策模型破局、具身控制与世界仿真分流 |
 
 ---
 
@@ -64,15 +67,23 @@
 ```
  机构分类        代表企业 / 团队                     主力模型系列与技术特色
 ─────────────────────────────────────────────────────────────────────────────────
- 美国前沿实验室  OpenAI                             GPT 系列, GPT-4o, o1, o3 (尺度定律与推理开拓)
+ 美国前沿实验室  OpenAI                             GPT-5/6, GPT-5.6 (Luna/Terra/Sol), o3/o4-mini, gpt-oss (内生统一)
+                 Anthropic                          Claude 4/5 家族, Claude Mythos 5.2, Claude Code (自适应思考与代码王座)
+                 Google DeepMind                    Gemini 3/4 (Hydrogen/Carbon/Argon), Gemini Omni 1.2, Genie 3
+                 Meta AI                            Llama 4 (Scout/Maverick) 开源主力 -> 2026 Q1 Avocado 转向闭源商业化
+                 TypeSafe AI                        Jev (2026-09 首创 System 1 决策模型，智能 if 语句开山之作)
                  Microsoft                          New Bing, Copilot, Phi-1~4 (Prometheus 搜索 RAG 与合成数据 SLM)
-                 Anthropic                          Claude 1-3.7, MCP 协议, Computer Use (安全与代码)
-                 Google DeepMind                    Gemini 1.5/2.0, Bard, Gemma, T5 (全栈 TPU 与原生多模态)
-                 Meta AI                            LLaMA 1, 2, 3, 3.1 405B (全球开源事实标准)
-                 xAI                                Grok-1/2/3 (万卡 Colossus 集群与实时数据)
-                 xAI                                Grok-1/2/3 (万卡 Colossus 集群与实时数据)
+                 xAI                                Grok 4.6 (low-xhigh 四档推理，十万卡超算与 Agentic 终端)
 
- 中国领军力量    DeepSeek (深度求索)                 DeepSeek-V2/V3, R1 (MLA架构, 纯RL推理, 极端能效)
+ 中国领军力量    DeepSeek (深度求索)                 V3/R1 纯RL涌现 -> V4/V4.1-Flash (MIT 宽松许可, 极端能效与 Agent 标杆)
+                 阿里巴巴 (通义千问)                 Qwen2.5 -> Qwen3.8-27B (Apache 2.0 原生多模态), Qwen3-Coder
+                 月之暗面 (Moonshot AI)              Kimi Chat (200k) -> Kimi K3 (2.8T MoE 巨模, 长程代码与多模态 Agent)
+                 智谱 AI                            GLM-4 -> GLM-5.3-Flash (MIT 极速开源), GLM-5.3 (商业定制)
+                 MiniMax (稀宇科技)                  M3 / M3.1-Flash (428B 总参数/23B 激活 MoE, 编码与安全 Agent)
+                 百度                               文心一言 (ERNIE 3.5/4.0), 飞桨协同 (产业级知识增强)
+                 字节跳动                           豆包通用模型, 豆包 1.5 Pro (国民级日均万亿 Token 落地)
+                 腾讯                               混元 (Hunyuan-Large 389B MoE), HY-World 2.0 3D 世界模型
+─────────────────────────────────────────────────────────────────────────────────
                  阿里巴巴 (通义千问)                 Qwen 1-2.5, QwQ, Qwen-Max (全尺寸矩阵, 顶级开源基座)
                  智谱 AI                            ChatGLM, GLM-4, GLM-Voice (清华传承, 端侧友好与全模态)
                  月之暗面 (Moonshot AI)              Kimi Chat, Kimi k1.5 (超长无损上下文, 多模态慢思考)
