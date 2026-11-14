@@ -204,12 +204,16 @@
     "type": "Tech Giant",
     "openSourceStrategy": "Closed Application & API (火山引擎对外赋能 + 豆包国民级 App)",
     "flagshipModels": [
-      "云雀大模型",
-      "豆包通用大模型",
-      "豆包 1.5 Pro",
-      "即梦 (Jimeng AI)"
+      "云雀大模型 (内部早期)",
+      "豆包大模型 (2024-05, 开启大模型厘时代)",
+      "豆包 1.5 Pro (2025-01, 端到端实时语音交互)",
+      "豆包 2.0 / Seed 2.0 (2026-02, IMO金牌级数学与自适应思考)",
+      "豆包 2.1 Pro (2026-06, 编程与复杂 Agent 质变)",
+      "Seed-TTS 2.0 (亚秒级拟真语音合成)",
+      "Seedream 5.0 (豆包文生图底座)",
+      "Seedance 2.0 (多镜头电影级视频生成)"
     ],
-    "coreStrengths": "国民级超级流量入口与应用落地、日均数万亿级 Token 吞吐处理、极低企业调用成本、音视频多模态生成",
+    "coreStrengths": "极致低价与国民级应用双引擎、日均 Token 消费突破万亿/百兆级、抖音与剪映生态无缝协同、端到端全双工实时语音与音视频多模态全矩阵",
     "computeEcosystem": "国内最大规模内部异构 GPU 计算资源池之一"
   },
   {
@@ -256,5 +260,115 @@
     ],
     "coreStrengths": "System 1 纯决策模型品类定义者、不生成文本、70-500ms 超低延迟、带贝叶斯校准概率的强类型离散决策、智能 if 语句革命",
     "computeEcosystem": "高效确定性推理集群，与传统代码流水线无缝集成"
+  },
+  {
+    "id": "xai",
+    "name": "xAI",
+    "chineseName": "xAI (埃隆·马斯克创立)",
+    "country": "US",
+    "type": "AI Frontier Lab / Infrastructure",
+    "openSourceStrategy": "Open Weights (Grok-1 314B) + Closed Frontier Supercompute (Grok 2/3/4/4.6)",
+    "flagshipModels": [
+      "Grok-1 (314B MoE Apache 2.0 开源)",
+      "Grok-2 / 2 mini (LMSYS 前列 + FLUX 绘图)",
+      "Grok 3 (Colossus 10万卡超算预训练 + DeepSearch)",
+      "Grok 4 / 4 Fast (2M 上下文与 Agentic 工具调用)",
+      "Grok 4.6 (low-xhigh 四档算力自适应推理)"
+    ],
+    "coreStrengths": "算力暴力美学、田纳西孟菲斯 Colossus 10万+ GPU 单一超算集群、X (Twitter) 独家实时全球数据流、强悍终端执行与 $2/$6 极致性价比",
+    "computeEcosystem": "全球最大规模物理 GPU 集群之一 (Colossus 100k H100/H200/B200 超算)"
+  },
+  {
+    "id": "cohere",
+    "name": "Cohere",
+    "chineseName": "Cohere (前 Google Brain 科学家创立)",
+    "country": "US",
+    "type": "Enterprise AI Unicorn",
+    "openSourceStrategy": "Hybrid (Aya 系列多语言完全开源 + Command 系列企业闭源云 API)",
+    "flagshipModels": [
+      "Command R / R+ (企业级 RAG 与工具调用标杆)",
+      "Command A (111B 激活 23B 企业级 MoE)",
+      "Aya 23 / Aya Expanse (多语言开源标杆)",
+      "Embed v3 / Rerank"
+    ],
+    "coreStrengths": "专注企业级可信 RAG、高准确率文档引用、私有化多云部署 (AWS/GCP/OCI)、卓越的多语言跨文化理解",
+    "computeEcosystem": "Oracle OCI 与 Google Cloud 深度战略算力网络"
+  },
+  {
+    "id": "baichuan",
+    "name": "Baichuan AI",
+    "chineseName": "百川智能 (王小川创立)",
+    "country": "CN",
+    "type": "AI Unicorn",
+    "openSourceStrategy": "Open Weights (Baichuan 1/2) + Closed Enterprise (Baichuan 3/4)",
+    "flagshipModels": [
+      "Baichuan-7B / 13B / 53B",
+      "Baichuan2-7B / 13B",
+      "Baichuan 3 / 4 (闭源千亿旗舰)",
+      "百川医疗大模型 (AI 医生与循证医学)"
+    ],
+    "coreStrengths": "搜狗原班人马、首批通过大模型备案、中国开源大模型先驱之一、医疗健康与严肃医学推理垂类最强护城河",
+    "computeEcosystem": "腾讯云与主流公有云算力"
+  },
+  {
+    "id": "stepfun",
+    "name": "StepFun",
+    "chineseName": "阶跃星辰 (原微软副总裁姜大昕创立)",
+    "country": "CN",
+    "type": "AI Unicorn",
+    "openSourceStrategy": "Proprietary API & Application",
+    "flagshipModels": [
+      "Step-1 (千亿语言大模型)",
+      "Step-1V (千亿多模态视觉模型)",
+      "Step-2 (万亿 MoE 基座)",
+      "跃问 (智能助手应用) / 冒泡鸭"
+    ],
+    "coreStrengths": "坚定践行万亿 MoE 与多模态统一探索、超长无损上下文长程规划、深厚系统工程底蕴",
+    "computeEcosystem": "大规模异构分布式计算集群"
+  },
+  {
+    "id": "sensetime",
+    "name": "SenseTime",
+    "chineseName": "商汤科技",
+    "country": "CN",
+    "type": "AI Giant / CV Leader",
+    "openSourceStrategy": "Hybrid (开源部分模型 + 日日新商用云服务)",
+    "flagshipModels": [
+      "日日新 SenseNova 1.0 - 5.5",
+      "SenseNova U1 Pro (复杂长程任务交付智能体)",
+      "书生·浦语参与共建",
+      "秒画 / 如影数字人"
+    ],
+    "coreStrengths": "中国计算机视觉传统四小龙代表、上海临港 AIDC 50000+ 卡超大规模智算中心、长程 Agent 交付与视觉工业深度落地",
+    "computeEcosystem": "商汤临港 AIDC 先进智算中心 (亚洲最大单体算力之一)"
+  },
+  {
+    "id": "iflytek",
+    "name": "iFLYTEK",
+    "chineseName": "科大讯飞",
+    "country": "CN",
+    "type": "Speech & AI Giant",
+    "openSourceStrategy": "Proprietary Commercial Service",
+    "flagshipModels": [
+      "讯飞星火认知大模型 SparkDesk 1.0 - 4.0 Ultra",
+      "飞星一号国产集群联合训练版"
+    ],
+    "coreStrengths": "语音与智能人机交互二十年技术积淀、深度赋能教育（讯飞学习机）、智慧医疗与智慧车载、与华为昇腾共建全栈国产“飞星”算力底座",
+    "computeEcosystem": "华为昇腾 910B 联合打造的全国产算力“飞星一号”平台"
+  },
+  {
+    "id": "internlm-shanghai",
+    "name": "Shanghai AI Laboratory",
+    "chineseName": "上海人工智能实验室 (书生系列)",
+    "country": "CN",
+    "type": "Top National Research Institution",
+    "openSourceStrategy": "Full Open Source & Open Weights (Apache 2.0 / 科研平权)",
+    "flagshipModels": [
+      "书生·浦语 InternLM 1.0 / 2.0 / 2.5 / 3.0 (7B-104B)",
+      "书生·万象 InternVL 1.0 / 1.5 / 2.0 (多模态评测世界领先)",
+      "OpenDataLab / OpenMMLab 生态"
+    ],
+    "coreStrengths": "国家级前沿人工智能研究机构、顶尖科研开源生态建设者、InternVL 在 MMBench 等国际榜单屡创佳绩、完备的评测工具链 (OpenCompass)",
+    "computeEcosystem": "国家实验室大规模高性能科研智算集群"
   }
 ]
