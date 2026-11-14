@@ -20,7 +20,10 @@
       "GPT-5.6 (Luna/Terra/Sol)",
       "GPT-6 / 6.1",
       "gpt-oss-20b/120b",
-      "Sora 2"
+      "Sora 2",
+      "Codex (代码基座)",
+      "Codex Agent",
+      "Operator (浏览器操控)"
     ],
     "coreStrengths": "尺度定律拓荒者、逻辑推理强化学习、多模态端到端、前沿研究资本化与商业生态",
     "computeEcosystem": "微软 Azure 深度绑定、数万张 NVIDIA A100/H100/GB200 集群"
@@ -103,7 +106,10 @@
       "Claude 4 (Opus/Sonnet)",
       "Claude Sonnet 4.5",
       "Claude 5 (Fable/Opus/Sonnet)",
-      "Claude Mythos 5.2 (网安与生科特化)"
+      "Claude Mythos 5.2 (网安与生科特化)",
+      "Claude Code (终端自主智能体)",
+      "MCP 协议 (Model Context Protocol)",
+      "Computer Use (屏幕接管)"
     ],
     "coreStrengths": "宪政 AI (Constitutional AI)、全球最强编程与推理评测表现、Computer Use 操作系统操控、MCP 标准协议",
     "computeEcosystem": "亚马逊 AWS (Trainium / EC2) 与 Google Cloud 深度算力合作"
@@ -142,7 +148,9 @@
       "Qwen 2.5-Max",
       "Qwen3",
       "Qwen3.8-27B (Apache 2.0 原生多模态)",
-      "Qwen3-Coder (Agentic 编码)"
+      "Qwen3-Coder (Agentic 编码)",
+      "通义灵码 (TONGYI Lingma)",
+      "Qwen3-Coder"
     ],
     "coreStrengths": "全球尺寸覆盖最全的开源模型库、18T 顶级多语言清洗语料、代码与数学专业基座标杆、阿里云全球算力支撑",
     "computeEcosystem": "阿里云异构超算、自研倚天/含光芯片与英伟达混合算力集群"
@@ -191,7 +199,8 @@
     "flagshipModels": [
       "ERNIE 1.0/2.0/3.0",
       "文心一言 3.5",
-      "文心大模型 4.0 / 4.0 Turbo"
+      "文心大模型 4.0 / 4.0 Turbo",
+      "文心快码 (Baidu Comate)"
     ],
     "coreStrengths": "中国首个对话商业大模型、知识增强预训练、飞桨深度学习平台端到端协同、百度全线业务生态深度重构",
     "computeEcosystem": "百度智能云百舸集群、自研昆仑芯 (Kunlunxin) 与混合算力"
@@ -211,7 +220,10 @@
       "豆包 2.1 Pro (2026-06, 编程与复杂 Agent 质变)",
       "Seed-TTS 2.0 (亚秒级拟真语音合成)",
       "Seedream 5.0 (豆包文生图底座)",
-      "Seedance 2.0 (多镜头电影级视频生成)"
+      "Seedance 2.0 (多镜头电影级视频生成)",
+      "Trae (AI-Native IDE)",
+      "扣子 / Coze (Agent 编排平台)",
+      "豆包代码 MarsCode"
     ],
     "coreStrengths": "极致低价与国民级应用双引擎、日均 Token 消费突破万亿/百兆级、抖音与剪映生态无缝协同、端到端全双工实时语音与音视频多模态全矩阵",
     "computeEcosystem": "国内最大规模内部异构 GPU 计算资源池之一"
@@ -226,7 +238,8 @@
     "flagshipModels": [
       "混元大模型 (Hunyuan)",
       "Hunyuan-Large (389B MoE)",
-      "混元 3D / 图像生成"
+      "混元 3D / 图像生成",
+      "腾讯云 AI 代码助手"
     ],
     "coreStrengths": "自研千亿/万亿稀疏混合专家架构、深度嵌入微信与数字内容生态、高保真 3D 生成与多模态",
     "computeEcosystem": "腾讯云星脉网络高性能分布式计算平台"

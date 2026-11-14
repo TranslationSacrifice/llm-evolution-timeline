@@ -3,7 +3,7 @@
 > **从 2017 年 Transformer 与 2018 年 GPT-1 起源，全面梳理全球大模型技术脉络、中美科技企业竞争格局、开源与闭源博弈、智能体 MCP 生态及未来智能范式展望（覆盖至 2026 年底）。**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Tracked Models: 240+](https://img.shields.io/badge/Tracked%20Models-240%2B-blueviolet.svg)](#-交互式时间线与数据资产)
+[![Tracked Models: 247+](https://img.shields.io/badge/Tracked%20Models-247%2B-blueviolet.svg)](#-交互式时间线与数据资产)
 [![Awesome](https://awesome.re/badge.svg)](https://github.com)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
@@ -189,7 +189,35 @@ Grok-0 (2023.07) ──> Grok-1 (2023.11 / 2024.03 开源 314B 稀疏 MoE, Apach
 | [第七章：中美双雄与开源/闭源演进矩阵](docs/07-us-cn-and-open-closed-matrix.md) | 中美欧企业战略阵型、21家科技公司全景矩阵 | 算力供给差异下的系统工程突破、代差收敛周期、私有化落地 |
 | [第八章：未来展望与未解挑战](docs/08-future-horizons-and-challenges.md) | SSM/Mamba, 具身智能, 世界模型, 能源墙 | 后 Transformer 骨干网络、通用工具协议、物理模拟与合成数据陷阱 |
 | [第九章：前沿裂变与范式重构 (2025-2026)](docs/09-frontier-2025-2026-and-system1-decision.md) | GPT-5/6, Claude 5/Mythos, Avocado, Jev, Decision 3.0, 具身/世界模型 | 旗舰内生统一、Meta闭源转向、Jev“智能 if 语句”决策模型破局、具身控制与世界仿真分流 |
-| [第十章：智能体、MCP 与工具生态演进史](docs/10-agent-mcp-and-tools-ecosystem.md) | Copilot, Function Calling, Devin, Cursor, MCP, Claude Code, Operator | 从辅助代码补全到完全自主软件工程、沙盒安全协议与标准化工具总线 (A2A) |
+| [第十章：智能体、MCP 与工具生态演进史](docs/10-agent-mcp-and-tools-ecosystem.md) | Codex, Copilot, CodeGeeX, 通义灵码, 文心快码, Devin, Cursor, Trae, Claude Code, Google Antigravity, MCP, A2A | 从单步代码补全到完全自主软件工程、AI-Native IDE、终端原生智能体与分布式 Agent 协同平台 |
+
+---
+
+## 🛠️ 全球与中国 AI 编码智能体 & AI-Native IDE 演进主线
+
+大模型最先被验证带来质变性生产力的垂直领域即为**软件工程**。从 2021 年 Codex 问世至今，中美科技阵营在智能编程与 Agent 工具链上形成了极具特色的演进双轨：
+
+```
+                    全球与中国 AI 编程智能体演进双轨 (2021 - 2026)
+
+  时间阶段               🇺🇸 美国阵营 (US)                             🇨🇳 中国阵营 (CN)
+─────────────────────────────────────────────────────────────────────────────────────────────
+ 2021-2022  OpenAI Codex (HumanEval / FIM 基准确立)       清华/智谱 CodeGeeX (13B 多语言开源基座)
+            GitHub Copilot (首创 IDE 补全插件体验)
+ ─────────────────────────────────────────────────────────────────────────────────────────────
+ 2023       OpenAI Function Calling (JSON 调用标准)       百度文心快码 Comate (产业级全生命周期助手)
+            ChatGPT Plugins & Custom GPTs 平台化          阿里通义灵码 (千万级安装，企业代码库 RAG 标杆)
+ ─────────────────────────────────────────────────────────────────────────────────────────────
+ 2024       Cognition AI Devin (首个自主软件工程师)       字节跳动 扣子 Coze (可视化多 Agent 编排平台)
+            Cursor (AI-First IDE, Composer 跨文件编辑)    腾讯云 AI 代码助手 (混元引擎与小程序云生态)
+            Windsurf (Cascade Flow 协同编程)
+            Anthropic MCP (Model Context Protocol 开源)
+ ─────────────────────────────────────────────────────────────────────────────────────────────
+ 2025-2026  Anthropic Claude Code (终端原生自主 CLI 智能体) 字节跳动 Trae (AI-Native IDE, Builder模式)
+            OpenAI Operator (浏览器 GUI 操控智能体)        Qwen3-Coder (专攻复杂工具调度与 Agentic 编码)
+            Google Antigravity (多 Subagents 协同、       DeepSeek-V4 (极低成本端到端 Agent 编码基座)
+            Native Swarm 消息总线与动态画布平台)
+```
 
 ---
 
@@ -198,7 +226,7 @@ Grok-0 (2023.07) ──> Grok-1 (2023.11 / 2024.03 开源 314B 稀疏 MoE, Apach
 仓库提供完整、结构化的大模型历史数据库与开箱即用的前端交互式系统：
 
 - **结构化历史数据**：
-  - `data/timeline.json`：收录 240+ 关键模型的完整元数据（模型名、机构、发布年月、国别、开源/闭源、参数规模、上下文窗口、关键技术点与历史意义）。
+  - `data/timeline.json`：收录 247+ 关键模型的完整元数据（模型名、机构、发布年月、国别、开源/闭源、参数规模、上下文窗口、关键技术点与历史意义）。
   - `data/timeline.js`：适配浏览器本地离线运行的轻量数据载体。
   - `data/company-profiles.json`：21 家全球顶尖大模型研发机构与企业的战略定位、算力集群与产品矩阵。
 - **可视化时间线交互界面**：
