@@ -12,10 +12,11 @@
   var GITHUB_REPO = 'https://github.com/TranslationSacrifice/llm-evolution-timeline';
   var TYPE_LABELS = {
     model: '模型',
+    architecture: '架构 / 算法',
+    infrastructure: '基础设施',
     product: '产品 / 工具',
     protocol: '协议',
-    event: '事件',
-    infrastructure: '基础设施'
+    event: '事件'
   };
   var FLAGS = { CN: '🇨🇳', US: '🇺🇸', EU: '🇪🇺' };
   var URL_KEYS = { country: 'c', license: 'l', type: 't', cat: 'cat', search: 'q' };
@@ -82,7 +83,7 @@
 
     var others = DATA.length - models.length;
     setText('dataNote', '时间线共 ' + DATA.length + ' 条：' + models.length + ' 个模型' +
-      (others ? '，另含 ' + others + ' 条产品 / 协议 / 事件 / 基础设施' : '') +
+      (others ? '，另含 ' + others + ' 条架构 / 基础设施 / 产品 / 协议 / 事件' : '') +
       '；开源比例仅按有明确授权属性的模型计算。');
   }
 
@@ -93,7 +94,11 @@
     if (state.license !== 'all' && record.licenseType !== state.license) return false;
     if (state.type !== 'all') {
       var t = typeOf(record);
-      if (state.type === 'meta' ? (t === 'model' || t === 'product') : t !== state.type) return false;
+      if (state.type === 'meta') {
+        if (t !== 'protocol' && t !== 'event') return false;
+      } else if (t !== state.type) {
+        return false;
+      }
     }
     if (state.cat !== 'all' && record.category !== state.cat) return false;
     if (state.search) {

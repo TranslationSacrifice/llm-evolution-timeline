@@ -23,7 +23,7 @@ CATEGORIES = {
     "System 1 / 决策特化",
 }
 LICENSE_TYPES = {"open", "closed", "other"}
-ENTRY_TYPES = {"model", "product", "protocol", "event", "infrastructure"}
+ENTRY_TYPES = {"model", "architecture", "product", "protocol", "event", "infrastructure"}
 COUNTRY_GROUPS = {"CN", "US", "EU", "other"}
 # 这些范式本来就没有 token 上下文概念（图像 / 视频 / 音频 / 具身 / 蛋白质等）
 NON_TEXT_CATEGORIES = {"图像生成", "文生视频", "语音 / 音频", "具身智能", "世界模型", "领域特化", "Embedding / 检索"}
@@ -78,8 +78,8 @@ def main() -> int:
             parsed = urlparse(source)
             if parsed.scheme not in ("http", "https") or not parsed.netloc:
                 errors.append(f"{rid}: source 不是合法的 http(s) 链接 {source!r}")
-            elif date >= "2025-01" and "wikipedia.org" not in parsed.netloc and parsed.netloc not in ("arxiv.org",):
-                warnings.append(f"{rid}: source 不是一手来源（{parsed.netloc}），建议换成官方公告或论文")
+            elif date >= "2025-01" and "wikipedia.org" in parsed.netloc:
+                warnings.append(f"{rid}: source 为维基百科，2025 年后的条目建议换成官方公告或论文（一手来源）")
 
         if not isinstance(row.get("keyTech"), list) or not row.get("keyTech"):
             errors.append(f"{rid}: keyTech 应为非空数组")

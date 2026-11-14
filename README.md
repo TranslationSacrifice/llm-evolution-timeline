@@ -3,7 +3,8 @@
 > **从 2017 年 Transformer 与 2018 年 GPT-1 起源，全面梳理全球大模型技术脉络、中美科技企业竞争格局、开源与闭源博弈、智能体 MCP 生态及未来智能范式展望（覆盖至 2026 年底）。**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Tracked Models: 222+](https://img.shields.io/badge/Tracked%20Models-222%2B-blueviolet.svg)](#-交互式时间线与数据资产)
+[![Tracked Models: 248+](https://img.shields.io/badge/Tracked%20Models-248%2B-blueviolet.svg)](#-交互式时间线与数据资产)
+[![Total Entries: 283](https://img.shields.io/badge/Total%20Entries-283-success.svg)](#-交互式时间线与数据资产)
 [![Awesome](https://awesome.re/badge.svg)](https://github.com)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
@@ -11,13 +12,15 @@
 
 ## 📖 项目定位与导读
 
-本项目系统梳理了从 2017 年至今大语言模型（LLM）领域的全景发展脉络。全书分为**十章深度专题**、**一套收录 222 个关键模型（另含 19 条产品 / 协议 / 事件 / 基建条目）的结构化历史数据库**，以及一个**支持 GitHub Pages 与开箱即用的前端可视化时间线交互系统**。
+本项目系统梳理了从 2017 年至今大语言模型（LLM）领域的全景发展脉络。全书分为**十章深度专题**、**一套收录 248 个关键模型（另含 35 条架构、基础设施、产品与协议条目，共 283 条记录）的结构化历史数据库**，以及一个**支持 GitHub Pages 与开箱即用的前端可视化时间线交互系统**。
 
 ### 核心亮点
+- **四层立体结构**：清晰划分“模型家族 (model)”、“架构与算法 (architecture)”、“推理基础设施 (infrastructure)”与“产品协议 (product/protocol)”。
 - **时间主线清晰**：从序列建模危机、预训练范式奠基，到千亿尺度定律、对齐革命，再到 MoE、多模态、System 2 慢思考与 System 1 决策特化。
-- **中美企业全景**：系统梳理 21 家顶级机构演进历程，深度拆解 9 大核心企业演进树（OpenAI, Anthropic, Google, Meta, DeepSeek, 阿里通义千问, 字节跳动豆包, Mistral, xAI）。
-- **开源闭源博弈**：深度复盘开源（Open Weights）与商业 API 的周期律、知识蒸馏生态、价格战与 Meta 前沿线转向闭源（Muse Spark，内部代号 Avocado）的关键转折。
-- **智能体与 MCP 生态**：专门设立第十章，全景剖析从 Copilot、Function Calling、Devin、Cursor 到 Claude Code、Operator 与 Model Context Protocol (MCP)。
+- **中美欧企业全景**：系统梳理 29 家顶级机构演进历程，深度拆解 9 大核心企业演进树（OpenAI, Anthropic, Google, Meta, DeepSeek, 阿里通义千问, 字节跳动豆包, Mistral, xAI）。
+- **底层架构全覆盖**：全面收录 Transformer 之外的状态空间（Mamba / Mamba-2）、循环网络（RWKV-7, xLSTM）、线性注意力（Gated DeltaNet, KDA）、神经长期记忆（Titans）、扩散语言模型（LLaDA, Mercury）与原生低比特（BitNet b1.58）。
+- **推理基础设施**：收录 FlashAttention 1-3、PagedAttention / vLLM、SGLang RadixAttention、Speculative Decoding 等现代推理服务关键底座。
+- **智能体与 MCP 生态**：专门设立第十章，全景剖析从 Copilot、Function Calling、Devin、Cursor 到 Claude Code、Google Antigravity、Operator 与 Model Context Protocol (MCP)。
 - **交互式时间线**：内置零外部依赖的可视化网页 (`index.html` / `visualizer/index.html`)，支持 18 种技术范式、国别归属与授权属性的高维交叉过滤。
 
 ---
@@ -223,19 +226,52 @@ Grok-0 (2023.07) ──> Grok-1 (2023.11 / 2024.03 开源 314B 稀疏 MoE, Apach
 
 ---
 
+## 🔬 序列建模架构多元演化谱系 (Sequence Modeling Architecture Evolution)
+
+```
+                    序列建模架构的演化谱系全景
+
+  Transformer ──► 标准自注意力路线 (Standard Self-Attention)
+    │             * 代表: GPT-4o, Claude 3.5, LLaMA 3, Qwen 2.5
+    │
+    ├─► 状态空间与循环路线 (SSM / Linear RNN)
+    │     ├─ Mamba (选择性状态空间) ──► Mamba-2 (状态空间对偶 SSD)
+    │     ├─ RWKV ──► RWKV-7 ("Goose" 动态状态循环)
+    │     └─ xLSTM (sLSTM 标量门控 + mLSTM 矩阵记忆)
+    │
+    ├─► 线性注意力路线 (Linear Attention)
+    │     ├─ Gated DeltaNet (门控增量联想记忆法则)
+    │     └─ Kimi Linear / KDA (增量注意力与 MLA 混合设计)
+    │
+    ├─► 记忆增强与测试时学习 (Memory-Augmented & Test-Time Memorization)
+    │     └─ Titans (神经长期记忆模块，测试期动态元梯度更新)
+    │
+    ├─► 扩散生成路线 (Diffusion Language Models, dLLM)
+    │     ├─ LLaDA (大规模掩码文本扩散模型)
+    │     └─ Inception Mercury / Mercury 2 (商业级千 Token/s 并行去噪)
+    │
+    ├─► 去分词器字节级架构 (Tokenizer-Free Byte-Level)
+    │     └─ Meta BLT (Byte Latent Transformer 动态 Patch) & Fast BLT
+    │
+    └─► 原生低比特架构 (Native Low-Bit Architecture)
+          └─ BitNet / BitNet b1.58 (1-bit 三值权重 {-1,0,1} 加法计算)
+```
+
+---
+
 ## 💡 交互式时间线与数据资产
 
 仓库提供完整、结构化的大模型历史数据库与开箱即用的前端交互式系统：
 
 - **结构化历史数据**（字段定义见 `data/schema.md`，校验脚本 `tools/validate.py`）：
-  - `data/timeline.json`：收录 222 个关键模型（另含 19 条产品 / 协议 / 事件条目）的完整元数据（模型名、机构、发布年月、国别、开源/闭源、参数规模、上下文窗口、关键技术点与历史意义）。
+  - `data/timeline.json`：收录 248 个关键模型（另含 35 条架构、底层基础设施、产品与协议条目，共 283 条记录）的完整元数据（模型名、机构、发布年月、国别、开源/闭源、参数规模、上下文窗口、关键技术点与历史意义）。
   - `data/timeline.js`：适配浏览器本地离线运行的轻量数据载体。
-  - `data/company-profiles.json`：21 家全球顶尖大模型研发机构与企业的战略定位、算力集群与产品矩阵。
+  - `data/company-profiles.json`：29 家全球顶尖大模型研发机构与企业的战略定位、算力集群与产品矩阵。
 - **可视化时间线交互界面**：
   - `index.html`（根目录直出，直接支持 GitHub Pages）与 `visualizer/index.html`。
   - **18 种技术范式筛选**：基础理论 (Foundation)、稠密基座 (Dense)、混合专家 (MoE)、深度推理 (Reasoning)、System 1 纯决策 (Jev)、原生多模态 (Multimodal)、智能体/工具 (Agent/MCP)、代码专精、文生视频、图像生成、语音音频、具身智能、世界模型、极致效率端侧 (SLM)、垂直特化 (Science/Bio)、向量检索 (Embedding)、安全与对齐、算力基础设施。
   - **国别与授权过滤**：中国 (CN) / 美国 (US) / 欧洲 (EU) / 其他，以及开源权重、专有闭源、协议论文三类授权属性交叉分析。
-  - **全文实时检索**：按模型名、企业、技术关键词（如 `MLA`, `RLHF`, `FP8`, `o1`, `GRPO`, `Jev`, `MCP`）秒级搜索。
+  - **全文实时检索**：按模型名、企业、技术关键词（如 `MLA`, `RLHF`, `FP8`, `o1`, `GRPO`, `Jev`, `MCP`, `Mamba`, `vLLM`）秒级搜索。
 
 ### 运行方式
 - **GitHub Pages 在线访问**：[https://translationsacrifice.github.io/llm-evolution-timeline/](https://translationsacrifice.github.io/llm-evolution-timeline/)

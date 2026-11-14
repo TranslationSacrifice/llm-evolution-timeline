@@ -39,7 +39,7 @@
 | `countryGroup` | ✅ | 归一后的国别组：`CN` / `US` / `EU` / `other`，页面筛选只用这个 |
 | `license` | ✅ | 自由文本，保留原始授权描述（如 `Open Weights (Apache 2.0)`） |
 | `licenseType` | ✅ | **枚举**：`open`（有权重可下载）/ `closed`（仅 API 或商业授权）/ `other`（论文、学术、协议、基建） |
-| `entryType` | ✅ | **枚举**：`model` / `product` / `protocol` / `event` / `infrastructure`。统计"模型数量"只算 `model` |
+| `entryType` | ✅ | **枚举**：`model` / `architecture` / `infrastructure` / `product` / `protocol` / `event`。统计"模型数量"只算 `model` |
 | `category` | ✅ | 18 类技术范式之一，白名单见 `tools/validate.py` |
 | `parameters` | ✅ | 参数量描述；未知写 `未公开`，不要写 `N/A` 混用 |
 | `contextWindow` | ✅ | 文本模型填 token 数（`128K` / `1M`）；图像/视频/具身类填模态容量或 `N/A` |
@@ -48,6 +48,14 @@
 | `source` | 建议 | 一手来源：官方公告、论文（arXiv）、厂商博客；2025 年后的条目应尽量补齐 |
 | `docLink` | 可选 | 指向 `docs/` 下的章节相对路径；缺失时页面不显示"阅读章节"按钮 |
 | `era` | ✅ | 所属阶段，与 `README` 的时间轴粗粒度对齐 |
+
+## 四大核心分层（Layer Taxonomy）
+
+时间线数据划分为四个互相关联的演进层次：
+1. **模型与模型家族 (`model`)**：具备具体版本号的基座与衍生权重（如 GPT-4o, DeepSeek-R1, Qwen2.5, Claude 3.5 Sonnet 等）；
+2. **架构与算法 (`architecture`)**：底层序列建模、注意力变体、记忆与生成范式（如 Transformer, Mamba / Mamba-2, RWKV-7, Gated DeltaNet, Kimi Linear/KDA, Titans, LLaDA 扩散语言模型, BLT 字节级架构等）；
+3. **训练与推理基础设施 (`infrastructure`)**：显存管理、计算调度、低比特量化与加速引擎（如 FlashAttention, PagedAttention / vLLM, SGLang / RadixAttention, Speculative Decoding, BitNet b1.58 等）；
+4. **产品、协议与行业事件 (`product` / `protocol` / `event`)**：开发者工具与 Agent 宿主（Cursor, Trae, Claude Code）、连接标准（MCP, A2A）、超算基础设施（Stargate）与安全治理事件。
 
 ## 校验与构建
 

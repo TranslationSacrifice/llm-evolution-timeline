@@ -133,11 +133,21 @@ Google 是现代深度学习底座（Transformer, Attention, T5, BERT, TPU 芯�
   - `Mistral Large 1/2 (2024)`：123B 多语言商业闭源旗舰。
   - `Mistral Nemo (2024.07)`：与 NVIDIA 联合发布 12B、128K 上下文模型，采用 Tekken Tokenizer。
   - `Mistral Small 3 / 4 (2025-2026)`：端侧高效指令遵循与原生多模态推理。
-  - `Devstral / Magistral / Voxtral (2025-2026)`：在代码生成、垂直推理与端到端语音全面布局。
+  - `Mistral Large 3 / 4 (2025-2026)`：>1T MoE 欧洲主权大模型旗舰，支持 100 万长上下文。
+  - `Devstral / Magistral / Voxtral 3 / Le Chonk (2025-2026)`：在代码生成、垂直推理、全双工语音智能体与网络安全全面布局。
 - **Cohere（加拿大）**：专注于企业级 RAG、向量检索与多语言服务。
   - `Command R / R+ (2024.03)`：35B/104B，企业级 RAG 检索增强与工具调用行业黄金标准。
   - `Command A (2025.03)`：111B（激活 23B）企业级高效 MoE 模型。
   - `Aya 23 / Aya Expanse (2024)`：覆盖 23+ 语言的大规模开源多语言模型，推动全球非英语语言平权。
+
+### 2.9 云计算与全开源标杆：Amazon、Apple 与 Allen AI (AI2)
+
+- **Amazon AWS**：
+  - `Amazon Nova 矩阵 (2024 - 2025)`：推出 Nova Micro/Lite/Pro/Premier 以及全新的 `Amazon Nova 2` 与实时低时延语音大模型 `Nova 2.5 Sonic`；依托 AWS Bedrock 构建极度安全的企业级数据围栏，并发布 `Nova Act` 实现浏览器与 GUI 界面自主操作。
+- **Apple (苹果公司)**：
+  - `Apple Foundation Models (AFM 1~3)`：采用 3B 稠密与 20B 稀疏 MoE 混合架构，深度结合 Apple Silicon 神经引擎（NPU）与私有云计算（Private Cloud Compute），在保护隐私的前提下赋能全球数十亿终端。
+- **Allen AI (AI2, 艾伦人工智能研究所)**：
+  - `OLMo 系列 (OLMo 1/2/3 & Olmo Hybrid)`：全球唯一坚持全链路“真开源”的学术灯塔，预训练数据清洗管线（Dolma 3T）、训练代码、中间检查点 Checkpoints 与模型权重 100% 完全开放，为全球 AI 科学研究树立了无与伦比的透明度范式。
 
 ---
 
@@ -215,27 +225,30 @@ Google 是现代深度学习底座（Transformer, Attention, T5, BERT, TPU 芯�
   - `Hunyuan-Large 389B MoE (2024.11)`：国内最大开源混合专家语言模型（激活 52B）。
   - `HY-World 2.0 (2025)`：开源 3D 物理一致性空间世界模型。
 
-### 3.8 MiniMax (稀宇科技)：全模态 MoE 架构与出海爆款
+### 3.8 MiniMax (稀宇科技)：全模态 MoE 架构与长上下文折返探索
 
 - **完整迭代谱系**：
   - `abab 5 / 6 / 6.5 (2023 - 2024)`：国内最早在基座预训练中采用 MoE 架构的先锋团队。
-  - `海螺 AI (Hailuo / MiniMax Video-01, 2024.09)`：凭借强保真与高物理动态生成，在全球文生视频领域异军突起。
+  - `MiniMax-01 (2025.01)`：456B MoE（激活 45.9B），率先采用 Lightning Attention 线性注意力挑战 400 万 Token（4M Context）长上下文。
+  - `MiniMax M2 (2026.03)`：面对超复杂 Agent 规划与代码推理时线性注意力的召回瓶颈，主动重返 **Full Attention 全注意力架构**，成为大模型工业界极具代表性的一次架构折返实践。
+  - `海螺 AI (Hailuo / MiniMax Video-01/02, 2024 - 2025)`：凭借强保真与高物理动态生成，在全球文生视频领域异军突起。
   - `MiniMax M3 / M3.1-Flash (2026)`：总参数约 **428B（单步激活 23B）** 的多模态 MoE 开源模型，专长于 Agent 自主规划与网络安全分析。
 
-### 3.9 中国更多中坚力量与学术基石
+### 3.9 中国更多中坚力量、领军企业与学术基石
 
-- **百川智能 (Baichuan AI)**：前搜狗 CEO 王小川创立。
-  - `Baichuan-7B / 13B (2023.06/07)`：国内早期开源社区最具影响力的中英文基座之一。
-  - `Baichuan 2 / 3 / 4 (2023-2024)`：在医疗专业领域与中文通用语义上具备深厚积累，推出“百小应”AI 助手与 Baichuan-Omni。
-- **阶跃星辰 (StepFun)**：前微软副总裁姜大昕创立。
-  - `Step-1 (千亿语言)`、`Step-1V (千亿多模态)` 与 `Step-2 (万亿 MoE)`：在多模态视觉理解与长文档深度分析上具备业界领先表现。
-- **商汤科技 (SenseTime)**：
-  - `日日新 SenseNova 1.0~5.5 (2023-2024)`：依托临港大装置 SenseCore 万卡算力底座，原生多模态与端侧交互全面贯通。
-- **科大讯飞 (iFLYTEK)**：
-  - `讯飞星火 (SparkDesk 1.0~4.0)`：国家级认知智能实验室，语音识别与合成全球领先，深度服务政务、教育、医疗等央国企私有化部署。
-- **上海人工智能实验室 (Shanghai AI Lab)**：
-  - `书生·浦语 (InternLM / InternLM2 / 2.5)`：开源全链条大模型学术基石。
-  - `书生·万象 (InternVL 1.0~2.5)`：全球开源视觉语言（VLM）领域的顶级标杆之一。
+- **华为云 (Huawei Cloud / 昇腾)**：
+  - `盘古大模型 1.0~5.0 / 5.5 (2021 - 2025)`：完全依托华为昇腾 AI 芯片与 MindSpore 昇思框架训练，发布 **718B MoE（256 专家）** 深度思考模型与工业具身世界模型，构筑中国 AI 全栈自主芯片与大模型生态堡垒。
+- **美团 (Meituan)**：
+  - `LongCat-2.0 (2026.07)`：开源 **1.6 万亿参数（1.6T MoE / 48B 激活）** 万亿基座，支持 100 万长上下文，全链路基于国产自主芯片端到端训练完成，坚持 **MIT 协议**。
+- **蚂蚁集团 (Ant Group)**：
+  - `百灵 / Ling-1T / Ring-1T (2026.02)`：开源万亿参数基座 `Ling-1T / 2.5-1T` 与万亿慢思考推理模型 `Ring-1T / 2.5-1T`，并推出统一语音全模态 `Ming-Flash-Omni`。
+- **小米 (Xiaomi)**：
+  - `小米 MiMo 家族 (MiMo-7B / V2.5 / V2.6 Pro/Flash)`：以极致能效比、端云协同架构与超低推理成本著称，原生深度赋能 HyperOS 人车家全生态。
+- **百川智能 (Baichuan AI)**：前搜狗 CEO 王小川创立，`Baichuan-7B/13B` (开源先锋) $\to$ `Baichuan 2/3/4` (医疗/知识搜索垂直深耕)。
+- **阶跃星辰 (StepFun)**：前微软副总裁姜大昕创立，`Step-1` (千亿语言) $\to$ `Step-1V` (多模态) $\to$ `Step-2` (万亿 MoE)。
+- **商汤科技 (SenseTime)**：`日日新 SenseNova 1.0~5.5`，依托临港大装置万卡算力底座，原生多模态与端侧交互全面贯通。
+- **科大讯飞 (iFLYTEK)**：`讯飞星火 (SparkDesk 1.0~4.0)`，认知智能国家重点实验室，央国企私有化部署标杆。
+- **上海人工智能实验室 (Shanghai AI Lab)**：`书生·浦语 (InternLM)` 与 `书生·万象 (InternVL)` 开源学术标杆。
 
 ---
 
@@ -289,7 +302,14 @@ graph TD
 | **月之暗面** | 中 | Kimi Chat, Kimi k1.5, Kimi K3 | 闭源应用 + 闭源 API | 公有云集群 | 中国超长文本先驱，2.8T MoE 巨模，多模态长程规划 |
 | **百度** | 中 | ERNIE 文心 1.0~4.0 Turbo | 闭源服务 + 云 API | 百度飞桨 + 昆仑芯/NVIDIA | 知识增强预训练，软硬一体协同，国内产业渗透广泛 |
 | **腾讯** | 中 | 混元 Hunyuan-Large, HY-World 2.0 | 闭源服务 + 核心开源 | 腾讯云集群 | 389B MoE 开源巨模，深度集成微信与数字娱乐生态 |
-| **MiniMax** | 中 | abab 5/6.5, 海螺 AI, MiniMax M3 | 开源权重 + 移动应用 | 混合算力 | 早期押注 MoE 架构，海螺文生视频与 M3 Agent 多模态 |
+| **MiniMax** | 中 | MiniMax-01 (4M), M2 (回归 Full Attn), M3 | 开源权重 + API | 混合算力 | 早期押注 MoE，4M 上下文 Lightning Attention 与架构折返代表 |
+| **华为** | 中 | 盘古 Pangu 1.0~5.5 (718B MoE 深度思考) | 闭源企业云服务 | 昇腾 910B/910C 全栈国产 | 昇腾软硬全栈自主可控，工业大模型与具身世界模型标杆 |
+| **美团** | 中 | LongCat-1.0, LongCat-2.0 (1.6T MoE) | 开放权重 (MIT) | 全链路国产自主算力芯片 | 1.6 万亿 MoE 国产芯片训练里程碑，本地生活场景 Agent |
+| **蚂蚁集团** | 中 | 百灵, Ling-1T/2.5-1T, Ring-1T 慢思考 | 开放权重 (Open Weights)| 分布式金融智算集群 | 万亿开源推理矩阵，全模态 Ming-Flash-Omni，金融级严谨推理 |
+| **小米** | 中 | MiMo 家族 (MiMo-7B / V2.5 Pro 全模态) | 开放权重 + 端侧集成 | 混合算力 + 亿级终端 | 端云协同原生全模态架构，极低推理性价比，HyperOS 人车家生态 |
+| **Amazon** | 美 | Amazon Nova 2, Nova 2.5 Sonic, Nova Act | 闭源 Bedrock 云 API | 自研 Trainium 2 / Inferentia | AWS Bedrock 企业数据隔离，UI 操控 Agent 与端到端实时音频 |
+| **Apple** | 美 | Apple Foundation Models (AFM 1~3) | 专有端侧部署 | Apple Silicon 神经引擎 | 端侧 3B 稠密+20B 稀疏 MoE 混合架构，私有云计算极致隐私保护 |
+| **Allen AI** | 美 | OLMo 1/2/3, Olmo Hybrid (混合架构) | 100% 全链路全透明真开源 | 学术联盟超算 | 语料、清洗代码、检查点 Checkpoints 与权重全部开源的科研灯塔 |
 | **百川智能** | 中 | Baichuan-7B/13B, Baichuan 2/3/4 | 开源权重 + 闭源医疗/企业 | 混合算力 | 王小川创立，医疗/知识搜索垂直领域深耕 |
 | **阶跃星辰** | 中 | Step-1, Step-1V, Step-2 | 闭源服务 + 开发者 API | 混合算力 | 姜大昕创立，千亿多模态与万亿 MoE 理解先锋 |
 | **商汤科技** | 中 | 日日新 SenseNova 1.0~5.5 | 商业服务 + 云 API | 商汤大装置 SenseCore | 视觉大厂底蕴，万卡集群软硬协同，全模态实时交互 |

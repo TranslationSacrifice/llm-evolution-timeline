@@ -383,5 +383,131 @@
     ],
     "coreStrengths": "国家级前沿人工智能研究机构、顶尖科研开源生态建设者、InternVL 在 MMBench 等国际榜单屡创佳绩、完备的评测工具链 (OpenCompass)",
     "computeEcosystem": "国家实验室大规模高性能科研智算集群"
+  },
+  {
+    "id": "minimax",
+    "name": "MiniMax",
+    "chineseName": "稀宇科技 (MiniMax)",
+    "country": "CN",
+    "type": "AI Unicorn / Full-stack Model Lab",
+    "openSourceStrategy": "Open Weights + Commercial API (首创 MoE 与长上下文线性注意力)",
+    "flagshipModels": [
+      "abab 5/6/6.5",
+      "MiniMax-01 (456B MoE / 4M 上下文)",
+      "MiniMax M2 (回归 Full Attention)",
+      "海螺 AI (Video-01 / 02)",
+      "MiniMax M3 / M3.1-Flash"
+    ],
+    "coreStrengths": "自研 MoE 架构先锋、Lightning Attention 4M 上下文探索、高拟真语音合成与海螺文生视频",
+    "computeEcosystem": "异构算力集群与公有云协同"
+  },
+  {
+    "id": "huawei",
+    "name": "Huawei",
+    "chineseName": "华为 (Huawei Cloud / 昇腾)",
+    "country": "CN",
+    "type": "Global Tech Giant",
+    "openSourceStrategy": "Proprietary Enterprise Cloud + Ascend Ecosystem",
+    "flagshipModels": [
+      "盘古大模型 1.0~3.0",
+      "盘古大模型 5.0 / 5.5 (718B MoE 深度思考)",
+      "盘古世界模型",
+      "MindSpore 昇思框架"
+    ],
+    "coreStrengths": "昇腾 AI 芯片全栈自主可控软硬件生态、工业与矿山/气象重型科学计算、具身控制大模型",
+    "computeEcosystem": "华为昇腾 910B/910C 超算集群、全国多处人工智能计算中心"
+  },
+  {
+    "id": "xiaomi",
+    "name": "Xiaomi",
+    "chineseName": "小米 (Xiaomi)",
+    "country": "CN",
+    "type": "Consumer Hardware & Tech Giant",
+    "openSourceStrategy": "Open Weights + On-device Integration",
+    "flagshipModels": [
+      "MiMo-7B",
+      "MiMo-V2.5 / V2.6 Pro/Flash",
+      "小爱同学大模型版"
+    ],
+    "coreStrengths": "端云协同架构、原生全模态端侧轻量化部署、极低推理性价比、HyperOS 人车家全生态贯通",
+    "computeEcosystem": "混合云算力 + 数亿级端侧智能硬件协同"
+  },
+  {
+    "id": "meituan",
+    "name": "Meituan",
+    "chineseName": "美团 (Meituan)",
+    "country": "CN",
+    "type": "Tech Giant / Living Services Platform",
+    "openSourceStrategy": "Open Weights (MIT) + Industry Scenarios",
+    "flagshipModels": [
+      "LongCat-1.0",
+      "LongCat-2.0 (1.6T MoE / 1M 上下文)"
+    ],
+    "coreStrengths": "万亿 MoE 超大模型全链路国产芯片训练突破、本地生活场景与履约 Agent",
+    "computeEcosystem": "全链路自主可控国产算力芯片集群"
+  },
+  {
+    "id": "ant-group",
+    "name": "Ant Group",
+    "chineseName": "蚂蚁集团 (Ant Group)",
+    "country": "CN",
+    "type": "FinTech & AI Platform",
+    "openSourceStrategy": "Open Weights + Commercial FinAI",
+    "flagshipModels": [
+      "百灵语言大模型",
+      "Ling-1T / Ling-2.5-1T (万亿基座)",
+      "Ring-1T / Ring-2.5-1T (万亿慢思考)",
+      "Ming-Flash-Omni (全模态)"
+    ],
+    "coreStrengths": "万亿参数开源推理矩阵、金融级安全与严谨逻辑推理、全模态语音交互",
+    "computeEcosystem": "超大规模分布式金融智算集群"
+  },
+  {
+    "id": "amazon",
+    "name": "Amazon",
+    "chineseName": "亚马逊 (Amazon AWS)",
+    "country": "US",
+    "type": "Global Cloud & Commerce Giant",
+    "openSourceStrategy": "Proprietary Cloud Services (AWS Bedrock)",
+    "flagshipModels": [
+      "Amazon Titan 系列",
+      "Amazon Nova (Micro/Lite/Pro/Premier)",
+      "Amazon Nova 2",
+      "Amazon Nova 2.5 Sonic (端到端低时延语音)",
+      "Nova Act (UI 操控智能体)"
+    ],
+    "coreStrengths": "AWS Bedrock 全球企业级云基础设施、Trainium / Inferentia 自研 AI 芯片、深度企业数据隔离",
+    "computeEcosystem": "AWS 全球智算中心网络、自研 Trainium 2 / Inferentia 芯片与 NVIDIA GPU 混合集群"
+  },
+  {
+    "id": "allen-ai",
+    "name": "Allen Institute for AI",
+    "chineseName": "艾伦人工智能研究所 (AI2)",
+    "country": "US",
+    "type": "Non-profit Research Institute",
+    "openSourceStrategy": "100% Fully Open (数据、代码、检查点、权重完全透明)",
+    "flagshipModels": [
+      "OLMo (1B/7B)",
+      "OLMo 2 / OLMo 3",
+      "Olmo Hybrid (混合线性架构)",
+      "Dolma (3T 开放数据集)"
+    ],
+    "coreStrengths": "全网唯一坚持科学研究全链路‘真开源’的灯塔机构，为学术界提供可验证、可审计的大模型科学实验范本",
+    "computeEcosystem": "学术联盟超算与国家级智算中心资源"
+  },
+  {
+    "id": "apple",
+    "name": "Apple",
+    "chineseName": "苹果 (Apple)",
+    "country": "US",
+    "type": "Consumer Tech Giant",
+    "openSourceStrategy": "Proprietary On-Device + Private Cloud Compute (PCC)",
+    "flagshipModels": [
+      "Apple Intelligence (3B 端侧基座)",
+      "Apple Foundation Models 2/3 (AFM 3 稠密/稀疏混合)",
+      "Ferret (多模态指代与定位)"
+    ],
+    "coreStrengths": "Apple Silicon 软硬件深度协同、神经引擎（NPU）极致能耗比、私有云计算端侧隐私保护安全体系",
+    "computeEcosystem": "Apple Silicon (M系列/A系列) 芯片服务器与数十亿终端设备端侧神经算力"
   }
 ]
