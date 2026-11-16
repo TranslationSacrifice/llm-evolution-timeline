@@ -3,8 +3,8 @@
 > **从 2017 年 Transformer 与 2018 年 GPT-1 起源，全面梳理全球大模型技术脉络、中美科技企业竞争格局、开源与闭源博弈、智能体 MCP 生态及未来智能范式展望（覆盖至 2026 年底）。**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Tracked Models: 248+](https://img.shields.io/badge/Tracked%20Models-248%2B-blueviolet.svg)](#-交互式时间线与数据资产)
-[![Total Entries: 283](https://img.shields.io/badge/Total%20Entries-283-success.svg)](#-交互式时间线与数据资产)
+[![Tracked Models: 249+](https://img.shields.io/badge/Tracked%20Models-249%2B-blueviolet.svg)](#-交互式时间线与数据资产)
+[![Total Entries: 291](https://img.shields.io/badge/Total%20Entries-291-success.svg)](#-交互式时间线与数据资产)
 [![Awesome](https://awesome.re/badge.svg)](https://github.com)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
@@ -12,7 +12,7 @@
 
 ## 📖 项目定位与导读
 
-本项目系统梳理了从 2017 年至今大语言模型（LLM）领域的全景发展脉络。全书分为**十章深度专题**、**一套收录 248 个关键模型（另含 35 条架构、基础设施、产品与协议条目，共 283 条记录）的结构化历史数据库**，以及一个**支持 GitHub Pages 与开箱即用的前端可视化时间线交互系统**。
+本项目系统梳理了从 2017 年至今大语言模型（LLM）领域的全景发展脉络。全书分为**十章深度专题**、**一套收录 249 个关键模型（另含 42 条架构、基础设施、产品与协议条目，共 291 条记录）的结构化历史数据库**，以及一个**支持 GitHub Pages 与开箱即用的前端可视化时间线交互系统**。
 
 ### 核心亮点
 - **四层立体结构**：清晰划分“模型家族 (model)”、“架构与算法 (architecture)”、“推理基础设施 (infrastructure)”与“产品协议 (product/protocol)”。
@@ -20,7 +20,7 @@
 - **中美欧企业全景**：系统梳理 29 家顶级机构演进历程，深度拆解 9 大核心企业演进树（OpenAI, Anthropic, Google, Meta, DeepSeek, 阿里通义千问, 字节跳动豆包, Mistral, xAI）。
 - **底层架构全覆盖**：全面收录 Transformer 之外的状态空间（Mamba / Mamba-2）、循环网络（RWKV-7, xLSTM）、线性注意力（Gated DeltaNet, KDA）、神经长期记忆（Titans）、扩散语言模型（LLaDA, Mercury）与原生低比特（BitNet b1.58）。
 - **推理基础设施**：收录 FlashAttention 1-3、PagedAttention / vLLM、SGLang RadixAttention、Speculative Decoding 等现代推理服务关键底座。
-- **智能体与 MCP 生态**：专门设立第十章，全景剖析从 Copilot、Function Calling、Devin、Cursor 到 Claude Code、Google Antigravity、Operator 与 Model Context Protocol (MCP)。
+- **智能体与 MCP 生态**：专门设立第十章，全景剖析从 Copilot、Function Calling、Devin、Cursor、Cline、Nous Hermes 3、Claude Code、OpenCode、Pi / oh-my-pi、Factory Droid、OpenClaw 到 DeepSeek Harness、Google Antigravity 与 Model Context Protocol (MCP)。
 - **交互式时间线**：内置零外部依赖的可视化网页 (`index.html` / `visualizer/index.html`)，支持 18 种技术范式、国别归属与授权属性的高维交叉过滤。
 
 ---
@@ -194,7 +194,7 @@ Grok-0 (2023.07) ──> Grok-1 (2023.11 / 2024.03 开源 314B 稀疏 MoE, Apach
 | [第七章：中美双雄与开源/闭源演进矩阵](docs/07-us-cn-and-open-closed-matrix.md) | 中美欧企业战略阵型、21家科技公司全景矩阵 | 算力供给差异下的系统工程突破、代差收敛周期、私有化落地 |
 | [第八章：未来展望与未解挑战](docs/08-future-horizons-and-challenges.md) | SSM/Mamba, 具身智能, 世界模型, 能源墙 | 后 Transformer 骨干网络、通用工具协议、物理模拟与合成数据陷阱 |
 | [第九章：前沿裂变与范式重构 (2025-2026)](docs/09-frontier-2025-2026-and-system1-decision.md) | GPT-5/6, Claude 5/Mythos, Muse Spark（代号 Avocado）, Jev, Decision 3.0, 具身/世界模型 | 旗舰内生统一、Meta闭源转向、Jev“智能 if 语句”决策模型破局、具身控制与世界仿真分流 |
-| [第十章：智能体、MCP 与工具生态演进史](docs/10-agent-mcp-and-tools-ecosystem.md) | Codex, Copilot, CodeGeeX, 通义灵码, 文心快码, Devin, Cursor, Trae, Claude Code, Google Antigravity, MCP, A2A | 从单步代码补全到完全自主软件工程、AI-Native IDE、终端原生智能体与分布式 Agent 协同平台 |
+| [第十章：智能体、MCP 与工具生态演进史](docs/10-agent-mcp-and-tools-ecosystem.md) | Codex, Copilot, Cline, Nous Hermes 3, CodeGeeX, 通义灵码, 文心快码, Devin, Cursor, Trae, Claude Code, OpenCode, Pi, oh-my-pi, Factory Droid, OpenClaw, DeepSeek Harness, Google Antigravity, MCP, A2A | 从单步代码补全到完全自主软件工程、AI-Native IDE、终端极简 CLI / TUI 智能体、解耦式 Agent Harness 运行时与分布式多智能体协同平台 |
 
 ---
 
@@ -216,11 +216,16 @@ Grok-0 (2023.07) ──> Grok-1 (2023.11 / 2024.03 开源 314B 稀疏 MoE, Apach
  2024       Cognition AI Devin (首个自主软件工程师)       字节跳动 扣子 Coze (可视化多 Agent 编排平台)
             Cursor (AI-First IDE, Composer 跨文件编辑)    腾讯云 AI 代码助手 (混元引擎与小程序云生态)
             Windsurf (Cascade Flow 协同编程)
+            Cline / Claude Dev (首个开源自主插件智能体)
+            Nous Hermes 3 (首个专注 Agent 工具调用的开源基座)
             Anthropic MCP (Model Context Protocol 开源)
  ─────────────────────────────────────────────────────────────────────────────────────────────
  2025-2026  Anthropic Claude Code (终端原生自主 CLI 智能体) 字节跳动 Trae (AI-Native IDE, Builder模式)
-            OpenAI Operator (浏览器 GUI 操控智能体)        Qwen3-Coder (专攻复杂工具调度与 Agentic 编码)
-            Google Antigravity (多 Subagents 协同、       DeepSeek-V4 (极低成本端到端 Agent 编码基座)
+            OpenCode / Pi / oh-my-pi (终端极简/TUI Agent) Qwen3-Coder (专攻复杂工具调度与 Agentic 编码)
+            Factory Droid (企业级自主端到端软件工程师)   DeepSeek Harness (dsh 解耦智能体架构基座)
+            OpenClaw (常驻个人助手与跨应用执行智能体)     DeepSeek-V4 (极低成本端到端 Agent 编码基座)
+            OpenAI Operator (浏览器 GUI 操控智能体)
+            Google Antigravity (多 Subagents 协同、
             Native Swarm 消息总线与动态画布平台)
 ```
 
@@ -264,7 +269,7 @@ Grok-0 (2023.07) ──> Grok-1 (2023.11 / 2024.03 开源 314B 稀疏 MoE, Apach
 仓库提供完整、结构化的大模型历史数据库与开箱即用的前端交互式系统：
 
 - **结构化历史数据**（字段定义见 `data/schema.md`，校验脚本 `tools/validate.py`）：
-  - `data/timeline.json`：收录 248 个关键模型（另含 35 条架构、底层基础设施、产品与协议条目，共 283 条记录）的完整元数据（模型名、机构、发布年月、国别、开源/闭源、参数规模、上下文窗口、关键技术点与历史意义）。
+  - `data/timeline.json`：收录 249 个关键模型（另含 42 条架构、底层基础设施、产品与协议条目，共 291 条记录）的完整元数据（模型名、机构、发布年月、国别、开源/闭源、参数规模、上下文窗口、关键技术点与历史意义）。
   - `data/timeline.js`：适配浏览器本地离线运行的轻量数据载体。
   - `data/company-profiles.json`：29 家全球顶尖大模型研发机构与企业的战略定位、算力集群与产品矩阵。
 - **可视化时间线交互界面**：

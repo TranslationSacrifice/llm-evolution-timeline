@@ -1,6 +1,6 @@
 # 第十章：智能体、MCP 与工具生态演进史 (2021 - 2026) —— 从代码补全到自主智能体、统一连接协议与工程平台
 
-> **核心主题**：智能体（Agent）范式革命、OpenAI Codex 与 GitHub Copilot、中国代码助手先锋（CodeGeeX / 通义灵码 / 文心快码）、Devin 与 AI-First IDE（Cursor / Trae）、Model Context Protocol (MCP) 标准大一统、终端原生智能体 Claude Code、Google Antigravity 全栈智能体工程平台、沙箱安全治理与未来协作范式。
+> **核心主题**：智能体（Agent）范式革命、OpenAI Codex 与 GitHub Copilot、开源微调与基座（Nous Hermes 3 / Qwen-Coder）、中国产业级助手（CodeGeeX / 通义灵码 / 文心快码）、AI-First 编辑器（Cursor / Trae / Cline）、终端原生智能体（Claude Code / OpenCode / Pi / oh-my-pi）、企业级平台（Factory Droid / Google Antigravity / OpenClaw）、Model Context Protocol (MCP) 标准大一统、智能体外壳（DeepSeek Harness `dsh`）与安全治理。
 
 ---
 
@@ -70,6 +70,8 @@ timeline
     2023.11 : 阿里通义灵码 (国内千万级编码助手)
     2024.01 : Cursor 兴起 (AI-Native 编辑器重构)
     2024.03 : Devin 发布 (首个自主 AI 软件工程师)
+    2024.06 : Cline / Claude Dev (开源自主编码插件)
+    2024.08 : Nous Hermes 3 (开源可操纵智能体基座)
     2024.11 : Anthropic 开源 MCP 协议 (AI 的 USB-C 接口)
     2025.01 : 字节跳动 Trae (AI-Native IDE 全球破局)
 ```
@@ -86,14 +88,9 @@ timeline
 
 ### 3.4 中国产业级智能研发助手规模化爆发 (2023 - 2024)
 面对中国庞大的工程师群体与复杂严苛的企业内部研发环境，国内科技巨头迅速展开了产业级代码助手布局：
-- **阿里巴巴 通义灵码 (TONGYI Lingma, 2023.11)**：
-  - 基于阿里云通义大模型（Qwen-Coder 前沿底座）打造，成为国内首个突破千万级下载量的 AI 编程助手；
-  - **核心特性**：深度适配企业级私有代码库，首创毫秒级代码检索与工程上下文 RAG，支持代码续写、单元测试批量生成、代码解释与多步排错，在金融、互联网和制造业企业中占据国内市场首位；
-- **百度 文心快码 (Baidu Comate, 2023.06)**：
-  - 依托百度飞桨平台与文心一言基座打造的产业级研发智能体；
-  - **核心特性**：覆盖研发全生命周期（需求理解、代码生成、单测编写、代码审查 Code Review、技术问答与系统重构），深度融入百度内部超 80% 的日常研发流水线，并在金融、央国企及运营商私有化部署中居于领先；
-- **腾讯云 AI 代码助手 (2024.04)**：
-  - 基于腾讯混元大模型打造，深度融入微信小程序开发者工具（WeChat DevTools）与腾讯云 Cloud Studio，实现从小程序前端到云端全栈代码的无缝辅助。
+- **阿里巴巴 通义灵码 (TONGYI Lingma, 2023.11)**：基于阿里云通义大模型（Qwen-Coder 前沿底座）打造，成为国内首个突破千万级下载量的 AI 编程助手，在金融、互联网和制造业企业中占据国内市场首位；
+- **百度 文心快码 (Baidu Comate, 2023.06)**：依托百度飞桨平台与文心一言基座打造的产业级研发智能体，深度融入百度内部超 80% 的日常研发流水线，并在金融、央国企及运营商私有化部署中居于领先；
+- **腾讯云 AI 代码助手 (2024.04)**：基于腾讯混元大模型打造，深度融入微信小程序开发者工具（WeChat DevTools）与腾讯云 Cloud Studio。
 
 ---
 
@@ -104,19 +101,26 @@ timeline
 ### 4.1 Devin 的震撼登场 (Cognition AI, 2024.03)
 - 由 Scott Wu 创立的 Cognition AI 发布了全球首个**自主 AI 软件工程师 Devin**；
 - 配备完整的沙箱运行环境（内置终端、代码编辑器和浏览器）；
-- 在真实 GitHub 开源问题基准 **SWE-bench** 上斩获 13.86% 的无辅助解决率（当时行业顶尖水平仅约 1.96%），向世界展示了智能体自主调试错误、运行测试用例、自动修复 Bug 的未来范式。
+- 在真实 GitHub 开源问题基准 **SWE-bench** 上斩获 13.86% 的无辅助解决率，向世界展示了智能体自主调试错误、运行测试用例、自动修复 Bug 的未来范式。
 
 ### 4.2 AI-First IDE 标杆：Cursor 与 Windsurf
 - **Cursor (Anysphere)**：重构了传统 VS Code 的交互形式，推出 `Composer`、多文件跨工程同时编辑、全局代码库语义索引以及终端自动纠错，成为硅谷与全球开发者几乎人手必备的生产力神器；
 - **Windsurf (Codeium, 2024.11)**：提出“Cascade（瀑布式）Flow”协同人机交互，将人类思考意图与智能体自主探测融合为沉浸式流式编程。
 
-### 4.3 字节跳动 Trae 与 扣子 (Coze)：中国 AI-Native IDE 的全球破局 (2024 - 2025)
+### 4.3 开源自主编码插件：Cline (原 Claude Dev, 2024.06)
+- **Saoud Rizwan** 发起的开源自主编码插件（原名 Claude Dev，后更名为 **Cline**），成为 VS Code 官方市场最火爆的开源 Agent 工具之一；
+- **核心机制**：在编辑器侧边栏内提供真正的自主行动循环——自主阅读项目文件树、使用统一 Diff 格式修改代码、在内置终端中执行编译测试命令，并深度接入 **MCP 协议**，支持人类在环（Human-in-the-Loop）严格安全确认。
+
+### 4.4 开源可操纵基座：Nous Hermes 3 (Nous Research, 2024.08)
+- Nous Research 发布的 **Hermes 3**（8B / 70B / 405B）是开源领域最受推崇的智能体微调模型之一；
+- 专精于**可操纵性（Steerability）**、长程系统提示遵从、极其严格的结构化 JSON 输出与复杂工具链函数调用，成为开源 Agent 开发者（如 Hermes Agent、OpenHands）首选的非专有推理基座。
+
+### 4.5 字节跳动 Trae 与 扣子 (Coze)：中国 AI-Native IDE 的全球破局 (2024 - 2025)
 - **Trae (ByteDance, 2025.01)**：
   - 字节跳动推出的全新自研 AI-Native 集成开发环境（IDE），直接面向全球开发者发布，打破了 Cursor 在 AI IDE 领域的长期垄断；
-  - **Builder 模式与 Agent 进化**：不仅支持 Chat 交互，更推出了革命性的 **Builder 模式**——用户只需用自然语言提出产品需求，Trae 能够自主分析项目结构、跨文件创建与修改代码、在内置终端中自动安装依赖并执行编译命令，并配备**实时 Web 视图预览（Web Preview）**；
-  - **自适应智能路由**：根据任务复杂度智能动态调度顶尖基座模型（Claude 3.5 Sonnet、GPT-4o 或豆包模型），实现最佳编码效果与极低延迟；
+  - **Builder 模式与 Agent 进化**：用户只需用自然语言提出产品需求，Trae 能够自主分析项目结构、跨文件创建与修改代码、在内置终端中自动安装依赖并执行编译命令，并配备**实时 Web 视图预览（Web Preview）**与自适应模型路由；
 - **扣子 / Coze (ByteDance, 2024.02)**：
-  - 字节跳动推出的无代码/低代码 AI Agent 编排平台，支持多智能体协作流（Multi-Agent Flow）、插件市场与长期记忆管理，可一键发布至飞书、微信公众号、抖音等平台，极大降低了全民构建复杂工作流智能体的门槛。
+  - 字节跳动推出的无代码/低代码 AI Agent 编排平台，支持多智能体协作流、插件市场与多端一键分发。
 
 ---
 
@@ -149,62 +153,85 @@ timeline
 
 ---
 
-## 6. 终端原生与全栈工程平台大决战 (2025 - 2026)
+## 6. 终端原生、多智能体平台与智能体外壳（Harness）大决战 (2025 - 2026)
 
-进入 2025–2026 年，智能体形态迎来了更高阶的分化：从“图形界面的编辑器插件”走向了**“极简高带宽的终端智能体（CLI Agent）”**与**“分布式多智能体工程平台（Agentic Platform / Swarm）”**。
+进入 2025–2026 年，智能体形态迎来了更高阶的分化：从“图形界面的编辑器插件”走向了**“极简高带宽的终端智能体（CLI Agent）”**、**“分布式多智能体工程平台（Agentic Platform / Swarm）”**以及以 **DeepSeek Harness** 为代表的**“智能体外壳（Harness）解耦革命”**。
 
 ```
-                   智能体形态进化光谱 (2021 - 2026)
+                   智能体形态演进光谱 (2021 - 2026)
 
   [2021-2022]      [2023-2024]            [2025]                  [2025-2026]
-   行级补全       AI-First IDE          终端原生智能体            分布式智能体平台
-  (Copilot /       (Cursor /             (Claude Code /           (Google Antigravity /
-   CodeGeeX)        Trae)                  Aider)                  Devin Swarm)
-      │                │                      │                         │
- 仅做光标后补全   跨多文件索引/编辑      驻留命令行/自编自跑/Git PR    多 Agent 拓扑协作/沙箱/画布
+   行级补全       AI-First IDE          终端原生智能体            分布式平台与解耦外壳
+  (Copilot /     (Cursor/Trae/         (Claude Code /            (Google Antigravity /
+   CodeGeeX)        Cline)               OpenCode / Pi)           DeepSeek dsh / OpenClaw)
+      │                │                      │                             │
+ 仅做光标后补全   跨多文件索引/编辑      驻留命令行/自编自跑/Git PR    多 Agent 拓扑/LSP内嵌/解耦外壳
 ```
 
-### 6.1 终端自主智能体：Claude Code (Anthropic, 2025.02)
-- **设计哲学**：摆脱厚重的 IDE 界面，回归 Unix 哲学——命令行终端（CLI）才是程序员高信息密度的交互圣地；
-- **核心机制**：
-  - 作为一个终端命令行工具（CLI Agent），Claude Code 直接运行在开发者的 Bash / Zsh 环境中；
-  - 深度原生整合 MCP 协议与项目 Git 仓库，能够自主递归遍历大型代码库、执行 `git grep` / `find` 定位文件、直接调用 `npm test` / `pytest` 运行测试套件、根据报错日志自发修改代码，直到全部通过并自动生成干净规范的 Pull Request；
-  - 引入了轻量级子智能体（Subagents）进行差异对比与代码审查，将人类工程师从琐碎的重构排错中彻底解放。
+### 6.1 终端自主智能体多样化演进：Claude Code、OpenCode、Pi 与 oh-my-pi
 
-### 6.2 Google Antigravity：新一代分布式智能体工程平台与 Agentic IDE (2025 - 2026)
-在 Google DeepMind 的长期智能体探索中，单一 Agent 面对超大型工程时常常出现上下文漂移、精力分散与工具调用冲突。Google 推出了开创性的 **Antigravity 全栈智能体系统与运行时架构**：
+#### (1) Claude Code (Anthropic, 2025.02)
+- **Unix 命令行哲学**：Anthropic 官方推出的终端原生自主工具，直接运行在开发者的 Bash / Zsh 环境中；
+- 深度整合 MCP 协议与 Git 仓库，自主递归遍历代码树、运行测试用例、排查修复错误并提交 Pull Request。
 
-1. **层次化子智能体拓扑 (Hierarchical Subagents)**：
-   - 系统支持主智能体（Coordinator / Parent）按需动态派生特化子智能体（如专门负责代码库拓扑分析的 `researcher`、负责实时网页与 UI 交互的 `browser`、负责沙箱编译的 `executor`）；
-   - 各 Agent 拥有独立的上下文视窗与任务目标，互不干扰，完成任务后向父级报告结果，彻底解决单 Agent 上下文过载问题；
-2. **异步协同消息总线 (Native Swarm & Message Board)**：
-   - 彻底打破“轮询（Polling）”与“同步阻塞等待”的低效机制，提出基于反应式唤醒（Reactive Wakeup）的消息看板体系；
-   - 智能体团队通过共享留言板进行异步协作，协同编排多名同侪智能体（Peer Agents）并行攻坚大型任务；
-3. **交互式 Artifact 画布与富交互生态 (Generative UI)**：
-   - 抛弃单纯的终端纯文本输出，内置一套动态 Artifact 管理系统，模型生成的复杂架构图（Mermaid）、数据报表、HTML/React 交互控件可实时投射于右侧独立工作空间中；
-4. **分级安全沙箱架构 (Graduated Sandboxing)**：
-   - 严格遵循零信任原则，默认将所有执行限制在标准的沙箱隔离环境中（只读/有限工作区写入，禁止外部任意网络提权）；
-   - 涉及网络出向、特权端口或全盘写入时触发显式人机协同审批（Human-in-the-Loop Gate），完美平衡自主行动力与系统安全性。
+#### (2) OpenCode (2025.05)
+- 开源社区（MIT）推出的全功能终端与 TUI 编码智能体，作为 Claude Code 与 Cursor 的重要开源替代；
+- 具备**本地优先（Local LLM First）**架构，支持通过 Ollama / vLLM 直接接入 DeepSeek、Qwen、Llama 等开源权重，彻底杜绝企业核心专有代码出境泄密风险。
 
-### 6.3 Google A2A 协议与跨模型握手 (2025.04)
-- Google 联合行业推出的 **Agent-to-Agent (A2A) 协议**，使不同厂商训练的独立智能体之间能够建立标准通信握手：例如由一个运行在本地的 Trae / Claude Code 终端智能体，向云端运行的 Google Antigravity 或 OpenAI Operator 委托多模态网页订票或分布式编译任务，实现了多智能体互联互通。
+#### (3) Pi (Mario Zechner, 2025.02)
+- 由著名开发者 Mario Zechner（libGDX 创造者）研发的**极简主义终端智能体框架**；
+- 核心回路极其轻巧，仅提供四大基础原语（`read` / `write` / `edit` / `bash`），配备专有的差分终端渲染引擎（`pi-tui`）与统一的多模型抽象（`pi-ai`），以极高的响应速度与极小开销风靡极客圈。
+
+#### (4) oh-my-pi / omp (can1357, 2026.02)
+- 标榜 **“A coding agent with the IDE wired in（内嵌完整 IDE 能力的编码智能体）”**，是 Pi 架构的“电池级全面增强版”；
+- **核心工程创新**：
+  1. **LSP 深度集成**：智能体原生接入 Language Server Protocol，支持符号跳转、类型签名推断与实时编译器诊断；
+  2. **哈希锚定精确编辑（Hash-Anchored Edits）**：放弃脆弱的行号匹配，采用基于内容哈希的行级锚定算法，从根本上解决多文件修改时的代码错位与冲突问题；
+  3. **Worktree 并行子智能体**：通过 Git Worktree 将复杂需求扇出（Fan-out）给多个并行 Subagents 独立执行，完成后自动三方归并。
+
+### 6.2 智能体外壳革命：DeepSeek Harness (`dsh`, 2026.04)
+
+在 SWE-bench 与实际工程评估中，行业逐渐认识到：**纯模型的裸推理能力仅仅决定了上限，而包裹在模型之外的智能体外壳（Agent Harness）往往决定了 30% 到 50% 的真实交付成败**。
+
+- **DeepSeek Harness (`dsh`)**：深度求索开源的模块化智能体运行时（MIT 协议）；
+- **核心架构理念**：
+  - **“Everything is a plugin”**：将沙箱终端、文件读写、网页浏览、代码执行器等能力完全插件化解耦；
+  - **状态机与重试恢复**：针对模型可能出现的死循环或误操作，外壳提供确定性的上下文窗口修剪（Pruning）、回溯点管理与反思注入；
+  - **Harness 标杆效应**：通过社区测试，同一款模型（如 DeepSeek-V4-Flash）在配备不同 Harness（如 `dsh`、mini-SWE-agent、Claude Code）时，其 SWE-bench 解决率与 Token 消耗存在巨大差异，**确立了“模型权重 + 智能体外壳”的双重评估范式**。
+
+### 6.3 企业级与个人自主平台：Factory Droid、OpenClaw 与 Google Antigravity
+
+- **Factory Droid (Factory.ai, 2025.01)**：面向企业级全流程研发的自主软件工程师系统，提供 CLI `droid` 工具、Slack 深度集成与多阶段任务执行（Missions）；
+- **OpenClaw (原 Clawdbot / Moltbot, 2026.01)**：由 Peter Steinberger 发起的现象级开源持久化个人 Agent 平台，直接连接 WhatsApp、Telegram、Discord、Slack 等聊天软件，用户在手机端发一条语音或短信，本地常驻 Agent 便自主操控电脑完成文件管理、代码编写、邮件处理与日程调度；
+- **Google Antigravity (Google DeepMind, 2025–2026)**：
+  - **多层次 Subagents 拓扑协同**：支持主 Agent 按需动态派生 `researcher`、`browser`、`executor` 等特化子智能体，视窗隔离互不干扰；
+  - **Native Swarm 异步协同总线**：基于反应式唤醒（Reactive Wakeup）的共享消息看板，支持多同侪智能体（Peer Agents）并行攻坚；
+  - **交互式 Artifact 动态画布**：支持 Mermaid 图表、数据报表与前端交互组件（Generative UI）在右侧独立沙箱中热渲染。
 
 ---
 
 ## 7. 全球主流代码智能体与开发环境全景对比
 
-| 产品 / 平台 | 主导机构 / 国家 | 形态模式 | 核心技术驱动 | 标志性能力与差异化亮点 |
+| 产品 / 平台 | 主导团队 / 国家 | 形态类别 | 核心技术驱动 | 标志性能力与历史定位 |
 | :--- | :---: | :--- | :--- | :--- |
-| **OpenAI Codex** | OpenAI (美) | 模型 API / 引擎 | GPT-3 微调 (12B) | 开创 HumanEval 评估体系与 FIM 补全，驱动第一代 GitHub Copilot |
+| **OpenAI Codex** | OpenAI (美) | 模型 API / 引擎 | GPT-3 微调 (12B) | 开创 HumanEval 评估体系与 FIM 补全，驱动第一代 Copilot |
 | **GitHub Copilot** | 微软 / GitHub (美) | IDE 插件 | Codex / GPT-4o | 全球装机量最大的首个商业级 AI 结对编程助手 |
-| **CodeGeeX** | 智谱 AI / 清华 (中) | 开源基座 + 插件 | 自研 13B 多语言基座 | 国内最早开源的多语言代码大模型，支持 20+ 语言互译与免费插件 |
-| **通义灵码** | 阿里云 / 阿里 (中) | IDE 插件 / 助手 | Qwen-Coder 矩阵 | 国内千万级装机量第一，企业级代码库私有 RAG 深度检索与单测生成 |
-| **百度文心快码** | 百度 (中) | IDE 插件 / 智能体 | 文心一言 ERNIE | 覆盖编码/单测/审查/重构全生命周期，国内央国企与金融私有化部署标杆 |
-| **Cursor** | Anysphere (美) | AI-Native IDE | 多模型 API + 语义索引 | 首创 Composer 跨文件同时编辑与代码库语义图谱，AI 编辑器标杆 |
-| **Trae** | 字节跳动 (中) | AI-Native IDE | Claude / GPT / 豆包 | 推出 Builder 模式全自主跨文件工程构建、智能路由与实时 Web 预览 |
-| **Devin** | Cognition AI (美) | 云端自主工程师 | 专有长程规划模型 | 具备独立沙箱、内置终端与浏览器的首个端到端自主软件工程师 |
-| **Claude Code** | Anthropic (美) | 终端命令行 Agent | Claude 3.7 / 4 + MCP | 扎根 Bash/Zsh，高带宽交互，自主运行测试套件纠错并提交 Git PR |
-| **Google Antigravity**| Google DeepMind (美)| 智能体工程平台/IDE| Gemini 2.0/3 + 拓扑系统 | 支持多 Subagents 层级协作、Native Swarm 异步总线、动态 Artifact 画布与沙箱隔离 |
+| **CodeGeeX** | 智谱 AI / 清华 (中) | 开源基座 + 插件 | 13B 多语言自研基座 | 国内最早开源的多语言代码模型，首创跨语言互译 |
+| **通义灵码** | 阿里云 / 阿里 (中) | IDE 插件 / 助手 | Qwen-Coder 矩阵 | 国内千万级装机量第一，企业级私有代码库 RAG 标杆 |
+| **百度文心快码** | 百度 (中) | IDE 插件 / 智能体 | 文心一言 ERNIE | 覆盖编码/单测/审查/重构全生命周期，央国企私有化标杆 |
+| **Cursor** | Anysphere (美) | AI-Native IDE | 多模型 API + 语义索引 | 首创 Composer 跨文件同时编辑与代码库语义图谱 |
+| **Trae** | 字节跳动 (中) | AI-Native IDE | Claude / GPT / 豆包 | 推出 Builder 模式全自主跨文件工程构建、Web 预览与智能路由 |
+| **Cline** | Saoud Rizwan (美) | 开源 VS Code 扩展 | 多模型 + MCP 工具 | 最受欢迎的开源自主编码扩展，编辑器内全自主执行与 Diff 审核 |
+| **Nous Hermes 3** | Nous Research (美) | 可操纵开源模型 | LLaMA 3.1 微调 | 开源界最强可操纵智能体基座，函数调用与结构化输出标杆 |
+| **Devin** | Cognition AI (美) | 云端自主工程师 | 专有长程规划模型 | 配备独立沙箱、终端与浏览器的首个端到端软件工程师 |
+| **Claude Code** | Anthropic (美) | 终端命令行 Agent | Claude 3.7 / 4 + MCP | 扎根 Bash/Zsh，高带宽交互，自主运行测试并提交 Git PR |
+| **OpenCode** | OpenCode Team (美) | 开源终端 Agent | 云端前沿 / 本地 Ollama | 终端/TUI 开源自主智能体，本地优先与私有代码隐私隔离 |
+| **Pi** | Mario Zechner (欧) | 极简终端智能体 | 极简核心 + pi-tui | 极致极客哲学，微小四原语核心循环与高扩展差分终端 UI |
+| **oh-my-pi (omp)** | can1357 (美) | 内嵌 IDE 终端外壳 | 多模型 + LSP 原生 | 内嵌 LSP 诊断、调试器、哈希锚定修改与 Git worktree 并行子智能体 |
+| **Factory Droid** | Factory.ai (美) | 企业级研发平台 | 多模型 + Droid CLI | 面向企业全流程研发的自主软件工程师与多阶段 Missions 调度 |
+| **OpenClaw** | OpenClaw 社区 (美) | 持久化个人 Agent | 聊天软件原生 + 本地 | 打通 WhatsApp/Telegram/Discord，手机发消息指挥本地电脑自主干活 |
+| **DeepSeek Harness**| 深度求索 (中) | 模块化 Agent 外壳 | dsh 极简插件架构 | 提出外壳架构与模型权重同等关键，开源标准智能体执行运行时 |
+| **Google Antigravity**| Google DeepMind (美)| 智能体平台 / IDE | Gemini 2.0/3 + 拓扑系统 | 支持多 Subagents 层级协作、Native Swarm 异步总线与 Artifact 动态画布 |
 
 ---
 
@@ -254,14 +281,24 @@ timeline
 | **2024.02** | **扣子 / Coze** | 字节跳动 | 中 | Agent 编排平台 | 可视化无代码多智能体工作流编排与多端生态分发 |
 | **2024.03** | **Devin** | Cognition AI | 美 | 自主软件工程师 | 具备独立沙箱、终端与浏览器的首个端到端软件工程师 |
 | **2024.04** | **腾讯云 AI 代码助手**| 腾讯 | 中 | 编码插件 | 混元大模型驱动，深度整合微信开发者工具与云开发 |
+| **2024.06** | **Cline (Claude Dev)**| Saoud Rizwan | 美 | 开源 IDE 扩展 | VS Code 现象级开源自主编码扩展，支持编辑/执行与 MCP |
 | **2024.06** | **Claude Artifacts** | Anthropic | 美 | 交互画布 | 在右侧独立画布实现前端代码、图表与文档实时动态渲染 |
+| **2024.08** | **Nous Hermes 3** | Nous Research | 美 | 智能体基座 | 开源界最强可操纵基座，主导复杂系统提示词与函数调用微调 |
+| **2024.09** | **Qwen2.5-Coder** | 阿里巴巴 | 中 | 代码基座 | 18T 语料打造的开源代码顶流，全球开源 Agent 核心底座 |
 | **2024.10** | **Claude Computer Use**| Anthropic | 美 | 屏幕操控 Agent | 视觉截图+键盘鼠标模拟，直接接管任意桌面 GUI 软件 |
 | **2024.11** | **MCP 协议开源** | Anthropic | 美 | 工具连接标准 | AI 领域的 USB-C 接口，一统模型与外部工具连接规范 |
 | **2025.01** | **Trae AI IDE** | 字节跳动 | 中 | AI-Native IDE | 推出 Builder 模式全自主跨文件工程构建、Web 预览与智能路由 |
+| **2025.01** | **Factory Droid** | Factory.ai | 美 | 自主工程平台 | 企业级全流程研发自主软件工程师，支持 Missions 调度 |
 | **2025.01** | **OpenAI Operator** | OpenAI | 美 | 浏览器操控 Agent | 自主规划完成网页预订、表单流转与跨站点自动化办公 |
 | **2025.02** | **Claude Code** | Anthropic | 美 | 终端自主智能体 | 扎根 Bash 命令行，自主查错、编译、测试并提交 PR |
+| **2025.02** | **Pi Coding Agent** | Mario Zechner | 欧 | 极简终端 Agent | 极简主义四原语核心架构与差分终端 UI 工具包 |
 | **2025.04** | **Google A2A 协议** | Google | 美 | 智能体协作协议 | 标准化 Agent 之间的任务委托、身份鉴权与协作结算 |
-| **2025.11** | **Google Antigravity**| Google DeepMind | 美 | 智能体平台/IDE | 支持多 Subagents 层级协作、Native Swarm 异步总线、动态 Artifact 画布 |
+| **2025.05** | **OpenCode** | OpenCode Team | 美 | 开源终端 Agent | 终端/TUI 开源自主智能体，本地优先与私有代码隐私隔离 |
+| **2025.07** | **Qwen3-Coder** | 阿里巴巴 | 中 | 智能体代码基座 | 专攻复杂系统级工具调度、Agentic 工作流与代码工程自动化 |
+| **2025.11** | **Google Antigravity**| Google DeepMind | 美 | 智能体平台 / IDE | 支持多 Subagents 层级协作、Native Swarm 异步总线与 Artifact 动态画布 |
+| **2026.01** | **OpenClaw** | OpenClaw 社区 | 美 | 持久化个人 Agent | 打通 WhatsApp/Telegram/Discord，手机发消息指挥本地电脑自主干活 |
+| **2026.02** | **oh-my-pi (omp)** | can1357 | 美 | 电池级终端外壳 | 内置 LSP 诊断、调试器、哈希锚定修改与 Git worktree 并行子智能体 |
+| **2026.04** | **DeepSeek Harness**| 深度求索 | 中 | 模块化 Agent 外壳 | 开源极简模块化运行时 dsh，确立“外壳架构与模型权重同等关键”共识 |
 
 ---
 

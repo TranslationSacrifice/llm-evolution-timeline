@@ -2748,6 +2748,30 @@ window.TIMELINE_DATA = [
     "era": "多模态与效率 2024"
   },
   {
+    "id": "cline-2024",
+    "date": "2024-06",
+    "name": "Cline (原 Claude Dev 自主编码扩展)",
+    "company": "Saoud Rizwan / Cline Team",
+    "country": "US",
+    "countryGroup": "US",
+    "license": "Open Source (Apache 2.0)",
+    "licenseType": "open",
+    "entryType": "product",
+    "category": "Agent / 工具生态",
+    "parameters": "多模型驱动",
+    "contextWindow": "N/A",
+    "highlight": "VS Code 生态中最具影响力的开源自主编码智能体插件（原名 Claude Dev），开创在编辑器内自主读写文件、执行终端命令与通过 MCP 连接外部工具链的先河。",
+    "keyTech": [
+      "Autonomous Coding Agent",
+      "VS Code Extension",
+      "MCP Native",
+      "Human-in-the-Loop Diff"
+    ],
+    "source": "https://github.com/cline/cline",
+    "docLink": "docs/10-agent-mcp-and-tools-ecosystem.md",
+    "era": "长上下文与多模态 2024"
+  },
+  {
     "id": "gemma2-2024",
     "date": "2024-06",
     "name": "Gemma 2 (9B / 27B)",
@@ -3050,6 +3074,30 @@ window.TIMELINE_DATA = [
       "Free Tier"
     ],
     "era": "多模态与效率 2024"
+  },
+  {
+    "id": "nous-hermes3-2024",
+    "date": "2024-08",
+    "name": "Nous Hermes 3 (可操纵智能体基座)",
+    "company": "Nous Research",
+    "country": "US",
+    "countryGroup": "US",
+    "license": "Open Weights (Apache 2.0)",
+    "licenseType": "open",
+    "entryType": "model",
+    "category": "Reasoning",
+    "parameters": "8B / 70B / 405B",
+    "contextWindow": "128K",
+    "highlight": "开源界开创性的智能体微调模型，专攻复杂系统提示词遵从、长程角色扮演（Roleplay）、结构化 JSON 函数调用与可操纵性（Steerability），成为众多开源 Agent Harness 的首选模型。",
+    "keyTech": [
+      "Function Calling",
+      "Agentic Steerability",
+      "Structured JSON",
+      "Open Weights (Apache 2.0)"
+    ],
+    "source": "https://huggingface.co/NousResearch/Hermes-3-Llama-3.1-70B",
+    "docLink": "docs/10-agent-mcp-and-tools-ecosystem.md",
+    "era": "长上下文与多模态 2024"
   },
   {
     "id": "perplexity-sonar-2024",
@@ -3641,6 +3689,30 @@ window.TIMELINE_DATA = [
     "era": "推理革命与智能体 2024Q4–2025"
   },
   {
+    "id": "factory-droid-2025",
+    "date": "2025-01",
+    "name": "Factory Droid (企业级自主软件工程平台)",
+    "company": "Factory (Factory.ai)",
+    "country": "US",
+    "countryGroup": "US",
+    "license": "Commercial SaaS",
+    "licenseType": "closed",
+    "entryType": "product",
+    "category": "Agent / 工具生态",
+    "parameters": "多前沿模型驱动",
+    "contextWindow": "N/A",
+    "highlight": "企业级全生命周期自主软件工程师平台，通过终端 CLI (droid)、Slack 与 Web 协同执行跨步骤复杂任务（Missions），覆盖代码审查、测试自动化与全天候系统可靠性维护。",
+    "keyTech": [
+      "Autonomous Software Engineer",
+      "Mission Orchestration",
+      "CLI & Slack Synergy",
+      "Enterprise SDLC"
+    ],
+    "source": "https://factory.ai",
+    "docLink": "docs/10-agent-mcp-and-tools-ecosystem.md",
+    "era": "推理革命与智能体 2024Q4–2025"
+  },
+  {
     "id": "gated-deltanet-2025",
     "date": "2025-01",
     "name": "Gated DeltaNet (门控增量线性注意力架构)",
@@ -3980,6 +4052,30 @@ window.TIMELINE_DATA = [
     ],
     "source": "https://arxiv.org/abs/2502.09992",
     "docLink": "docs/08-future-horizons-and-challenges.md",
+    "era": "推理革命与智能体 2024Q4–2025"
+  },
+  {
+    "id": "pi-coding-agent-2025",
+    "date": "2025-02",
+    "name": "Pi (极简终端编码智能体)",
+    "company": "Mario Zechner (@badlogic)",
+    "country": "EU",
+    "countryGroup": "EU",
+    "license": "Open Source (MIT)",
+    "licenseType": "open",
+    "entryType": "product",
+    "category": "Agent / 工具生态",
+    "parameters": "多模型驱动",
+    "contextWindow": "N/A",
+    "highlight": "libGDX 作者 Mario Zechner 打造的极简主义终端智能体工具包，以极小核心循环与四大基础原语（read/write/edit/bash）提供超高扩展性与差分终端 UI (pi-tui)。",
+    "keyTech": [
+      "Minimalist Agent Core",
+      "Terminal TUI",
+      "Multi-Provider AI",
+      "Extension System"
+    ],
+    "source": "https://github.com/badlogic/pi-mono",
+    "docLink": "docs/10-agent-mcp-and-tools-ecosystem.md",
     "era": "推理革命与智能体 2024Q4–2025"
   },
   {
@@ -4432,6 +4528,30 @@ window.TIMELINE_DATA = [
       "Cost Efficient"
     ],
     "era": "前沿演进 2025"
+  },
+  {
+    "id": "opencode-2025",
+    "date": "2025-05",
+    "name": "OpenCode (开源终端 AI 编码智能体)",
+    "company": "OpenCode Team",
+    "country": "US",
+    "countryGroup": "US",
+    "license": "Open Source (MIT)",
+    "licenseType": "open",
+    "entryType": "product",
+    "category": "Agent / 工具生态",
+    "parameters": "多模型与本地 LLM",
+    "contextWindow": "N/A",
+    "highlight": "开源界抗衡 Claude Code 与 Cursor 的重要命令行/TUI 智能体，支持云端商业前沿模型与 Ollama 本地模型无缝自由切换，主打本地优先与隐私安全研发。",
+    "keyTech": [
+      "Terminal / TUI Agent",
+      "Local LLM First",
+      "Repository Navigation",
+      "MIT License"
+    ],
+    "source": "https://github.com/opencode-ai/opencode",
+    "docLink": "docs/10-agent-mcp-and-tools-ecosystem.md",
+    "era": "推理革命与智能体 2024Q4–2025"
   },
   {
     "id": "veo3-2025",
@@ -5180,6 +5300,30 @@ window.TIMELINE_DATA = [
     "era": "前沿演进 2025"
   },
   {
+    "id": "openclaw-2026",
+    "date": "2026-01",
+    "name": "OpenClaw (开源持久化自主智能体平台)",
+    "company": "OpenClaw Community (原 Clawdbot)",
+    "country": "US",
+    "countryGroup": "US",
+    "license": "Open Source (MIT)",
+    "licenseType": "open",
+    "entryType": "product",
+    "category": "Agent / 工具生态",
+    "parameters": "多模型驱动",
+    "contextWindow": "N/A",
+    "highlight": "由 Peter Steinberger 发起（原名 Clawdbot / Moltbot）的现象级开源个人自主 Agent 平台，打通 WhatsApp/Telegram/Discord 等即时通信软件，常驻本地并自主执行文件、代码与生活工作流。",
+    "keyTech": [
+      "Chat-App Native",
+      "Persistent Personal Agent",
+      "Self-Hosted Private",
+      "Tool Automation"
+    ],
+    "source": "https://github.com/openclaw/openclaw",
+    "docLink": "docs/10-agent-mcp-and-tools-ecosystem.md",
+    "era": "超级模型与具身 2026"
+  },
+  {
     "id": "ant-ling-ring-2026",
     "date": "2026-02",
     "name": "蚂蚁百灵 (Ling-2.5-1T / Ring-2.5-1T)",
@@ -5270,6 +5414,30 @@ window.TIMELINE_DATA = [
     ],
     "source": "https://en.wikipedia.org/wiki/GLM_(AI)",
     "docLink": "docs/09-frontier-2025-2026-and-system1-decision.md",
+    "era": "超级模型与具身 2026"
+  },
+  {
+    "id": "oh-my-pi-2026",
+    "date": "2026-02",
+    "name": "oh-my-pi / omp (内嵌 IDE 级终端编码外壳)",
+    "company": "can1357 / omp Community",
+    "country": "US",
+    "countryGroup": "US",
+    "license": "Open Source (MIT)",
+    "licenseType": "open",
+    "entryType": "product",
+    "category": "Agent / 工具生态",
+    "parameters": "多前沿模型驱动",
+    "contextWindow": "N/A",
+    "highlight": "基于 Pi 架构打造的‘自带完整 IDE 能力’的终端智能体外壳（A coding agent with the IDE wired in），深度集成 LSP 语义索引、实时调试器、哈希锚定精确编辑与多工作树并行子智能体。",
+    "keyTech": [
+      "LSP Integration",
+      "Hash-Anchored Edits",
+      "Interactive Debugger",
+      "Worktree Subagents"
+    ],
+    "source": "https://github.com/can1357/oh-my-pi",
+    "docLink": "docs/10-agent-mcp-and-tools-ecosystem.md",
     "era": "超级模型与具身 2026"
   },
   {
@@ -5476,6 +5644,30 @@ window.TIMELINE_DATA = [
       "Cinematic Motion"
     ],
     "docLink": "docs/09-frontier-2025-2026-and-system1-decision.md",
+    "era": "超级模型与具身 2026"
+  },
+  {
+    "id": "deepseek-harness-2026",
+    "date": "2026-04",
+    "name": "DeepSeek Harness / dsh (开源模块化智能体运行时)",
+    "company": "深度求索 (DeepSeek)",
+    "country": "CN",
+    "countryGroup": "CN",
+    "license": "Open Source (MIT)",
+    "licenseType": "open",
+    "entryType": "infrastructure",
+    "category": "Agent / 工具生态",
+    "parameters": "Agent 执行外壳 / 运行时",
+    "contextWindow": "N/A",
+    "highlight": "深度求索开源的极简模块化智能体执行外壳（dsh），将 SWE-bench 评测标准与模型执行环境完全解耦，以轻量插件架构管控终端、文件与浏览器环境，有力证明了‘智能体外壳（Harness）与模型权重同等关键’。",
+    "keyTech": [
+      "Agent Harness (dsh)",
+      "SWE-bench Runtime",
+      "Modular Plugin Architecture",
+      "MIT License"
+    ],
+    "source": "https://github.com/deepseek-ai",
+    "docLink": "docs/10-agent-mcp-and-tools-ecosystem.md",
     "era": "超级模型与具身 2026"
   },
   {
