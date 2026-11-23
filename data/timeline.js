@@ -5766,6 +5766,31 @@ window.TIMELINE_DATA = [
     "era": "超级模型与具身 2026"
   },
   {
+    "id": "gemma4-31b-2026",
+    "date": "2026-04",
+    "name": "Gemma 4 31B",
+    "company": "Google DeepMind",
+    "country": "US",
+    "countryGroup": "US",
+    "license": "Open Weights (Apache 2.0)",
+    "licenseType": "open",
+    "entryType": "model",
+    "category": "Dense LLM",
+    "parameters": "30.7B Dense",
+    "contextWindow": "256K",
+    "highlight": "Google DeepMind 于 2026 年 4 月开源的 Gemma 4 旗舰稠密模型，继承 Gemini 3 架构创新，内置可配置思考模式（Thinking Mode）与原生函数调用，支持 140+ 语言。",
+    "keyTech": [
+      "30.7B Dense",
+      "256K Context",
+      "Thinking Mode",
+      "Tool Calling",
+      "Apache 2.0"
+    ],
+    "source": "https://deepmind.google/technologies/gemma/",
+    "docLink": "docs/09-frontier-2025-2026-and-system1-decision.md",
+    "era": "超级模型与具身 2026"
+  },
+  {
     "id": "chinese-embodied-2026",
     "date": "2026-05",
     "name": "中国具身智能先锋矩阵 (智元 GO-2 / 自变量 WALL-A)",
@@ -6093,6 +6118,56 @@ window.TIMELINE_DATA = [
     "era": "超级模型与具身 2026"
   },
   {
+    "id": "muse-glimmer-2026",
+    "date": "2026-08",
+    "name": "Muse Glimmer (30B)",
+    "company": "Meta",
+    "country": "US",
+    "countryGroup": "US",
+    "license": "Open Weights (Apache 2.0)",
+    "licenseType": "open",
+    "entryType": "model",
+    "category": "Multimodal",
+    "parameters": "31.4B（29.6B Decoder + 1.8B ViT）",
+    "contextWindow": "128K",
+    "highlight": "Meta Superintelligence Labs 于 2026 年 8 月开源的端侧 Agentic 多模态模型，支持 MCP 工具调用、自主多步规划与失败自动重试，专为单卡工作站与本地运行优化。",
+    "keyTech": [
+      "29.6B Dense",
+      "1.8B ViT-G/14",
+      "Agentic Tool Calling",
+      "MCP Native",
+      "Apache 2.0"
+    ],
+    "source": "https://ai.meta.com/research/",
+    "docLink": "docs/09-frontier-2025-2026-and-system1-decision.md",
+    "era": "超级模型与具身 2026"
+  },
+  {
+    "id": "qwen38-27b-2026",
+    "date": "2026-08",
+    "name": "Qwen3.8-27B",
+    "company": "阿里巴巴 (Alibaba)",
+    "country": "CN",
+    "countryGroup": "CN",
+    "license": "Open Weights (Apache 2.0)",
+    "licenseType": "open",
+    "entryType": "model",
+    "category": "Multimodal",
+    "parameters": "27B Dense",
+    "contextWindow": "1M",
+    "highlight": "阿里通义千问于 2026 年 8 月以 Apache 2.0 协议开源的 27B 稠密全模态旗舰，原生深度对齐视觉感知与代码智能体能力，成为单张消费级 GPU 本地部署的最强基座。",
+    "keyTech": [
+      "27B Dense",
+      "1M Context",
+      "Apache 2.0",
+      "Native Multimodal",
+      "Agentic Coding"
+    ],
+    "source": "https://github.com/QwenLM/Qwen3",
+    "docLink": "docs/09-frontier-2025-2026-and-system1-decision.md",
+    "era": "超级模型与具身 2026"
+  },
+  {
     "id": "claude-opus55-2026",
     "date": "2026-09",
     "name": "Claude Opus 5.5",
@@ -6401,6 +6476,31 @@ window.TIMELINE_DATA = [
     "era": "超级模型与具身 2026"
   },
   {
+    "id": "nemotron-35-super-vl-2026",
+    "date": "2026-10",
+    "name": "NVIDIA Nemotron 3.5 Super VL",
+    "company": "NVIDIA",
+    "country": "US",
+    "countryGroup": "US",
+    "license": "Open Weights (NVIDIA Open Model License)",
+    "licenseType": "open",
+    "entryType": "model",
+    "category": "Multimodal",
+    "parameters": "120B MoE（激活 12B）",
+    "contextWindow": "1M",
+    "highlight": "NVIDIA 于 2026 年 10 月发布的常驻多模态 Agent 基座，融合文本、GUI 截图与视频理解，单 GPU 推理吞吐达同级模型 5 倍，支持长达数周的长周期软件与科研自动化任务。",
+    "keyTech": [
+      "120B MoE",
+      "12B Active",
+      "1M Context",
+      "5x Throughput",
+      "Long-Horizon Agent"
+    ],
+    "source": "https://developer.nvidia.com/nemotron",
+    "docLink": "docs/09-frontier-2025-2026-and-system1-decision.md",
+    "era": "超级模型与具身 2026"
+  },
+  {
     "id": "claude-fable-mythos-52-2026",
     "date": "2026-11",
     "name": "Claude Fable 5.2 / Mythos 5.2",
@@ -6515,6 +6615,56 @@ window.TIMELINE_DATA = [
       "Causal Dynamics"
     ],
     "source": "https://openai.com",
+    "docLink": "docs/09-frontier-2025-2026-and-system1-decision.md",
+    "era": "超级模型与具身 2026"
+  },
+  {
+    "id": "gemini4-neon-2026",
+    "date": "2026-11",
+    "name": "Gemini 4 Neon",
+    "company": "Google DeepMind",
+    "country": "US",
+    "countryGroup": "US",
+    "license": "Proprietary / Closed API",
+    "licenseType": "closed",
+    "entryType": "model",
+    "category": "Reasoning",
+    "parameters": "未公开",
+    "contextWindow": "1M",
+    "highlight": "Google DeepMind 于 2026 年 11 月 18 日发布的 Gemini 4 代前沿代码与高阶分析智能体，介于 Carbon 与 Hydrogen 之间，支持四档动态自适应思考（Low/Med/High/XHigh），原生入驻 Google Antigravity。",
+    "keyTech": [
+      "Gemini 4 Neon",
+      "Frontier Coding",
+      "1M Context",
+      "Adaptive Thinking",
+      "Antigravity Native"
+    ],
+    "source": "https://deepmind.google/technologies/gemini/",
+    "docLink": "docs/09-frontier-2025-2026-and-system1-decision.md",
+    "era": "超级模型与具身 2026"
+  },
+  {
+    "id": "inkling-2-mini-2026",
+    "date": "2026-11",
+    "name": "Inkling 2 Mini",
+    "company": "Thinking Machines Lab",
+    "country": "US",
+    "countryGroup": "US",
+    "license": "Open Weights (Apache 2.0)",
+    "licenseType": "open",
+    "entryType": "model",
+    "category": "MoE",
+    "parameters": "26.4B MoE（激活 3.4B-5.4B）",
+    "contextWindow": "1M",
+    "highlight": "Thinking Machines Lab 于 2026 年 11 月 20 日开源的紧凑型多模态 Agent 基座，首创 Looped Transformer 架构（中间 12 层循环 3 次），在单台 32GB Mac 上即可提供 48 层等效深推理与高保真屏幕操作。",
+    "keyTech": [
+      "Looped Transformer",
+      "26.4B MoE",
+      "1M Context",
+      "ScreenSpot Visual Reasoning",
+      "Apache 2.0"
+    ],
+    "source": "https://huggingface.co/thinkingmachines",
     "docLink": "docs/09-frontier-2025-2026-and-system1-decision.md",
     "era": "超级模型与具身 2026"
   }

@@ -3,8 +3,8 @@
 > **从 2017 年 Transformer 与 2018 年 GPT-1 起源，全面梳理全球大模型技术脉络、中美科技企业竞争格局、开源与闭源博弈、智能体 MCP 生态及未来智能范式展望（覆盖至 2026 年底）。**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Tracked Models: 249+](https://img.shields.io/badge/Tracked%20Models-249%2B-blueviolet.svg)](#-交互式时间线与数据资产)
-[![Total Entries: 291](https://img.shields.io/badge/Total%20Entries-291-success.svg)](#-交互式时间线与数据资产)
+[![Tracked Models: 255+](https://img.shields.io/badge/Tracked%20Models-255%2B-blueviolet.svg)](#-交互式时间线与数据资产)
+[![Total Entries: 297](https://img.shields.io/badge/Total%20Entries-297-success.svg)](#-交互式时间线与数据资产)
 [![Awesome](https://awesome.re/badge.svg)](https://github.com)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
@@ -12,7 +12,7 @@
 
 ## 📖 项目定位与导读
 
-本项目系统梳理了从 2017 年至今大语言模型（LLM）领域的全景发展脉络。全书分为**十章深度专题**、**一套收录 249 个关键模型（另含 42 条架构、基础设施、产品与协议条目，共 291 条记录）的结构化历史数据库**，以及一个**支持 GitHub Pages 与开箱即用的前端可视化时间线交互系统**。
+本项目系统梳理了从 2017 年至今大语言模型（LLM）领域的全景发展脉络。全书分为**十章深度专题**、**一套收录 255 个关键模型（另含 42 条架构、基础设施、产品与协议条目，共 297 条记录）的结构化历史数据库**，以及一个**支持 GitHub Pages 与开箱即用的前端可视化时间线交互系统**。
 
 ### 核心亮点
 - **四层立体结构**：清晰划分“模型家族 (model)”、“架构与算法 (architecture)”、“推理基础设施 (infrastructure)”与“产品协议 (product/protocol)”。
@@ -92,11 +92,11 @@ Transformer (2017) ──> BERT / T5 (2018-2019) ──> Chinchilla / PaLM (2022
   └──> Gemini 1.0 (Nano/Pro/Ultra, 2023.12)
          │
          ├──> Gemini 1.5 Pro / Flash (2024.02/05, 1M-2M 极限上下文捞针)
-         ├──> Gemma 1 / 2 / 4 家族 (2024-2026, 端侧轻量级开放权重)
+         ├──> Gemma 1 / 2 / 4 家族 (Gemma 4 31B/E4B, 2024-2026, 宽松开源 Apache 2.0)
          │
          └──> Gemini 2.0 (Flash/Thinking, 2024.12) ──> Gemini 3 Pro / Flash (2026)
                 │
-                └──> Gemini 4 家族 (Argon 2026.09 / Carbon 2026.10 / Hydrogen 2026.11) ──> Gemini Omni (2026.05, 任意模态输入生成视频)
+                └──> Gemini 4 元素矩阵 (Argon 2026.09 / Carbon 2026.11 / Hydrogen 2026.11 / Neon 2026.11) ──> Gemini Omni (2026.05)
 ```
 
 ### 4. Meta (美国 · 开源主力到 Muse Spark 闭源转折)
@@ -108,7 +108,9 @@ LLaMA 1 (2023.02, 7B-65B 学术开源) ──> LLaMA 2 (2023.07, 商用许可/GQ
          ├──> LLaMA 3.2 (2024.09, 端侧+视觉多模态)
          ├──> Llama 4 Scout / Maverick (2025-2026, 开放权重主力基座)
          │
-         └──> ★ 路线转向: Muse Spark (2026.04, 内部代号 Avocado; 原 Llama 5 继任者转向闭源商业 API)
+         ├──> ★ 路线转向: Muse Spark (2026.04, 内部代号 Avocado; 原 Llama 5 继任者转向闭源商业 API)
+         │      └──> Muse Wonder / Wonder Full (2026.09, 闭源多模态扩展)
+         └──> Muse Glimmer (2026.08, 30B 端侧 Agentic 开源 Apache 2.0)
 ```
 
 ### 5. 深度求索 DeepSeek (中国 · 算法第一性原理与极端能效)
@@ -193,7 +195,7 @@ Grok-0 (2023.07) ──> Grok-1 (2023.11 / 2024.03 开源 314B 稀疏 MoE, Apach
 | [第六章：深度推理与后训练强化 (2024末-2025)](docs/06-reasoning-and-o1-r1-era.md) | OpenAI o1/o3, DeepSeek-V3, DeepSeek-R1, QwQ | 数据墙危机、Test-Time Compute 慢思考、GRPO 与纯 RL 顿悟涌现 |
 | [第七章：中美双雄与开源/闭源演进矩阵](docs/07-us-cn-and-open-closed-matrix.md) | 中美欧企业战略阵型、21家科技公司全景矩阵 | 算力供给差异下的系统工程突破、代差收敛周期、私有化落地 |
 | [第八章：未来展望与未解挑战](docs/08-future-horizons-and-challenges.md) | SSM/Mamba, 具身智能, 世界模型, 能源墙 | 后 Transformer 骨干网络、通用工具协议、物理模拟与合成数据陷阱 |
-| [第九章：前沿裂变与范式重构 (2025-2026)](docs/09-frontier-2025-2026-and-system1-decision.md) | GPT-5/6, Claude 5/Mythos, Muse Spark（代号 Avocado）, Jev, Decision 3.0, 具身/世界模型 | 旗舰内生统一、Meta闭源转向、Jev“智能 if 语句”决策模型破局、具身控制与世界仿真分流 |
+| [第九章：前沿裂变与范式重构 (2025-2026)](docs/09-frontier-2025-2026-and-system1-decision.md) | GPT-5/6, Claude 5/Mythos, Gemini 4 (Argon/Carbon/Hydrogen/Neon), Gemma 4 31B, Muse Spark/Glimmer, Qwen3.8-27B, Nemotron 3.5 Super VL, Inkling 2 Mini, Jev, Decision 3.0, 具身/世界模型 | 旗舰内生统一、Gemini 4化学元素矩阵、Meta闭源转向与端侧开源、Jev“智能 if 语句”决策模型破局、具身控制与世界仿真分流 |
 | [第十章：智能体、MCP 与工具生态演进史](docs/10-agent-mcp-and-tools-ecosystem.md) | Codex, Copilot, Cline, Nous Hermes 3, CodeGeeX, 通义灵码, 文心快码, Devin, Cursor, Trae, Claude Code, OpenCode, Pi, oh-my-pi, Factory Droid, OpenClaw, DeepSeek Harness, Google Antigravity, MCP, A2A | 从单步代码补全到完全自主软件工程、AI-Native IDE、终端极简 CLI / TUI 智能体、解耦式 Agent Harness 运行时与分布式多智能体协同平台 |
 
 ---
@@ -269,7 +271,7 @@ Grok-0 (2023.07) ──> Grok-1 (2023.11 / 2024.03 开源 314B 稀疏 MoE, Apach
 仓库提供完整、结构化的大模型历史数据库与开箱即用的前端交互式系统：
 
 - **结构化历史数据**（字段定义见 `data/schema.md`，校验脚本 `tools/validate.py`）：
-  - `data/timeline.json`：收录 249 个关键模型（另含 42 条架构、底层基础设施、产品与协议条目，共 291 条记录）的完整元数据（模型名、机构、发布年月、国别、开源/闭源、参数规模、上下文窗口、关键技术点与历史意义）。
+  - `data/timeline.json`：收录 255 个关键模型（另含 42 条架构、底层基础设施、产品与协议条目，共 297 条记录）的完整元数据（模型名、机构、发布年月、国别、开源/闭源、参数规模、上下文窗口、关键技术点与历史意义）。
   - `data/timeline.js`：适配浏览器本地离线运行的轻量数据载体。
   - `data/company-profiles.json`：29 家全球顶尖大模型研发机构与企业的战略定位、算力集群与产品矩阵。
 - **可视化时间线交互界面**：

@@ -58,8 +58,12 @@ graph TD
 
 - **Gemini 3 Pro / 3.x Flash (2026 上半年)**：
   - 在自研 TPU 算力集群上实现能耗比与推理吞吐的阶跃。
-- **Gemini 4 矩阵 (2026.09 - 11) —— Argon / Carbon / Hydrogen 三档**：
-  - **Argon（2026-09-30 起）**：重型科研与长程推理；**Carbon（2026-10）**：主力综合档；**Hydrogen（2026-11）**：超轻高速档。
+- **Gemini 4 化学元素矩阵 (2026.09 - 11) —— Argon / Carbon / Hydrogen / Neon 四档体系**：
+  - Google DeepMind 在 Gemini 4 代放弃了传统的数字小版本递增命名，转而以化学元素命名，构建了覆盖能力、速度与成本帕累托前沿的四档分级矩阵：
+    - **Gemini 4 Argon（2026-09-30）**：面向深度专业与科研场景的高阶长程推理基座；
+    - **Gemini 4 Carbon（2026-11-10 官方 Model Card）**：重型高算力旗舰，专攻最困难的多步骤长程推演与跨领域验证；
+    - **Gemini 4 Hydrogen（2026-11-12 官方 Model Card）**：极致轻量与超低延迟模型，首创毫秒级原生流式多模态，服务于高并发 API 与边缘端侧；
+    - **Gemini 4 Neon（2026-11-18）**：前沿代码与高阶分析智能体，介于 Carbon 与 Hydrogen 之间。具备 1M 上下文，支持 Low / Medium / High / XHigh 四档自适应动态思考（Adaptive Thinking），原生深度集成入 Google Antigravity、Gemini API 与企业开发套件。
 - **Gemini Omni (2026.05)**：
   - 任意模态输入生成视频的原生全模态模型，为实时环境感知与可穿戴硬件铺路；流传的 `1.2 Flash` 版本号暂无一手来源，以官方发布为准。
 
@@ -100,15 +104,19 @@ graph TD
 
 ```mermaid
 graph LR
-    subgraph 宽松自由开源 (Permissive)
+    subgraph 宽松自由开源 (Permissive Apache 2.0 / MIT)
         DeepSeek[DeepSeek V4.1-Flash / V4 Pro<br/>MIT 协议 / 极限性价比]
-        Qwen27B[Qwen3.8-27B<br/>Apache 2.0 / 原生多模态]
+        Qwen27B[Qwen3.8-27B<br/>Apache 2.0 / 27B 原生多模态]
+        Gemma4[Gemma 4 31B<br/>Apache 2.0 / 内置 Thinking Mode]
+        MuseGlimmer[Muse Glimmer 30B<br/>Apache 2.0 / 端侧 Agentic 多模态]
+        Inkling[Inkling 2 Mini<br/>Apache 2.0 / 循环 Transformer]
         GLMFlash[GLM-5.3-Flash<br/>MIT 协议 / 端侧极速]
     end
 
     subgraph 商业化保护 / 专有开放权重
         GLM53[GLM-5.3<br/>自定义商业限制许可]
         Llama4[Llama 4 Scout/Maverick<br/>月活超额需商业授权]
+        Nemotron[Nemotron 3.5 Super VL<br/>NVIDIA 开放权重 / 120B MoE]
         MiniMaxM3[MiniMax M3 / M3.1<br/>428B MoE 专属许可]
     end
 ```
@@ -118,16 +126,19 @@ graph LR
 | 家族 / 机构 | 2026 代表版本 | 许可证类型 | 核心技术特征与历史生态定位 |
 | :--- | :--- | :--- | :--- |
 | **DeepSeek (深度求索)** | **V4.1-Flash / V4 Pro** | **MIT 许可证** (完全自由) | 继 R1 引爆推理浪潮后，在低显存推理与超高性价比 Agent 编码领域持续作为全球开源标杆 |
-| **Qwen (阿里通义)** | **Qwen3.8-27B / Qwen3-Coder** | **Apache 2.0** (部分核心开源) | Qwen3.8 原生多模态能力卓越；Qwen3-Coder 成为全球开源 Agentic 编程基座主力 |
+| **Qwen (阿里通义)** | **Qwen3.8-27B / Qwen3.8-MoE** | **Apache 2.0** (27B) / 专属开源 | 27B 稠密版以 Apache 2.0 开源，具备原生高保真视觉感知与代码智能体能力，单卡易部署 |
+| **Gemma (Google)** | **Gemma 4 31B / E4B / 12B** | **Apache 2.0** (全面宽松开源) | 31B 稠密基座源自 Gemini 3 技术底座，内置思考模式与函数调用，支持 140+ 语言与单卡部署 |
+| **Meta 开源分支** | **Muse Glimmer (30B)** | **Apache 2.0** (端侧开源专精) | 在主干转向闭源后，由 Superintelligence Labs 开源的 30B 端侧 Agentic 模型，原生适配 MCP |
+| **Thinking Machines** | **Inkling 2 Mini (26.4B)** | **Apache 2.0** (完全自由) | 首创 Looped Transformer（中间 12 层循环 3 次，等效 48 层），32GB Mac 上极高性价比多模态 Agent |
+| **NVIDIA** | **Nemotron 3.5 Super VL** | 开放模型许可 (Open Model) | 120B MoE（激活 12B），单 GPU 吞吐提升 5 倍，专攻长达数周的长周期软件工程与科研 Agent 任务 |
 | **GLM (智谱 AI)** | **GLM-5.3-Flash / GLM-5.3** | Flash 为 **MIT**；大尺寸为自定义商业许可 | 清华工程传承，Flash 版成为端侧与学术首选，大尺寸版兼顾企业级商业化定制 |
 | **MiniMax (稀宇科技)** | **M3 / M3.1-Flash** | 开放权重商业许可 | 总参数约 428B、单步激活 23B 的多模态 MoE，专长于 Agent 自主规划与网络安全分析 |
 | **Mistral AI** | **Mistral Large 3 / Small 4** | Apache 2.0 / 商业双轨 | 欧洲人工智能代表，主打欧洲数据主权（Data Residency）与企业合规治理 |
-| **Gemma (Google)** | **Gemma 4 家族 (E2B / E4B / 12B / 26B)** | Gemma 特许条款 | 针对 PC 本地 NPU 与端侧芯片深度调优的高质量小型化权重 |
 | **OpenAI gpt-oss** | **gpt-oss-20b / 120b** | 开放权重许可 (2025.08 启动) | OpenAI 迫于开源生态压力，通过 Ollama 等渠道开放的部分蒸馏权重 |
 | **Kimi (月之暗面)** | **Kimi K3 (开源探索版)** | 社区许可 | 2.8T MoE 超大基座的探索性权重释放，主打长期记忆与复杂多模态推理 |
 
 > **关键认知：区分“开源权重”与“完整开源”**
-> 2026 年社区对 License 的辨析愈发严谨：以 DeepSeek（MIT）和 Qwen3.8-27B（Apache 2.0）为代表的许可允许无条件商业化与自由闭源再分发；而 Llama 4、GLM-5.3 则包含月活用户阈值或场景限制条款；Meta Avocado 的闭源转向更是促使全球开发者将供应链安全建立在更纯粹的宽松开源基座上。
+> 2026 年社区对 License 的辨析愈发严谨：以 DeepSeek（MIT）、Qwen3.8-27B（Apache 2.0）、Gemma 4 31B（Apache 2.0）、Muse Glimmer（Apache 2.0）与 Inkling 2 Mini（Apache 2.0）为代表的宽松许可允许无条件商业化与自由闭源再分发；而 Llama 4、GLM-5.3 则包含月活用户阈值或场景限制条款；Meta Avocado 的主干闭源转向更促使全球开发者将供应链安全建立在更纯粹的宽松开源基座上。
 
 ---
 
