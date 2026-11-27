@@ -3,7 +3,7 @@
     "id": "transformer-2017",
     "date": "2017-06",
     "name": "Transformer (Attention Is All You Need)",
-    "company": "Google Brain / Research",
+    "company": "Google Research",
     "country": "US",
     "countryGroup": "US",
     "license": "Open Source",
@@ -48,7 +48,7 @@
     "id": "bert-2018",
     "date": "2018-10",
     "name": "BERT (Bidirectional Encoder Representations)",
-    "company": "Google AI",
+    "company": "Google DeepMind",
     "country": "US",
     "countryGroup": "US",
     "license": "Open Source",
@@ -155,10 +155,52 @@
     "era": "尺度定律与对齐 2020–2022"
   },
   {
+    "id": "diffusion-models-2020",
+    "date": "2020-06",
+    "name": "DDPM (去噪扩散概率模型)",
+    "company": "Google Research",
+    "country": "US",
+    "countryGroup": "US",
+    "license": "Open Source",
+    "licenseType": "open",
+    "entryType": "architecture",
+    "category": "Foundation",
+    "parameters": "N/A (方法论)",
+    "contextWindow": "N/A",
+    "highlight": "Ho et al. 提出 Denoising Diffusion Probabilistic Models，奠定现代图像/视频/音频生成的理论基础。",
+    "keyTech": [
+      "Denoising Diffusion",
+      "Generative Foundation",
+      "Score Matching"
+    ],
+    "era": "尺度定律与对齐 2020–2022"
+  },
+  {
+    "id": "alphafold2-2020",
+    "date": "2020-11",
+    "name": "AlphaFold 2",
+    "company": "Google DeepMind",
+    "country": "US",
+    "countryGroup": "US",
+    "license": "Open Source (Apache 2.0)",
+    "licenseType": "open",
+    "entryType": "model",
+    "category": "领域特化",
+    "parameters": "~90M",
+    "contextWindow": "N/A",
+    "highlight": "在 CASP14 竞赛中以原子级精度解决蛋白质三维结构预测问题，被称为 AI 在科学领域最重要的突破之一。",
+    "keyTech": [
+      "Protein Structure Prediction",
+      "CASP14 Winner",
+      "Evoformer Architecture"
+    ],
+    "era": "尺度定律与对齐 2020–2022"
+  },
+  {
     "id": "cpm-2020",
     "date": "2020-12",
     "name": "CPM-1 (Chinese Pre-trained Model)",
-    "company": "清华大学 / 北京智源 (BAAI)",
+    "company": "北京智源 (BAAI)",
     "country": "CN",
     "countryGroup": "CN",
     "license": "Open Source",
@@ -176,10 +218,52 @@
     "era": "尺度定律与对齐 2020–2022"
   },
   {
+    "id": "dalle1-2021",
+    "date": "2021-01",
+    "name": "DALL-E 1",
+    "company": "OpenAI",
+    "country": "US",
+    "countryGroup": "US",
+    "license": "Proprietary",
+    "licenseType": "closed",
+    "entryType": "model",
+    "category": "图像生成",
+    "parameters": "12B",
+    "contextWindow": "N/A",
+    "highlight": "OpenAI 首个文本到图像生成模型，基于 GPT-3 变体的自回归架构，从文字描述生成创意图像。",
+    "keyTech": [
+      "Text-to-Image",
+      "Autoregressive",
+      "Zero-shot Visual Concepts"
+    ],
+    "era": "尺度定律与对齐 2020–2022"
+  },
+  {
+    "id": "clip-2021",
+    "date": "2021-01",
+    "name": "CLIP (Contrastive Language-Image Pre-training)",
+    "company": "OpenAI",
+    "country": "US",
+    "countryGroup": "US",
+    "license": "Open Source (MIT)",
+    "licenseType": "open",
+    "entryType": "model",
+    "category": "Multimodal",
+    "parameters": "~400M (ViT-L/14)",
+    "contextWindow": "N/A",
+    "highlight": "通过对比学习将图像与文本对齐到统一嵌入空间，零样本图像分类能力，深刻影响后续多模态研究与图像生成引导。",
+    "keyTech": [
+      "Contrastive Learning",
+      "Zero-shot Classification",
+      "Vision-Language Alignment"
+    ],
+    "era": "尺度定律与对齐 2020–2022"
+  },
+  {
     "id": "pangu-alpha-2021",
     "date": "2021-04",
     "name": "盘古大模型 (PanGu-α)",
-    "company": "华为 / 鹏城实验室",
+    "company": "华为 (Huawei)",
     "country": "CN",
     "countryGroup": "CN",
     "license": "Open Source (Research)",
@@ -201,7 +285,7 @@
     "id": "lamda-2021",
     "date": "2021-05",
     "name": "LaMDA (Language Model for Dialogue Applications)",
-    "company": "Google",
+    "company": "Google DeepMind",
     "country": "US",
     "countryGroup": "US",
     "license": "Proprietary",
@@ -243,7 +327,7 @@
     "id": "wudao-2021",
     "date": "2021-06",
     "name": "悟道 2.0 (WuDao 2.0)",
-    "company": "北京智源 (BAAI) / 清华大学",
+    "company": "北京智源 (BAAI)",
     "country": "CN",
     "countryGroup": "CN",
     "license": "Academic",
@@ -307,7 +391,7 @@
     "id": "chinchilla-2022",
     "date": "2022-03",
     "name": "Chinchilla",
-    "company": "DeepMind",
+    "company": "Google DeepMind",
     "country": "US",
     "countryGroup": "US",
     "license": "Proprietary",
@@ -316,7 +400,7 @@
     "category": "Foundation",
     "parameters": "70B",
     "contextWindow": "2048",
-    "highlight": "修正 Kaplan 尺度定律，证明参数被高估而语料被低估，奠定现代“小参数大语料 (Compute-Optimal)”训练理念。",
+    "highlight": "Hoffmann et al. 提出 Chinchilla 计算最优训练定律，证明数据量与参数量应同比缩放，修正 Kaplan 尺度定律高估参数而低估语料的偏差，深刻重塑后续所有大模型训练策略。",
     "keyTech": [
       "Compute-Optimal Scaling",
       "4x Data Over-training"
@@ -373,7 +457,7 @@
     "id": "palm-2022",
     "date": "2022-04",
     "name": "PaLM (Pathways Language Model)",
-    "company": "Google",
+    "company": "Google DeepMind",
     "country": "US",
     "countryGroup": "US",
     "license": "Proprietary",
@@ -437,6 +521,28 @@
     "era": "尺度定律与对齐 2020–2022"
   },
   {
+    "id": "midjourney-v1-2022",
+    "date": "2022-07",
+    "name": "Midjourney v1-v4",
+    "company": "Midjourney",
+    "country": "US",
+    "countryGroup": "US",
+    "license": "Commercial SaaS",
+    "licenseType": "closed",
+    "entryType": "model",
+    "category": "图像生成",
+    "parameters": "未公开",
+    "contextWindow": "N/A",
+    "highlight": "David Holz 创立的 AI 艺术生成平台，通过 Discord 社区运营模式迅速走红，v4 大幅提升真实感和美学品质。",
+    "keyTech": [
+      "Discord-based",
+      "Art Generation",
+      "Aesthetic Focus",
+      "Community Model"
+    ],
+    "era": "尺度定律与对齐 2020–2022"
+  },
+  {
     "id": "sd-1-2022",
     "date": "2022-08",
     "name": "Stable Diffusion 1.x / 2.x",
@@ -462,7 +568,7 @@
     "id": "codegeex-2022",
     "date": "2022-09",
     "name": "CodeGeeX (开源多语言代码大模型)",
-    "company": "智谱 AI / 清华大学 KEG",
+    "company": "智谱 AI / 清华大学",
     "country": "CN",
     "countryGroup": "CN",
     "license": "Open Weights / Apache 2.0",
@@ -526,6 +632,28 @@
     "era": "尺度定律与对齐 2020–2022"
   },
   {
+    "id": "langchain-2022",
+    "date": "2022-10",
+    "name": "LangChain (LLM 应用开发框架)",
+    "company": "LangChain Inc.",
+    "country": "US",
+    "countryGroup": "US",
+    "license": "Open Source (MIT)",
+    "licenseType": "open",
+    "entryType": "product",
+    "category": "Agent / 工具生态",
+    "parameters": "N/A (框架)",
+    "contextWindow": "N/A",
+    "highlight": "Harrison Chase 创立的 LLM 应用编排框架，提供链式调用、检索增强生成 (RAG)、Agent 循环等核心抽象，成为 AI 应用开发事实标准。",
+    "keyTech": [
+      "Chain Orchestration",
+      "RAG Framework",
+      "Agent Abstraction",
+      "Tool Integration"
+    ],
+    "era": "尺度定律与对齐 2020–2022"
+  },
+  {
     "id": "chatgpt-2022",
     "date": "2022-11",
     "name": "ChatGPT (GPT-3.5)",
@@ -573,7 +701,7 @@
     "id": "google-bard-2023",
     "date": "2023-02",
     "name": "Google Bard (Gemini 前身)",
-    "company": "谷歌 (Google)",
+    "company": "Google DeepMind",
     "country": "US",
     "countryGroup": "US",
     "license": "Proprietary / Closed Service",
@@ -619,7 +747,7 @@
     "id": "new-bing-2023",
     "date": "2023-02",
     "name": "New Bing (Prometheus 架构)",
-    "company": "微软 (Microsoft)",
+    "company": "微软研究院 (Microsoft Research)",
     "country": "US",
     "countryGroup": "US",
     "license": "Proprietary / Closed Service",
@@ -660,7 +788,7 @@
     ],
     "source": "https://arxiv.org/abs/2211.17192",
     "docLink": "docs/05-moe-long-context-efficiency.md",
-    "era": "大爆发与开源狂潮 2023"
+    "era": "寒武纪爆发 2023"
   },
   {
     "id": "adobe-firefly-2023",
@@ -860,6 +988,28 @@
     "era": "寒武纪爆发 2023"
   },
   {
+    "id": "autogpt-2023",
+    "date": "2023-03",
+    "name": "AutoGPT / BabyAGI (自主智能体浪潮)",
+    "company": "Significant Gravitas / Yohei Nakajima",
+    "country": "US",
+    "countryGroup": "US",
+    "license": "Open Source (MIT)",
+    "licenseType": "open",
+    "entryType": "product",
+    "category": "Agent / 工具生态",
+    "parameters": "N/A (框架)",
+    "contextWindow": "N/A",
+    "highlight": "GPT-4 发布后诞生的开源自主 Agent 先驱，AutoGPT 成为 GitHub 增长最快的项目之一，BabyAGI 以 140 行代码展示任务循环，引爆全球 Agent 热潮。",
+    "keyTech": [
+      "Autonomous Loop",
+      "Task Decomposition",
+      "Self-prompting",
+      "Goal-driven Agent"
+    ],
+    "era": "寒武纪爆发 2023"
+  },
+  {
     "id": "llava-2023",
     "date": "2023-04",
     "name": "LLaVA (开源多模态开山之作)",
@@ -899,6 +1049,49 @@
       "Vision AI Heritage",
       "SenseChat",
       "First Batch Approval"
+    ],
+    "era": "寒武纪爆发 2023"
+  },
+  {
+    "id": "sam-2023",
+    "date": "2023-04",
+    "name": "SAM (Segment Anything Model)",
+    "company": "Meta AI",
+    "country": "US",
+    "countryGroup": "US",
+    "license": "Open Source (Apache 2.0)",
+    "licenseType": "open",
+    "entryType": "model",
+    "category": "Multimodal",
+    "parameters": "~641M (ViT-H)",
+    "contextWindow": "N/A",
+    "highlight": "计算机视觉基础模型里程碑，在 11 亿掩码数据集 (SA-1B) 上训练，实现零样本可提示图像分割，革新自动标注与视觉理解。",
+    "keyTech": [
+      "Promptable Segmentation",
+      "SA-1B Dataset",
+      "Zero-shot Vision Foundation"
+    ],
+    "era": "寒武纪爆发 2023"
+  },
+  {
+    "id": "tiangong-kunlun-2023",
+    "date": "2023-04",
+    "name": "天工大模型 1.0 (昆仑万维)",
+    "company": "昆仑万维 (Kunlun Tech)",
+    "country": "CN",
+    "countryGroup": "CN",
+    "license": "Proprietary / Open Source (3.0)",
+    "licenseType": "open",
+    "entryType": "model",
+    "category": "Dense LLM",
+    "parameters": "—",
+    "contextWindow": "—",
+    "highlight": "国内较早对标 ChatGPT 的千亿级大模型，推出国内首款大模型 AI 搜索产品，2024 年升级至天工 3.0 (4000 亿 MoE) 开源",
+    "keyTech": [
+      "AI Search",
+      "MoE 4000B",
+      "Super Agent",
+      "SkyReels"
     ],
     "era": "寒武纪爆发 2023"
   },
@@ -969,7 +1162,7 @@
     "id": "palm2-2023",
     "date": "2023-05",
     "name": "PaLM 2",
-    "company": "Google",
+    "company": "Google DeepMind",
     "country": "US",
     "countryGroup": "US",
     "license": "Proprietary",
@@ -1055,7 +1248,7 @@
     "id": "baidu-comate-2023",
     "date": "2023-06",
     "name": "百度文心快码 (Baidu Comate)",
-    "company": "百度",
+    "company": "百度 (Baidu)",
     "country": "CN",
     "countryGroup": "CN",
     "license": "Commercial SaaS",
@@ -1072,7 +1265,7 @@
       "IDE Integration"
     ],
     "docLink": "docs/10-agent-mcp-and-tools-ecosystem.md",
-    "era": "大爆发与开源狂潮 2023"
+    "era": "寒武纪爆发 2023"
   },
   {
     "id": "pagedattention-vllm-2023",
@@ -1096,7 +1289,7 @@
     ],
     "source": "https://arxiv.org/abs/2309.06180",
     "docLink": "docs/05-moe-long-context-efficiency.md",
-    "era": "大爆发与开源狂潮 2023"
+    "era": "寒武纪爆发 2023"
   },
   {
     "id": "phi-series-2023",
@@ -1118,6 +1311,27 @@
       "Small Language Models (SLM)"
     ],
     "docLink": "docs/04-cambrian-explosion-2023.md",
+    "era": "寒武纪爆发 2023"
+  },
+  {
+    "id": "360-ai-brain-2023",
+    "date": "2023-06",
+    "name": "360 智脑大模型 4.0 (多模态全能)",
+    "company": "360 (三六零)",
+    "country": "CN",
+    "countryGroup": "CN",
+    "license": "Proprietary",
+    "licenseType": "closed",
+    "entryType": "model",
+    "category": "Multimodal",
+    "parameters": "—",
+    "contextWindow": "—",
+    "highlight": "360 自研认知型通用大模型，4.0 版具备文字/图像/语音/视频多模态处理，落地搜索与安全场景，首批通过国家大模型标准测试",
+    "keyTech": [
+      "Multi-Modal",
+      "Security AI",
+      "360 Browser Integration"
+    ],
     "era": "寒武纪爆发 2023"
   },
   {
@@ -1201,6 +1415,27 @@
       "1024x1024 Native",
       "Base + Refiner",
       "Open Source"
+    ],
+    "era": "寒武纪爆发 2023"
+  },
+  {
+    "id": "rt2-2023",
+    "date": "2023-07",
+    "name": "RT-2 (Robotics Transformer 2 / VLA)",
+    "company": "Google DeepMind",
+    "country": "US",
+    "countryGroup": "US",
+    "license": "Research",
+    "licenseType": "other",
+    "entryType": "model",
+    "category": "具身智能",
+    "parameters": "55B (PaLM-E)",
+    "contextWindow": "N/A",
+    "highlight": "开创 Vision-Language-Action (VLA) 模型范式，将互联网级视觉语言模型直接映射为机器人动作指令，首次实现语义推理驱动的通用机器人操控。",
+    "keyTech": [
+      "Vision-Language-Action",
+      "Web Knowledge Transfer",
+      "Semantic Robot Control"
     ],
     "era": "寒武纪爆发 2023"
   },
@@ -1677,7 +1912,7 @@
     "id": "tongyi-lingma-2023",
     "date": "2023-11",
     "name": "通义灵码 (TONGYI Lingma)",
-    "company": "阿里巴巴 / 阿里云",
+    "company": "阿里巴巴 (Alibaba)",
     "country": "CN",
     "countryGroup": "CN",
     "license": "Freemium / Commercial",
@@ -1694,7 +1929,7 @@
       "Bug Fixing Agent"
     ],
     "docLink": "docs/10-agent-mcp-and-tools-ecosystem.md",
-    "era": "大爆发与开源狂潮 2023"
+    "era": "寒武纪爆发 2023"
   },
   {
     "id": "yi-34b-2023",
@@ -1760,7 +1995,7 @@
     ],
     "source": "https://arxiv.org/abs/2312.00752",
     "docLink": "docs/08-future-horizons-and-challenges.md",
-    "era": "大爆发与开源狂潮 2023"
+    "era": "寒武纪爆发 2023"
   },
   {
     "id": "mistral-medium-2023",
@@ -1824,6 +2059,27 @@
       "CyberSecEval",
       "Safety Classifier",
       "Trust & Safety"
+    ],
+    "era": "寒武纪爆发 2023"
+  },
+  {
+    "id": "crewai-2023",
+    "date": "2023-12",
+    "name": "CrewAI (多智能体协作框架)",
+    "company": "CrewAI / Joao Moura",
+    "country": "US",
+    "countryGroup": "US",
+    "license": "Open Source",
+    "licenseType": "open",
+    "entryType": "product",
+    "category": "Agent / 工具生态",
+    "parameters": "N/A (框架)",
+    "contextWindow": "N/A",
+    "highlight": "角色扮演式多 Agent 协作编排框架，允许开发者为不同 Agent 分配角色、目标和工具，实现层级式或顺序协作。",
+    "keyTech": [
+      "Multi-Agent Orchestration",
+      "Role-Playing Agents",
+      "Hierarchical Delegation"
     ],
     "era": "寒武纪爆发 2023"
   },
@@ -1893,7 +2149,7 @@
     ],
     "source": "https://arxiv.org/abs/2312.07104",
     "docLink": "docs/10-agent-mcp-and-tools-ecosystem.md",
-    "era": "长上下文与多模态 2024"
+    "era": "多模态与效率 2024"
   },
   {
     "id": "text-embedding-3-2024",
@@ -1917,10 +2173,205 @@
     "era": "多模态与效率 2024"
   },
   {
+    "id": "langgraph-2024",
+    "date": "2024-01",
+    "name": "LangGraph (图状态机 Agent 编排)",
+    "company": "LangChain Inc.",
+    "country": "US",
+    "countryGroup": "US",
+    "license": "Open Source (MIT)",
+    "licenseType": "open",
+    "entryType": "product",
+    "category": "Agent / 工具生态",
+    "parameters": "N/A (框架)",
+    "contextWindow": "N/A",
+    "highlight": "LangChain 推出的图编排运行时，以有向图 + 状态机控制 Agent 工作流，解决无限循环问题，支持人机协作断点，推动 Agent 走向生产级。",
+    "keyTech": [
+      "Graph Orchestration",
+      "State Machine",
+      "Human-in-the-Loop",
+      "Production-grade"
+    ],
+    "era": "多模态与效率 2024"
+  },
+  {
+    "id": "elevenlabs-2024",
+    "date": "2024-01",
+    "name": "ElevenLabs (AI 语音合成平台)",
+    "company": "ElevenLabs",
+    "country": "US",
+    "countryGroup": "US",
+    "license": "Commercial / API",
+    "licenseType": "closed",
+    "entryType": "product",
+    "category": "语音 / 音频",
+    "parameters": "未公开",
+    "contextWindow": "N/A",
+    "highlight": "业界领先的 AI 语音克隆与合成平台，2025 年推出 Eleven v3 (Audio Tags 情感控制)、Scribe 语音转文字、AI 音乐生成，进化为全栈音频 AI 平台。",
+    "keyTech": [
+      "Voice Cloning",
+      "Audio Tags",
+      "70+ Languages",
+      "Real-time TTS"
+    ],
+    "era": "多模态与效率 2024"
+  },
+  {
+    "id": "zhipu-glm4-2024",
+    "date": "2024-01",
+    "name": "智谱 GLM-4 / GLM-4V",
+    "company": "智谱 AI / 清华大学",
+    "country": "CN",
+    "countryGroup": "CN",
+    "license": "Open Weights / API",
+    "licenseType": "open",
+    "entryType": "model",
+    "category": "Multimodal",
+    "parameters": "未公开",
+    "contextWindow": "128K",
+    "highlight": "智谱 AI 新一代旗舰模型，128K 上下文，多模态能力全面对标 GPT-4V，同步推出 GLM-4V-Plus 视觉增强版。",
+    "keyTech": [
+      "128K Context",
+      "Vision-Language",
+      "Chinese Enterprise AI"
+    ],
+    "era": "多模态与效率 2024"
+  },
+  {
+    "id": "internlm2-2024",
+    "date": "2024-01",
+    "name": "InternLM2 / InternLM2.5",
+    "company": "上海人工智能实验室",
+    "country": "CN",
+    "countryGroup": "CN",
+    "license": "Open Source (Apache 2.0)",
+    "licenseType": "open",
+    "entryType": "model",
+    "category": "Dense LLM",
+    "parameters": "7B / 20B",
+    "contextWindow": "32K / 1M",
+    "highlight": "书生大模型第二代，InternLM2.5 实现百万 token 上下文和强化推理能力，同步推出 InternVL2 多模态视觉语言开源标杆。",
+    "keyTech": [
+      "1M Context",
+      "InternVL2 VLM",
+      "Open Source Research",
+      "Apache 2.0"
+    ],
+    "era": "多模态与效率 2024"
+  },
+  {
+    "id": "tesla-optimus-gen2-2024",
+    "date": "2024-01",
+    "name": "Tesla Optimus Gen 2 (人形机器人)",
+    "company": "Tesla",
+    "country": "US",
+    "countryGroup": "US",
+    "license": "Proprietary",
+    "licenseType": "closed",
+    "entryType": "product",
+    "category": "具身智能",
+    "parameters": "—",
+    "contextWindow": "—",
+    "highlight": "特斯拉第二代人形机器人，步行速度提升 30%，多指触觉传感可操作脆弱物体，计划部署于 Giga 工厂",
+    "keyTech": [
+      "Humanoid Robot",
+      "Tactile Sensing",
+      "FSD Neural Net Transfer",
+      "Factory Deployment"
+    ],
+    "era": "多模态与效率 2024"
+  },
+  {
+    "id": "dspy-2024",
+    "date": "2024-01",
+    "name": "DSPy (声明式 LLM 编程框架)",
+    "company": "Stanford NLP",
+    "country": "US",
+    "countryGroup": "US",
+    "license": "MIT",
+    "licenseType": "open",
+    "entryType": "product",
+    "category": "Agent / 工具生态",
+    "parameters": "—",
+    "contextWindow": "—",
+    "highlight": "Stanford 推出的声明式 LLM 编程框架，用 Python 签名替代手工 Prompt 工程，自动优化提示与权重，革新 LLM 编程范式",
+    "keyTech": [
+      "Declarative Programming",
+      "Auto-Prompt Optimization",
+      "Modular LLM Pipelines"
+    ],
+    "era": "多模态与效率 2024"
+  },
+  {
+    "id": "llamaindex-2024",
+    "date": "2024-01",
+    "name": "LlamaIndex (RAG 与数据框架)",
+    "company": "LlamaIndex Inc.",
+    "country": "US",
+    "countryGroup": "US",
+    "license": "MIT",
+    "licenseType": "open",
+    "entryType": "product",
+    "category": "Agent / 工具生态",
+    "parameters": "—",
+    "contextWindow": "—",
+    "highlight": "LLM 数据连接与 RAG 框架标杆，支持 160+ 数据源连接器与多种索引策略，成为 RAG 应用开发事实标准之一",
+    "keyTech": [
+      "RAG Framework",
+      "Data Connectors",
+      "Index Strategies",
+      "LLM Applications"
+    ],
+    "era": "多模态与效率 2024"
+  },
+  {
+    "id": "alphageometry-2024",
+    "date": "2024-01",
+    "name": "AlphaGeometry (IMO 级几何自动推理)",
+    "company": "Google DeepMind",
+    "country": "US",
+    "countryGroup": "US",
+    "license": "Research / Open Source",
+    "licenseType": "open",
+    "entryType": "model",
+    "category": "Reasoning",
+    "parameters": "—",
+    "contextWindow": "—",
+    "highlight": "神经符号混合几何推理系统，可解 25 年 IMO 历史几何题的 83%，Nature 正刊论文",
+    "keyTech": [
+      "Neuro-Symbolic",
+      "Geometry Reasoning",
+      "Auxiliary Construction",
+      "Nature Publication"
+    ],
+    "era": "多模态与效率 2024"
+  },
+  {
+    "id": "microsoft-autogen-2024",
+    "date": "2024-01",
+    "name": "Microsoft AutoGen 0.4 (多智能体对话框架)",
+    "company": "微软研究院 (Microsoft Research)",
+    "country": "US",
+    "countryGroup": "US",
+    "license": "MIT",
+    "licenseType": "open",
+    "entryType": "product",
+    "category": "Agent / 工具生态",
+    "parameters": "—",
+    "contextWindow": "—",
+    "highlight": "微软研究院开源多智能体对话框架，支持灵活的 Agent 间多轮对话与协作，企业级 Agentic 工作流编排的重要基础设施",
+    "keyTech": [
+      "Multi-Agent Conversation",
+      "Agent Orchestration",
+      "Enterprise Workflow"
+    ],
+    "era": "多模态与效率 2024"
+  },
+  {
     "id": "bitnet-b158-2024",
     "date": "2024-02",
     "name": "BitNet b1.58 (1-bit 原生低比特权重架构)",
-    "company": "Microsoft Research",
+    "company": "微软研究院 (Microsoft Research)",
     "country": "US",
     "countryGroup": "US",
     "license": "Open Source (Apache 2.0)",
@@ -1938,13 +2389,13 @@
     ],
     "source": "https://arxiv.org/abs/2402.17764",
     "docLink": "docs/08-future-horizons-and-challenges.md",
-    "era": "长上下文与多模态 2024"
+    "era": "多模态与效率 2024"
   },
   {
     "id": "coze-bytedance-2024",
     "date": "2024-02",
     "name": "扣子 / Coze (下一代 AI Agent 协同编排平台)",
-    "company": "字节跳动",
+    "company": "字节跳动 / 火山引擎",
     "country": "CN",
     "countryGroup": "CN",
     "license": "Commercial SaaS",
@@ -1961,7 +2412,7 @@
       "Workflow Automation"
     ],
     "docLink": "docs/10-agent-mcp-and-tools-ecosystem.md",
-    "era": "长上下文与多模态 2024"
+    "era": "多模态与效率 2024"
   },
   {
     "id": "deepseek-math-2024",
@@ -2115,6 +2566,71 @@
     "era": "多模态与效率 2024"
   },
   {
+    "id": "github-copilot-x-2024",
+    "date": "2024-02",
+    "name": "GitHub Copilot Workspace / Chat",
+    "company": "GitHub / Microsoft",
+    "country": "US",
+    "countryGroup": "US",
+    "license": "Commercial SaaS",
+    "licenseType": "closed",
+    "entryType": "product",
+    "category": "Agent / 工具生态",
+    "parameters": "N/A",
+    "contextWindow": "N/A",
+    "highlight": "GitHub Copilot 从代码补全升级为全面的 AI 编程助手，集成 Chat、编辑器内联建议、拉取请求摘要和安全漏洞修复。",
+    "keyTech": [
+      "AI Pair Programmer",
+      "PR Summaries",
+      "Security Fix",
+      "Multi-model Support"
+    ],
+    "era": "多模态与效率 2024"
+  },
+  {
+    "id": "smaug-72b-2024",
+    "date": "2024-02",
+    "name": "Smaug-72B (DPOP 偏好优化突破)",
+    "company": "Abacus.AI",
+    "country": "US",
+    "countryGroup": "US",
+    "license": "Apache 2.0",
+    "licenseType": "open",
+    "entryType": "model",
+    "category": "Dense LLM",
+    "parameters": "72B",
+    "contextWindow": "32K",
+    "highlight": "首个在 HuggingFace 开源排行榜突破平均 80% 准确率的模型，DPO-Positive 新型偏好优化方法超越 GPT-3.5",
+    "keyTech": [
+      "DPOP",
+      "Preference Optimization",
+      "Open Source Leader"
+    ],
+    "era": "多模态与效率 2024"
+  },
+  {
+    "id": "sourcegraph-cody-2024",
+    "date": "2024-02",
+    "name": "Sourcegraph Cody (代码搜索 AI 助手)",
+    "company": "Sourcegraph",
+    "country": "US",
+    "countryGroup": "US",
+    "license": "Proprietary (Free tier)",
+    "licenseType": "closed",
+    "entryType": "product",
+    "category": "Agent / 工具生态",
+    "parameters": "—",
+    "contextWindow": "—",
+    "highlight": "代码搜索引擎巨头推出的 AI 编程助手，依托代码图分析准确把握仓库结构与依赖关系，支持灵活切换多种 LLM",
+    "keyTech": [
+      "Code Search",
+      "Graph Analysis",
+      "Multi-LLM",
+      "IDE Extension"
+    ],
+    "era": "多模态与效率 2024"
+  },
+  {
     "id": "claude-3-opus-2024",
     "date": "2024-03",
     "name": "Claude 3 Opus",
@@ -2169,9 +2685,9 @@
     "licenseType": "open",
     "entryType": "model",
     "category": "Dense LLM",
-    "parameters": "35B / 104B",
+    "parameters": "35B / 104B (R+)",
     "contextWindow": "128K",
-    "highlight": "专为企业 RAG 与工具调用优化的模型，在检索增强生成和多语言理解方面树立标杆。",
+    "highlight": "专为企业 RAG、多步工具调用与精准引用（Grounding）优化的模型家族（104B R+ 版支持 10 种语言与 128K 上下文），树立企业多云私有部署标杆。",
     "keyTech": [
       "RAG Optimization",
       "Tool Use",
@@ -2255,9 +2771,9 @@
     "licenseType": "open",
     "entryType": "model",
     "category": "MoE",
-    "parameters": "52B / 398B",
+    "parameters": "52B (激活 12B) / Jamba 1.5 Large 398B (激活 94B)",
     "contextWindow": "256K",
-    "highlight": "全球首个 Mamba-Transformer 混合架构商用模型，结合 SSM 的线性复杂度与 Transformer 的表达能力。",
+    "highlight": "全球首个商业级 Mamba-Transformer 混合架构模型，结合 SSM 线性复杂度与注意力表达能力，支持 256K 超长上下文与显存效率革命。",
     "keyTech": [
       "Mamba-Transformer Hybrid",
       "SSM + Attention",
@@ -2283,6 +2799,116 @@
       "Trillion MoE",
       "Ultra-long Context",
       "Multimodal Fusion"
+    ],
+    "era": "多模态与效率 2024"
+  },
+  {
+    "id": "suno-ai-2024",
+    "date": "2024-03",
+    "name": "Suno AI (AI 音乐生成)",
+    "company": "Suno AI",
+    "country": "US",
+    "countryGroup": "US",
+    "license": "Commercial SaaS",
+    "licenseType": "closed",
+    "entryType": "product",
+    "category": "语音 / 音频",
+    "parameters": "未公开",
+    "contextWindow": "8 分钟歌曲",
+    "highlight": "端到端 AI 音乐创作平台，从文字提示生成完整歌曲（人声+伴奏），支持 1200+ 风格，2025 年推出 Suno Studio 多轨工作站。",
+    "keyTech": [
+      "Text-to-Song",
+      "Full Production",
+      "1200+ Styles",
+      "Suno Studio DAW"
+    ],
+    "era": "多模态与效率 2024"
+  },
+  {
+    "id": "v0-vercel-2024",
+    "date": "2024-03",
+    "name": "v0 by Vercel (AI 前端生成)",
+    "company": "Vercel",
+    "country": "US",
+    "countryGroup": "US",
+    "license": "Commercial SaaS",
+    "licenseType": "closed",
+    "entryType": "product",
+    "category": "Agent / 工具生态",
+    "parameters": "N/A",
+    "contextWindow": "N/A",
+    "highlight": "Vercel 推出的 AI 驱动前端 UI 生成工具，从自然语言描述直接生成 React/Tailwind 组件，开创 AI 前端开发新范式。",
+    "keyTech": [
+      "Text-to-UI",
+      "React/Tailwind",
+      "Generative Frontend",
+      "Instant Deploy"
+    ],
+    "era": "多模态与效率 2024"
+  },
+  {
+    "id": "figure-01-02-2024",
+    "date": "2024-03",
+    "name": "Figure 01 / 02 (OpenAI 合作人形机器人)",
+    "company": "Figure AI",
+    "country": "US",
+    "countryGroup": "US",
+    "license": "Proprietary",
+    "licenseType": "closed",
+    "entryType": "product",
+    "category": "具身智能",
+    "parameters": "—",
+    "contextWindow": "—",
+    "highlight": "与 OpenAI 合作实现端到端神经网络驱动对话式人形机器人，Figure 02 部署至 BMW 工厂，采用 VLA 架构 (Helix)",
+    "keyTech": [
+      "Humanoid Robot",
+      "VLA",
+      "OpenAI Partnership",
+      "BMW Deployment"
+    ],
+    "era": "多模态与效率 2024"
+  },
+  {
+    "id": "eu-ai-act-2024",
+    "date": "2024-03",
+    "name": "EU AI Act (欧盟人工智能法案通过)",
+    "company": "European Union",
+    "country": "EU",
+    "countryGroup": "EU",
+    "license": "—",
+    "licenseType": "other",
+    "entryType": "event",
+    "category": "安全与对齐",
+    "parameters": "—",
+    "contextWindow": "—",
+    "highlight": "全球首部全面 AI 监管法案由欧洲议会正式通过，对基础模型实施分级风险管理，深远影响全球 AI 治理格局",
+    "keyTech": [
+      "AI Regulation",
+      "Risk-Based Framework",
+      "Foundation Model Rules",
+      "Global Impact"
+    ],
+    "era": "多模态与效率 2024"
+  },
+  {
+    "id": "nvidia-nim-2024",
+    "date": "2024-03",
+    "name": "NVIDIA NIM (推理微服务平台)",
+    "company": "NVIDIA",
+    "country": "US",
+    "countryGroup": "US",
+    "license": "Proprietary",
+    "licenseType": "closed",
+    "entryType": "infrastructure",
+    "category": "Infrastructure",
+    "parameters": "—",
+    "contextWindow": "—",
+    "highlight": "GTC 2024 发布，预打包容器化推理微服务，一键部署任意基础模型，降低企业 AI 推理部署门槛至分钟级",
+    "keyTech": [
+      "Inference Microservice",
+      "Container",
+      "One-Click Deploy",
+      "Enterprise"
     ],
     "era": "多模态与效率 2024"
   },
@@ -2375,7 +3001,7 @@
     "id": "tencent-ai-code-2024",
     "date": "2024-04",
     "name": "腾讯云 AI 代码助手",
-    "company": "腾讯",
+    "company": "腾讯 (Tencent)",
     "country": "CN",
     "countryGroup": "CN",
     "license": "Freemium / Commercial",
@@ -2392,7 +3018,222 @@
       "Smart Completion"
     ],
     "docLink": "docs/10-agent-mcp-and-tools-ecosystem.md",
-    "era": "长上下文与多模态 2024"
+    "era": "多模态与效率 2024"
+  },
+  {
+    "id": "adobe-firefly3-2024",
+    "date": "2024-04",
+    "name": "Adobe Firefly Image Model 3 / 4",
+    "company": "Adobe",
+    "country": "US",
+    "countryGroup": "US",
+    "license": "Commercial (版权安全)",
+    "licenseType": "closed",
+    "entryType": "model",
+    "category": "图像生成",
+    "parameters": "未公开",
+    "contextWindow": "N/A",
+    "highlight": "仅在 Adobe 获授权内容上训练，商用版权完全安全。Model 3 引入 Structure/Style Reference，Model 4 (2025) 推出 Ultra 超高清变体。",
+    "keyTech": [
+      "Commercially Safe",
+      "Content Credentials",
+      "Structure Reference",
+      "Adobe Ecosystem"
+    ],
+    "era": "多模态与效率 2024"
+  },
+  {
+    "id": "udio-2024",
+    "date": "2024-04",
+    "name": "Udio (高保真 AI 音乐)",
+    "company": "Udio",
+    "country": "US",
+    "countryGroup": "US",
+    "license": "Commercial SaaS",
+    "licenseType": "closed",
+    "entryType": "product",
+    "category": "语音 / 音频",
+    "parameters": "未公开",
+    "contextWindow": "音乐片段",
+    "highlight": "以极致音频保真度和精细编辑闻名，原生 48kHz 立体声输出，独创 2 秒片段精准修复 (Inpainting) 功能。",
+    "keyTech": [
+      "48kHz Stereo",
+      "Audio Inpainting",
+      "High Fidelity",
+      "Electronic Music"
+    ],
+    "era": "多模态与效率 2024"
+  },
+  {
+    "id": "wanzhi-2024",
+    "date": "2024-04",
+    "name": "万知 (Wanzhi) / 豆包智能体",
+    "company": "字节跳动 / 火山引擎",
+    "country": "CN",
+    "countryGroup": "CN",
+    "license": "Proprietary",
+    "licenseType": "closed",
+    "entryType": "product",
+    "category": "Agent / 工具生态",
+    "parameters": "N/A",
+    "contextWindow": "N/A",
+    "highlight": "字节跳动面向企业的 AI 智能体平台，可自定义业务流程和知识库，深度集成飞书办公生态。",
+    "keyTech": [
+      "Enterprise Agent",
+      "Feishu Integration",
+      "Custom Workflows",
+      "Knowledge Base"
+    ],
+    "era": "多模态与效率 2024"
+  },
+  {
+    "id": "ernie-4-turbo-2024",
+    "date": "2024-04",
+    "name": "ERNIE 4.0 Turbo (文心大模型 4.0)",
+    "company": "百度 (Baidu)",
+    "country": "CN",
+    "countryGroup": "CN",
+    "license": "Proprietary / API",
+    "licenseType": "closed",
+    "entryType": "model",
+    "category": "Dense LLM",
+    "parameters": "未公开",
+    "contextWindow": "128K",
+    "highlight": "百度旗舰大模型迭代至 4.0 Turbo，大幅降价开放 API，日均调用量突破 5 亿次，驱动百度搜索和文库等核心产品。",
+    "keyTech": [
+      "5B Daily API Calls",
+      "Baidu Search Integration",
+      "Price Reduction",
+      "Enterprise Ready"
+    ],
+    "era": "多模态与效率 2024"
+  },
+  {
+    "id": "reka-core-2024",
+    "date": "2024-04",
+    "name": "Reka Core / Flash / Edge (原生多模态)",
+    "company": "Reka AI",
+    "country": "US",
+    "countryGroup": "US",
+    "license": "Proprietary",
+    "licenseType": "closed",
+    "entryType": "model",
+    "category": "Multimodal",
+    "parameters": "7B-67B",
+    "contextWindow": "128K",
+    "highlight": "由前 DeepMind/Google Brain 研究者创立，从零训练原生文本/图像/视频/音频四模态理解，Core 67B 对标 GPT-4V",
+    "keyTech": [
+      "Native Multimodal",
+      "Video Understanding",
+      "Audio Understanding"
+    ],
+    "era": "多模态与效率 2024"
+  },
+  {
+    "id": "wizardlm2-2024",
+    "date": "2024-04",
+    "name": "WizardLM-2 (Evol-Instruct 进化指令)",
+    "company": "微软研究院 (Microsoft Research)",
+    "country": "US",
+    "countryGroup": "US",
+    "license": "Apache 2.0",
+    "licenseType": "open",
+    "entryType": "model",
+    "category": "Dense LLM",
+    "parameters": "7B-8x22B MoE",
+    "contextWindow": "32K",
+    "highlight": "微软进化指令微调方法论代表作，8x22B MoE 版本在指令遵循上接近 GPT-4，推动开源后训练范式",
+    "keyTech": [
+      "Evol-Instruct",
+      "Progressive Fine-tuning",
+      "MoE"
+    ],
+    "era": "多模态与效率 2024"
+  },
+  {
+    "id": "sensetime-sensenova5-2024",
+    "date": "2024-04",
+    "name": "日日新 SenseNova 5.0 (全栈云端边)",
+    "company": "商汤科技 (SenseTime)",
+    "country": "CN",
+    "countryGroup": "CN",
+    "license": "Proprietary",
+    "licenseType": "closed",
+    "entryType": "model",
+    "category": "Multimodal",
+    "parameters": "—",
+    "contextWindow": "—",
+    "highlight": "商汤日日新 5.0 全面对标 GPT-4 Turbo，推出行业首个云/端/边全栈大模型产品矩阵",
+    "keyTech": [
+      "Cloud-Edge-Device",
+      "Full Stack",
+      "GPT-4 Turbo Competitive"
+    ],
+    "era": "多模态与效率 2024"
+  },
+  {
+    "id": "openelm-2024",
+    "date": "2024-04",
+    "name": "Apple OpenELM (开源高效语言模型)",
+    "company": "Apple",
+    "country": "US",
+    "countryGroup": "US",
+    "license": "Open Source",
+    "licenseType": "open",
+    "entryType": "model",
+    "category": "Efficiency/Edge",
+    "parameters": "270M-3B",
+    "contextWindow": "2048",
+    "highlight": "Apple 首个开源语言模型家族，采用逐层缩放策略（Layer-Wise Scaling）优化参数分配，支持 MLX 框架在 Apple Silicon 上高效推理",
+    "keyTech": [
+      "Layer-Wise Scaling",
+      "MLX",
+      "On-Device"
+    ],
+    "era": "多模态与效率 2024"
+  },
+  {
+    "id": "snowflake-arctic-2024",
+    "date": "2024-04",
+    "name": "Snowflake Arctic",
+    "company": "Snowflake",
+    "country": "US",
+    "countryGroup": "US",
+    "license": "Apache 2.0",
+    "licenseType": "open",
+    "entryType": "model",
+    "category": "MoE",
+    "parameters": "480B (17B active)",
+    "contextWindow": "—",
+    "highlight": "企业级超大稀疏 MoE，480B 总参仅 17B 激活，Apache 2.0 完全开源，聚焦 SQL 生成与企业编码",
+    "keyTech": [
+      "128 Experts",
+      "Enterprise SQL",
+      "Apache 2.0",
+      "Efficient MoE"
+    ],
+    "era": "多模态与效率 2024"
+  },
+  {
+    "id": "augment-code-2024",
+    "date": "2024-04",
+    "name": "Augment Code (企业级代码上下文理解)",
+    "company": "Augment",
+    "country": "US",
+    "countryGroup": "US",
+    "license": "Proprietary",
+    "licenseType": "closed",
+    "entryType": "product",
+    "category": "Agent / 工具生态",
+    "parameters": "—",
+    "contextWindow": "—",
+    "highlight": "专注大规模代码库 (Monorepo) 深度上下文理解的 AI 编程平台，全项目索引精度极高，企业级代码助手标杆",
+    "keyTech": [
+      "Codebase Indexing",
+      "Monorepo Understanding",
+      "Enterprise Code AI"
+    ],
+    "era": "多模态与效率 2024"
   },
   {
     "id": "alphafold3-2024",
@@ -2442,7 +3283,7 @@
     "id": "cohere-aya-2024",
     "date": "2024-05",
     "name": "Cohere Aya 23 / Aya Expanse",
-    "company": "Cohere For AI",
+    "company": "Cohere",
     "country": "US",
     "countryGroup": "US",
     "license": "Open Weights (Apache 2.0)",
@@ -2612,7 +3453,7 @@
     ],
     "source": "https://arxiv.org/abs/2405.21060",
     "docLink": "docs/08-future-horizons-and-challenges.md",
-    "era": "长上下文与多模态 2024"
+    "era": "多模态与效率 2024"
   },
   {
     "id": "paligemma-2024",
@@ -2677,7 +3518,138 @@
     ],
     "source": "https://arxiv.org/abs/2405.04517",
     "docLink": "docs/08-future-horizons-and-challenges.md",
-    "era": "长上下文与多模态 2024"
+    "era": "多模态与效率 2024"
+  },
+  {
+    "id": "aider-2024",
+    "date": "2024-05",
+    "name": "Aider (终端 AI 编码助手)",
+    "company": "Paul Gauthier / Aider Community",
+    "country": "US",
+    "countryGroup": "US",
+    "license": "Open Source (Apache 2.0)",
+    "licenseType": "open",
+    "entryType": "product",
+    "category": "Agent / 工具生态",
+    "parameters": "N/A (工具)",
+    "contextWindow": "N/A",
+    "highlight": "开源终端编码助手先驱，支持多文件编辑和 Git 自动提交，在开发者社区中率先验证了 LLM 驱动的命令行编码范式。",
+    "keyTech": [
+      "Terminal Coding",
+      "Multi-file Edit",
+      "Auto Git Commit",
+      "Open Source Tool"
+    ],
+    "era": "多模态与效率 2024"
+  },
+  {
+    "id": "hunyuan-turbo-2024",
+    "date": "2024-05",
+    "name": "腾讯混元 (Hunyuan) Turbo / Pro",
+    "company": "腾讯 (Tencent)",
+    "country": "CN",
+    "countryGroup": "CN",
+    "license": "Proprietary / API",
+    "licenseType": "closed",
+    "entryType": "model",
+    "category": "MoE",
+    "parameters": "未公开 (MoE)",
+    "contextWindow": "256K",
+    "highlight": "腾讯 MoE 架构旗舰模型，深度嵌入微信、QQ、腾讯云和游戏等腾讯全生态，256K 长上下文。",
+    "keyTech": [
+      "WeChat/QQ Ecosystem",
+      "256K Context",
+      "Tencent Cloud Native",
+      "MoE"
+    ],
+    "era": "多模态与效率 2024"
+  },
+  {
+    "id": "yi-large-2024",
+    "date": "2024-05",
+    "name": "Yi-Large (零一万物闭源旗舰)",
+    "company": "零一万物 (01.AI)",
+    "country": "CN",
+    "countryGroup": "CN",
+    "license": "Proprietary",
+    "licenseType": "closed",
+    "entryType": "model",
+    "category": "Dense LLM",
+    "parameters": "—",
+    "contextWindow": "32K",
+    "highlight": "李开复创立的零一万物闭源旗舰模型，LMSYS 排行紧追 GPT-4，六语种卓越多语言能力",
+    "keyTech": [
+      "Multilingual Excellence",
+      "LMSYS Top Tier",
+      "Chinese-English Bilingual"
+    ],
+    "era": "多模态与效率 2024"
+  },
+  {
+    "id": "gemini-nano-on-device-2024",
+    "date": "2024-05",
+    "name": "Gemini Nano (端侧 AI 基座)",
+    "company": "Google DeepMind",
+    "country": "US",
+    "countryGroup": "US",
+    "license": "Proprietary",
+    "licenseType": "closed",
+    "entryType": "model",
+    "category": "Efficiency/Edge",
+    "parameters": "~1.8B-3.25B",
+    "contextWindow": "32K",
+    "highlight": "Google I/O 2024 正式推出端侧 Gemini Nano，集成至 Pixel/Samsung 设备，支持离线多模态理解与摘要",
+    "keyTech": [
+      "On-Device",
+      "Pixel Integration",
+      "Offline AI",
+      "Distillation"
+    ],
+    "era": "多模态与效率 2024"
+  },
+  {
+    "id": "google-project-astra-2024",
+    "date": "2024-05",
+    "name": "Google Project Astra (实时多模态 AI 助手)",
+    "company": "Google DeepMind",
+    "country": "US",
+    "countryGroup": "US",
+    "license": "Research Preview",
+    "licenseType": "closed",
+    "entryType": "model",
+    "category": "Multimodal",
+    "parameters": "—",
+    "contextWindow": "—",
+    "highlight": "Google I/O 2024 展示的实时多模态 AI 助手原型，可通过摄像头实时理解环境并对话，定义未来 AI 助手交互范式",
+    "keyTech": [
+      "Real-time Vision",
+      "Live Camera",
+      "Conversational AI",
+      "Ambient Intelligence"
+    ],
+    "era": "多模态与效率 2024"
+  },
+  {
+    "id": "copilot-plus-2024",
+    "date": "2024-05",
+    "name": "Microsoft Copilot+ PC / Recall",
+    "company": "微软研究院 (Microsoft Research)",
+    "country": "US",
+    "countryGroup": "US",
+    "license": "Proprietary",
+    "licenseType": "closed",
+    "entryType": "product",
+    "category": "Agent / 工具生态",
+    "parameters": "—",
+    "contextWindow": "—",
+    "highlight": "微软推出 Copilot+ PC 品类与 Recall 功能（屏幕回忆），将 AI 深度嵌入 Windows 操作系统层，定义端侧 AI PC 范式",
+    "keyTech": [
+      "AI PC",
+      "Windows Recall",
+      "NPU Integration",
+      "On-Device AI"
+    ],
+    "era": "多模态与效率 2024"
   },
   {
     "id": "apple-intelligence-2024",
@@ -2768,7 +3740,7 @@
     ],
     "source": "https://github.com/cline/cline",
     "docLink": "docs/10-agent-mcp-and-tools-ecosystem.md",
-    "era": "长上下文与多模态 2024"
+    "era": "多模态与效率 2024"
   },
   {
     "id": "gemma2-2024",
@@ -2874,6 +3846,138 @@
       "Architecture Upgrade",
       "Coding Enhancement",
       "Math Specialization"
+    ],
+    "era": "多模态与效率 2024"
+  },
+  {
+    "id": "sd3-2024",
+    "date": "2024-06",
+    "name": "Stable Diffusion 3 / 3.5",
+    "company": "Stability AI",
+    "country": "EU",
+    "countryGroup": "EU",
+    "license": "Community License (开源 + 商用)",
+    "licenseType": "open",
+    "entryType": "model",
+    "category": "图像生成",
+    "parameters": "2.5B / 8.1B",
+    "contextWindow": "N/A",
+    "highlight": "采用全新 MMDiT-X 架构，三编码器流水线 (OpenCLIP + CLIP + T5-xxl)，大幅提升文字渲染和人体解剖准确性，SD3.5 修复社区反馈成为开源标杆。",
+    "keyTech": [
+      "MMDiT-X Architecture",
+      "Triple Text Encoder",
+      "QK Normalization",
+      "Open Source"
+    ],
+    "era": "多模态与效率 2024"
+  },
+  {
+    "id": "runway-gen3-2024",
+    "date": "2024-06",
+    "name": "Runway Gen-3 Alpha",
+    "company": "Runway",
+    "country": "US",
+    "countryGroup": "US",
+    "license": "Commercial SaaS",
+    "licenseType": "closed",
+    "entryType": "model",
+    "category": "文生视频",
+    "parameters": "未公开",
+    "contextWindow": "视频",
+    "highlight": "相比 Gen-2 在真实感、人体动作和镜头控制上实现代际跃升，时序密集字幕训练实现精确镜头运动控制。",
+    "keyTech": [
+      "Temporal Dense Captions",
+      "Human Motion",
+      "Camera Control",
+      "Gen-3 Alpha Turbo"
+    ],
+    "era": "多模态与效率 2024"
+  },
+  {
+    "id": "pika-2024",
+    "date": "2024-06",
+    "name": "Pika 2.0 / 2.5",
+    "company": "Pika Labs",
+    "country": "US",
+    "countryGroup": "US",
+    "license": "Commercial SaaS",
+    "licenseType": "closed",
+    "entryType": "model",
+    "category": "文生视频",
+    "parameters": "未公开",
+    "contextWindow": "视频",
+    "highlight": "以创作者友好著称，Pikaframes 关键帧控制和 Pikaffects 视觉特效，物理真实感大幅提升，主攻社交媒体内容创作。",
+    "keyTech": [
+      "Pikaframes",
+      "Pikaffects",
+      "Creator-friendly",
+      "Social Media Focus"
+    ],
+    "era": "多模态与效率 2024"
+  },
+  {
+    "id": "deepseek-coder-v2-2024",
+    "date": "2024-06",
+    "name": "DeepSeek-Coder-V2 (MoE 代码旗舰)",
+    "company": "DeepSeek (深度求索)",
+    "country": "CN",
+    "countryGroup": "CN",
+    "license": "Open Weights",
+    "licenseType": "open",
+    "entryType": "model",
+    "category": "代码专精",
+    "parameters": "236B (激活 21B) / 16B",
+    "contextWindow": "128K",
+    "highlight": "首个开源 MoE 代码模型达到 GPT-4 Turbo 级代码能力，支持 338 种编程语言，同时在数学推理上也表现出色。",
+    "keyTech": [
+      "338 Languages",
+      "GPT-4 Turbo Level",
+      "MoE Code Model",
+      "128K Context"
+    ],
+    "era": "多模态与效率 2024"
+  },
+  {
+    "id": "huawei-pangu-5-2024",
+    "date": "2024-06",
+    "name": "华为盘古大模型 5.0",
+    "company": "华为 (Huawei)",
+    "country": "CN",
+    "countryGroup": "CN",
+    "license": "Proprietary / 华为云",
+    "licenseType": "closed",
+    "entryType": "model",
+    "category": "Multimodal",
+    "parameters": "未公开 (多档)",
+    "contextWindow": "N/A",
+    "highlight": "华为发布全系列多模态大模型，支持全模态理解与生成，深度服务政企、气象、药物研发等行业场景，全栈国产化适配昇腾芯片。",
+    "keyTech": [
+      "Ascend NPU Native",
+      "Industry AI",
+      "Weather/Drug Discovery",
+      "Full-stack Domestic"
+    ],
+    "era": "多模态与效率 2024"
+  },
+  {
+    "id": "sparkdesk-4-ultra-2024",
+    "date": "2024-06",
+    "name": "讯飞星火 4.0 Ultra / X1",
+    "company": "科大讯飞 (iFlytek)",
+    "country": "CN",
+    "countryGroup": "CN",
+    "license": "Proprietary",
+    "licenseType": "closed",
+    "entryType": "model",
+    "category": "Dense LLM",
+    "parameters": "未公开",
+    "contextWindow": "128K",
+    "highlight": "讯飞旗舰模型升级至 4.0 Ultra，深度推理模型 X1 对标 o1，持续强化教育、医疗和车载 AI 生态。",
+    "keyTech": [
+      "Education AI",
+      "X1 Reasoning",
+      "Speech Heritage",
+      "Smart Hardware"
     ],
     "era": "多模态与效率 2024"
   },
@@ -3009,6 +4113,50 @@
     "era": "多模态与效率 2024"
   },
   {
+    "id": "sam2-2024",
+    "date": "2024-07",
+    "name": "SAM 2 / SAM 2.1 (视频分割基础模型)",
+    "company": "Meta AI",
+    "country": "US",
+    "countryGroup": "US",
+    "license": "Open Source (Apache 2.0)",
+    "licenseType": "open",
+    "entryType": "model",
+    "category": "Multimodal",
+    "parameters": "未公开",
+    "contextWindow": "视频流",
+    "highlight": "从图像分割扩展到视频分割，引入流式记忆架构在视频帧间追踪对象，速度比 SAM 1 快 6 倍，支持实时处理。",
+    "keyTech": [
+      "Video Segmentation",
+      "Streaming Memory",
+      "6x Faster",
+      "Real-time Tracking"
+    ],
+    "era": "多模态与效率 2024"
+  },
+  {
+    "id": "alphaproof-2024",
+    "date": "2024-07",
+    "name": "AlphaProof & AlphaGeometry 2 (IMO 银牌数学推理)",
+    "company": "Google DeepMind",
+    "country": "US",
+    "countryGroup": "US",
+    "license": "Research",
+    "licenseType": "other",
+    "entryType": "model",
+    "category": "Reasoning",
+    "parameters": "—",
+    "contextWindow": "—",
+    "highlight": "强化学习数学定理证明系统，联合 AlphaGeometry 2 解出 2024 IMO 六题中四题达银牌水平，论文发表于 Nature",
+    "keyTech": [
+      "Formal Math Reasoning",
+      "RL",
+      "IMO Silver",
+      "Theorem Proving"
+    ],
+    "era": "多模态与效率 2024"
+  },
+  {
     "id": "flux-2024",
     "date": "2024-08",
     "name": "Flux.1 (dev / schnell / pro)",
@@ -3034,7 +4182,7 @@
     "id": "glm-voice-2024",
     "date": "2024-08",
     "name": "GLM-4-Voice (智谱端到端开源语音)",
-    "company": "智谱 AI (Zhipu AI)",
+    "company": "智谱 AI / 清华大学",
     "country": "CN",
     "countryGroup": "CN",
     "license": "Open Weights / Commercial",
@@ -3096,7 +4244,7 @@
     ],
     "source": "https://huggingface.co/NousResearch/Hermes-3-Llama-3.1-70B",
     "docLink": "docs/10-agent-mcp-and-tools-ecosystem.md",
-    "era": "长上下文与多模态 2024"
+    "era": "多模态与效率 2024"
   },
   {
     "id": "perplexity-sonar-2024",
@@ -3118,7 +4266,7 @@
       "Perplexity Engine"
     ],
     "docLink": "docs/06-reasoning-and-o1-r1-era.md",
-    "era": "深度推理 2024–2025"
+    "era": "推理革命与智能体 2024Q4–2025"
   },
   {
     "id": "qwen2-vl-2024",
@@ -3139,6 +4287,50 @@
       "Video Understanding",
       "GUI Control",
       "Open VLM"
+    ],
+    "era": "多模态与效率 2024"
+  },
+  {
+    "id": "openai-structured-outputs-2024",
+    "date": "2024-08",
+    "name": "OpenAI Structured Outputs (结构化输出)",
+    "company": "OpenAI",
+    "country": "US",
+    "countryGroup": "US",
+    "license": "Proprietary",
+    "licenseType": "closed",
+    "entryType": "infrastructure",
+    "category": "Infrastructure",
+    "parameters": "—",
+    "contextWindow": "—",
+    "highlight": "GPT-4o 支持 JSON Schema 约束的 100% 可靠结构化输出，从根本上解决 LLM 输出格式不可控难题，成为 Agent 工具调用基石",
+    "keyTech": [
+      "JSON Schema",
+      "Guaranteed Format",
+      "Tool Calling Foundation",
+      "API"
+    ],
+    "era": "多模态与效率 2024"
+  },
+  {
+    "id": "1x-neo-2024",
+    "date": "2024-08",
+    "name": "1X NEO (家庭安全人形机器人)",
+    "company": "1X Technologies",
+    "country": "EU",
+    "countryGroup": "EU",
+    "license": "Proprietary",
+    "licenseType": "closed",
+    "entryType": "product",
+    "category": "具身智能",
+    "parameters": "—",
+    "contextWindow": "—",
+    "highlight": "OpenAI 投资的挪威机器人公司，NEO 仅 30kg 软性仿生体，面向家庭场景，强调安全共存设计，售价约 $20,000",
+    "keyTech": [
+      "Soft Biomimetic Body",
+      "Home Robot",
+      "OpenAI Backed",
+      "Safe Coexistence"
     ],
     "era": "多模态与效率 2024"
   },
@@ -3183,7 +4375,7 @@
       "AIME Olympiad Math"
     ],
     "docLink": "docs/06-reasoning-and-o1-r1-era.md",
-    "era": "深度推理 2024–2025"
+    "era": "推理革命与智能体 2024Q4–2025"
   },
   {
     "id": "pixtral-2024",
@@ -3296,6 +4488,113 @@
     "era": "多模态与效率 2024"
   },
   {
+    "id": "minimax-music-2024",
+    "date": "2024-09",
+    "name": "MiniMax Music / 海螺 AI",
+    "company": "MiniMax (稀宇科技)",
+    "country": "CN",
+    "countryGroup": "CN",
+    "license": "Commercial",
+    "licenseType": "closed",
+    "entryType": "model",
+    "category": "语音 / 音频",
+    "parameters": "未公开",
+    "contextWindow": "音乐",
+    "highlight": "MiniMax 推出 AI 音乐生成能力，集成于海螺 AI 应用，以高质量中文歌曲生成和多样风格在国内市场快速崛起。",
+    "keyTech": [
+      "Chinese Music Generation",
+      "Hailuo AI App",
+      "Style Diversity"
+    ],
+    "era": "推理革命与智能体 2024Q4–2025"
+  },
+  {
+    "id": "deepseek-v25-2024",
+    "date": "2024-09",
+    "name": "DeepSeek-V2.5",
+    "company": "DeepSeek (深度求索)",
+    "country": "CN",
+    "countryGroup": "CN",
+    "license": "Open Weights",
+    "licenseType": "open",
+    "entryType": "model",
+    "category": "MoE",
+    "parameters": "236B (激活 21B)",
+    "contextWindow": "128K",
+    "highlight": "将 DeepSeek-V2-Chat 与 DeepSeek-Coder-V2 合并为统一模型，通用对话与编程能力兼得，API 人气飙升。",
+    "keyTech": [
+      "Unified Chat+Code",
+      "MoE Architecture",
+      "Popular API"
+    ],
+    "era": "推理革命与智能体 2024Q4–2025"
+  },
+  {
+    "id": "alphaproteo-2024",
+    "date": "2024-09",
+    "name": "AlphaProteo (从头设计高亲和力蛋白结合物)",
+    "company": "Google DeepMind",
+    "country": "US",
+    "countryGroup": "US",
+    "license": "Research",
+    "licenseType": "other",
+    "entryType": "model",
+    "category": "领域特化",
+    "parameters": "—",
+    "contextWindow": "—",
+    "highlight": "超越 AlphaFold 预测功能，可从零设计全新蛋白结合物，亲和力数倍于传统计算方法，加速药物发现",
+    "keyTech": [
+      "De Novo Protein Design",
+      "Drug Discovery",
+      "Binding Affinity"
+    ],
+    "era": "多模态与效率 2024"
+  },
+  {
+    "id": "google-notebooklm-2024",
+    "date": "2024-09",
+    "name": "Google NotebookLM (Audio Overview AI 播客)",
+    "company": "Google DeepMind",
+    "country": "US",
+    "countryGroup": "US",
+    "license": "Proprietary",
+    "licenseType": "closed",
+    "entryType": "product",
+    "category": "Agent / 工具生态",
+    "parameters": "—",
+    "contextWindow": "—",
+    "highlight": "Google 实验性产品全面升级，Audio Overview 功能可将文档自动转为逼真 AI 播客对话，全球现象级应用",
+    "keyTech": [
+      "AI Podcast",
+      "Document Understanding",
+      "Audio Overview",
+      "Consumer AI"
+    ],
+    "era": "多模态与效率 2024"
+  },
+  {
+    "id": "alphachip-2024",
+    "date": "2024-09",
+    "name": "AlphaChip (RL 芯片布局设计)",
+    "company": "Google DeepMind",
+    "country": "US",
+    "countryGroup": "US",
+    "license": "Open Source (Checkpoints)",
+    "licenseType": "open",
+    "entryType": "model",
+    "category": "领域特化",
+    "parameters": "—",
+    "contextWindow": "—",
+    "highlight": "强化学习自动芯片宏单元布局，数小时生成超人类水平版图，已用于多代 Google TPU 与 Axion CPU 设计",
+    "keyTech": [
+      "RL Chip Design",
+      "Macro Placement",
+      "TPU Design",
+      "Nature Publication"
+    ],
+    "era": "多模态与效率 2024"
+  },
+  {
     "id": "claude35-haiku-2024",
     "date": "2024-10",
     "name": "Claude 3.5 Haiku + Computer Use",
@@ -3336,7 +4635,7 @@
       "Autoregressive Vision"
     ],
     "docLink": "docs/06-reasoning-and-o1-r1-era.md",
-    "era": "深度推理 2024–2025"
+    "era": "推理革命与智能体 2024Q4–2025"
   },
   {
     "id": "ministral-2024",
@@ -3358,6 +4657,202 @@
       "Ultra-compact"
     ],
     "era": "推理革命与智能体 2024Q4–2025"
+  },
+  {
+    "id": "recraft-v3-2024",
+    "date": "2024-10",
+    "name": "Recraft V3",
+    "company": "Recraft",
+    "country": "US",
+    "countryGroup": "US",
+    "license": "Commercial / API",
+    "licenseType": "closed",
+    "entryType": "model",
+    "category": "图像生成",
+    "parameters": "未公开",
+    "contextWindow": "N/A",
+    "highlight": "专为平面设计师打造，以精准文字排版、SVG/Lottie 矢量输出和品牌资产生成著称，在 Artificial Analysis 排行榜持续领先。",
+    "keyTech": [
+      "Typography Precision",
+      "SVG/Vector Output",
+      "Brand Design",
+      "Benchmark Leader"
+    ],
+    "era": "推理革命与智能体 2024Q4–2025"
+  },
+  {
+    "id": "yi-lightning-2024",
+    "date": "2024-10",
+    "name": "Yi-Lightning",
+    "company": "零一万物 (01.AI)",
+    "country": "CN",
+    "countryGroup": "CN",
+    "license": "Proprietary / API",
+    "licenseType": "closed",
+    "entryType": "model",
+    "category": "Dense LLM",
+    "parameters": "未公开",
+    "contextWindow": "16K",
+    "highlight": "李开复创立的零一万物旗舰模型，Yi-Lightning 以极低成本在 LMSYS 排行榜跻身前列，超越 GPT-4o 同期版本。",
+    "keyTech": [
+      "LMSYS Top Tier",
+      "Cost Efficient",
+      "Chinese AI Startup"
+    ],
+    "era": "推理革命与智能体 2024Q4–2025"
+  },
+  {
+    "id": "baichuan4-2024",
+    "date": "2024-10",
+    "name": "百川 Baichuan 4 / Baichuan-M1",
+    "company": "百川智能 (Baichuan AI)",
+    "country": "CN",
+    "countryGroup": "CN",
+    "license": "Commercial / API",
+    "licenseType": "closed",
+    "entryType": "model",
+    "category": "Dense LLM",
+    "parameters": "未公开",
+    "contextWindow": "128K",
+    "highlight": "百川智能转向医疗 AI 垂直领域的战略性产品，Baichuan-M1 为首个专注医疗长思考推理的大模型。",
+    "keyTech": [
+      "Medical AI Focus",
+      "Healthcare Reasoning",
+      "Vertical Domain"
+    ],
+    "era": "推理革命与智能体 2024Q4–2025"
+  },
+  {
+    "id": "chatgpt-search-2024",
+    "date": "2024-10",
+    "name": "ChatGPT Search (SearchGPT 整合)",
+    "company": "OpenAI",
+    "country": "US",
+    "countryGroup": "US",
+    "license": "Proprietary",
+    "licenseType": "closed",
+    "entryType": "product",
+    "category": "Agent / 工具生态",
+    "parameters": "N/A",
+    "contextWindow": "N/A",
+    "highlight": "OpenAI 将 SearchGPT 原型整合进 ChatGPT，实现 AI 对话与实时网页搜索的无缝融合，直接挑战传统搜索引擎。",
+    "keyTech": [
+      "AI-native Search",
+      "Real-time Web",
+      "Citation Links",
+      "Search Engine Rival"
+    ],
+    "era": "推理革命与智能体 2024Q4–2025"
+  },
+  {
+    "id": "bolt-stackblitz-2024",
+    "date": "2024-10",
+    "name": "Bolt.new / Lovable (浏览器内全栈 AI 开发)",
+    "company": "StackBlitz / Lovable",
+    "country": "US",
+    "countryGroup": "US",
+    "license": "Commercial SaaS",
+    "licenseType": "closed",
+    "entryType": "product",
+    "category": "Agent / 工具生态",
+    "parameters": "N/A",
+    "contextWindow": "N/A",
+    "highlight": "在浏览器中实现从自然语言到完整全栈应用的端到端生成，无需本地环境，集成 WebContainers 实时预览和一键部署。",
+    "keyTech": [
+      "Browser-based",
+      "Full-stack Generation",
+      "WebContainers",
+      "One-click Deploy"
+    ],
+    "era": "推理革命与智能体 2024Q4–2025"
+  },
+  {
+    "id": "chatgpt-4o-realtime-2024",
+    "date": "2024-10",
+    "name": "ChatGPT Advanced Voice / Realtime API",
+    "company": "OpenAI",
+    "country": "US",
+    "countryGroup": "US",
+    "license": "Proprietary",
+    "licenseType": "closed",
+    "entryType": "model",
+    "category": "语音 / 音频",
+    "parameters": "—",
+    "contextWindow": "—",
+    "highlight": "GPT-4o 原生语音模式正式上线，端到端语音理解与生成，支持实时多语言对话、歌唱与情感表达，开放 Realtime API",
+    "keyTech": [
+      "End-to-End Voice",
+      "Realtime API",
+      "Emotional Speech",
+      "Multilingual Voice"
+    ],
+    "era": "多模态与效率 2024"
+  },
+  {
+    "id": "samsung-gauss2-2024",
+    "date": "2024-10",
+    "name": "Samsung Gauss 2 (端侧多模态)",
+    "company": "Samsung (三星)",
+    "country": "KR",
+    "countryGroup": "other",
+    "license": "Proprietary",
+    "licenseType": "closed",
+    "entryType": "model",
+    "category": "Efficiency/Edge",
+    "parameters": "—",
+    "contextWindow": "—",
+    "highlight": "三星第二代自研端侧大模型，支持多模态理解与代码生成，集成至 Galaxy AI 设备，处理速度与准确率大幅提升",
+    "keyTech": [
+      "On-Device",
+      "Galaxy AI",
+      "Multimodal",
+      "Code Generation"
+    ],
+    "era": "多模态与效率 2024"
+  },
+  {
+    "id": "openai-swarm-2024",
+    "date": "2024-10",
+    "name": "OpenAI Swarm (轻量多智能体编排框架)",
+    "company": "OpenAI",
+    "country": "US",
+    "countryGroup": "US",
+    "license": "MIT",
+    "licenseType": "open",
+    "entryType": "product",
+    "category": "Agent / 工具生态",
+    "parameters": "—",
+    "contextWindow": "—",
+    "highlight": "OpenAI 开源的教育性多智能体协作框架，以 Routine + Handoff 模式实现智能体间任务交接，启发多智能体编排范式",
+    "keyTech": [
+      "Multi-Agent",
+      "Handoff Pattern",
+      "Routine-based",
+      "Educational Framework"
+    ],
+    "era": "多模态与效率 2024"
+  },
+  {
+    "id": "anthropic-computer-use-2024",
+    "date": "2024-10",
+    "name": "Anthropic Computer Use (屏幕操控 API)",
+    "company": "Anthropic",
+    "country": "US",
+    "countryGroup": "US",
+    "license": "Proprietary (API)",
+    "licenseType": "closed",
+    "entryType": "product",
+    "category": "Agent / 工具生态",
+    "parameters": "—",
+    "contextWindow": "—",
+    "highlight": "Claude 3.5 Sonnet 新增 Computer Use 能力，可看屏幕截图并模拟鼠标/键盘操作，开创 LLM 直接操控桌面应用新范式",
+    "keyTech": [
+      "Screen Control",
+      "Mouse/Keyboard Simulation",
+      "Desktop Automation",
+      "API"
+    ],
+    "era": "多模态与效率 2024"
   },
   {
     "id": "mcp-2024",
@@ -3400,7 +4895,7 @@
       "Multimodal Thinking"
     ],
     "docLink": "docs/06-reasoning-and-o1-r1-era.md",
-    "era": "深度推理 2024–2025"
+    "era": "推理革命与智能体 2024Q4–2025"
   },
   {
     "id": "qwq-preview-2024",
@@ -3436,7 +4931,7 @@
     "category": "Agent / 工具生态",
     "parameters": "N/A",
     "contextWindow": "N/A",
-    "highlight": "引入'Flow 态'智能体编程概念，人类与 AI 在 IDE 内同步协作的新范式。",
+    "highlight": "Codeium 推出的 AI-First IDE，首创 'Flow 态' (AI Flows / Cascade) 智能体协同编程范式，可自主创建/编辑多文件、操作终端并实时修复错误。",
     "keyTech": [
       "Flow State",
       "Agentic IDE",
@@ -3445,10 +4940,53 @@
     "era": "推理革命与智能体 2024Q4–2025"
   },
   {
+    "id": "deepseek-r1-lite-2024",
+    "date": "2024-11",
+    "name": "DeepSeek-R1-Lite-Preview",
+    "company": "DeepSeek (深度求索)",
+    "country": "CN",
+    "countryGroup": "CN",
+    "license": "Proprietary / Free Web",
+    "licenseType": "closed",
+    "entryType": "model",
+    "category": "Reasoning",
+    "parameters": "未公开",
+    "contextWindow": "64K",
+    "highlight": "DeepSeek 首个推理专精模型预览版，Deep Think 模式实时展示思维链过程，AIME/MATH 达 o1-preview 水平，为 R1 正式版铺路。",
+    "keyTech": [
+      "Deep Think Mode",
+      "Visible Chain-of-Thought",
+      "o1-preview Rival"
+    ],
+    "era": "推理革命与智能体 2024Q4–2025"
+  },
+  {
+    "id": "olmo2-2024",
+    "date": "2024-11",
+    "name": "OLMo 2 (全链路真开源)",
+    "company": "Allen AI (AI2)",
+    "country": "US",
+    "countryGroup": "US",
+    "license": "Apache 2.0",
+    "licenseType": "open",
+    "entryType": "model",
+    "category": "Foundation",
+    "parameters": "7B-32B",
+    "contextWindow": "4K-32K",
+    "highlight": "AI2 旗舰全链路开源模型，权重/数据/代码/训练日志/检查点全部公开，5T tokens 训练，对标 Llama 3.1 同级",
+    "keyTech": [
+      "Full Open Science",
+      "Dolma Dataset",
+      "Curriculum Annealing",
+      "Tülu Alignment"
+    ],
+    "era": "多模态与效率 2024"
+  },
+  {
     "id": "amazon-nova-2024",
     "date": "2024-12",
-    "name": "Amazon Nova (Micro/Lite/Pro/Premier)",
-    "company": "Amazon (AWS)",
+    "name": "Amazon Nova (Micro / Lite / Pro / Canvas / Reel)",
+    "company": "Amazon AWS",
     "country": "US",
     "countryGroup": "US",
     "license": "Proprietary / AWS Bedrock",
@@ -3612,7 +5150,7 @@
     "category": "Reasoning",
     "parameters": "未公开",
     "contextWindow": "128K / 200K",
-    "highlight": "推理期计算扩展定律 (Test-Time Compute Scaling) 的正式落地：隐式思维链 + 大规模强化学习，在数学与编程竞赛上达到博士级水准，2024-12-05 起向付费用户全量开放。",
+    "highlight": "推理期计算扩展定律 (Test-Time Compute Scaling) 正式版落地（2024-12-05）：隐式思维链 + 大规模强化学习，达到博士级数理与编程水准，并正式支持多模态图像推理、函数调用与结构化输出。",
     "keyTech": [
       "Test-Time Compute Scaling",
       "Hidden Chain-of-Thought",
@@ -3639,6 +5177,28 @@
       "Math Reasoning SOTA",
       "Synthetic Data",
       "14B Efficient"
+    ],
+    "era": "推理革命与智能体 2024Q4–2025"
+  },
+  {
+    "id": "huggingface-smolagents-2024",
+    "date": "2024-12",
+    "name": "HuggingFace smolagents (极简 Agent 框架)",
+    "company": "Hugging Face",
+    "country": "US",
+    "countryGroup": "US",
+    "license": "Apache 2.0",
+    "licenseType": "open",
+    "entryType": "product",
+    "category": "Agent / 工具生态",
+    "parameters": "—",
+    "contextWindow": "—",
+    "highlight": "HuggingFace 推出极简 Agent 框架，代码仅数百行，支持 Code Agent 与 ToolCall Agent 两种范式，降低 Agent 开发门槛",
+    "keyTech": [
+      "Minimal Agent Framework",
+      "Code Agent",
+      "Tool Calling",
+      "Open Source"
     ],
     "era": "推理革命与智能体 2024Q4–2025"
   },
@@ -3918,7 +5478,7 @@
     "id": "trae-bytedance-2025",
     "date": "2025-01",
     "name": "Trae (字节跳动 AI-Native 集成开发环境)",
-    "company": "字节跳动",
+    "company": "字节跳动 / 火山引擎",
     "country": "CN",
     "countryGroup": "CN",
     "license": "Free / Commercial",
@@ -3963,7 +5523,7 @@
     "id": "deepseek-nsa-2025",
     "date": "2025-02",
     "name": "DeepSeek NSA (原生硬件对齐稀疏注意力)",
-    "company": "深度求索 (DeepSeek)",
+    "company": "DeepSeek (深度求索)",
     "country": "CN",
     "countryGroup": "CN",
     "license": "Paper & Open Source",
@@ -4075,6 +5635,71 @@
     ],
     "source": "https://github.com/badlogic/pi-mono",
     "docLink": "docs/10-agent-mcp-and-tools-ecosystem.md",
+    "era": "推理革命与智能体 2024Q4–2025"
+  },
+  {
+    "id": "perplexity-sonar-reasoning-2025",
+    "date": "2025-02",
+    "name": "Perplexity Sonar Reasoning Pro",
+    "company": "Perplexity AI",
+    "country": "US",
+    "countryGroup": "US",
+    "license": "Commercial / API",
+    "licenseType": "closed",
+    "entryType": "model",
+    "category": "Reasoning",
+    "parameters": "未公开",
+    "contextWindow": "128K",
+    "highlight": "搜索增强推理模型，将实时网络检索与深度链式推理结合，在事实性回答和研究报告生成上树立新标杆。",
+    "keyTech": [
+      "Search-augmented Reasoning",
+      "Real-time Citations",
+      "Research Reports"
+    ],
+    "era": "推理革命与智能体 2024Q4–2025"
+  },
+  {
+    "id": "phi4-mini-2025",
+    "date": "2025-02",
+    "name": "Microsoft Phi-4-mini / Phi-4-multimodal",
+    "company": "微软研究院 (Microsoft Research)",
+    "country": "US",
+    "countryGroup": "US",
+    "license": "MIT",
+    "licenseType": "open",
+    "entryType": "model",
+    "category": "Efficiency/Edge",
+    "parameters": "3.8B-5.6B",
+    "contextWindow": "128K",
+    "highlight": "Phi-4-mini 仅 3.8B 支持 128K 上下文与 200K 多语言词表；Phi-4-multimodal 5.6B 单架构同时处理文本/图像/音频，端侧多模态标杆",
+    "keyTech": [
+      "128K Context",
+      "Multimodal SLM",
+      "Edge Deployment",
+      "Function Calling"
+    ],
+    "era": "推理革命与智能体 2024Q4–2025"
+  },
+  {
+    "id": "cursor-agent-2025",
+    "date": "2025-02",
+    "name": "Cursor Agent Mode (Agentic 编程)",
+    "company": "Anysphere",
+    "country": "US",
+    "countryGroup": "US",
+    "license": "Proprietary",
+    "licenseType": "closed",
+    "entryType": "product",
+    "category": "Agent / 工具生态",
+    "parameters": "—",
+    "contextWindow": "—",
+    "highlight": "Cursor IDE 推出 Agent 模式，可自主执行终端命令、创建/编辑多文件、自动修复 lint 错误，从辅助编码进化为自主编码智能体",
+    "keyTech": [
+      "Agent Mode",
+      "Multi-file Edit",
+      "Terminal Execution",
+      "Auto-fix"
+    ],
     "era": "推理革命与智能体 2024Q4–2025"
   },
   {
@@ -4231,6 +5856,71 @@
     ],
     "source": "https://arxiv.org",
     "docLink": "docs/08-future-horizons-and-challenges.md",
+    "era": "推理革命与智能体 2024Q4–2025"
+  },
+  {
+    "id": "ideogram3-2025",
+    "date": "2025-03",
+    "name": "Ideogram 3.0",
+    "company": "Ideogram",
+    "country": "US",
+    "countryGroup": "US",
+    "license": "Commercial / API",
+    "licenseType": "closed",
+    "entryType": "model",
+    "category": "图像生成",
+    "parameters": "未公开",
+    "contextWindow": "N/A",
+    "highlight": "前 Google Brain 研究员创立，彻底解决 AI 生图文字拼写问题，多行复杂文字渲染准确率达 90-95%，海报/Logo 生成标杆。",
+    "keyTech": [
+      "Typography Mastery",
+      "95% Text Accuracy",
+      "Style Reference System",
+      "Design Focus"
+    ],
+    "era": "推理革命与智能体 2024Q4–2025"
+  },
+  {
+    "id": "gemini20-flash-native-img-2025",
+    "date": "2025-03",
+    "name": "Gemini 2.0 Flash 原生图像生成",
+    "company": "Google DeepMind",
+    "country": "US",
+    "countryGroup": "US",
+    "license": "Proprietary / API",
+    "licenseType": "closed",
+    "entryType": "model",
+    "category": "图像生成",
+    "parameters": "未公开",
+    "contextWindow": "1M",
+    "highlight": "LLM 推理能力与图像生成直接融合的里程碑，可在对话中生成文字+图像混合输出，支持多轮对话式编辑，角色一致性保持。",
+    "keyTech": [
+      "Native Text+Image Output",
+      "Conversational Image Editing",
+      "Character Consistency"
+    ],
+    "era": "推理革命与智能体 2024Q4–2025"
+  },
+  {
+    "id": "nemotron-ultra-2025",
+    "date": "2025-03",
+    "name": "NVIDIA Nemotron Ultra 253B (开放推理旗舰)",
+    "company": "NVIDIA",
+    "country": "US",
+    "countryGroup": "US",
+    "license": "NVIDIA Open",
+    "licenseType": "open",
+    "entryType": "model",
+    "category": "Reasoning",
+    "parameters": "253B (Llama 3.1 based)",
+    "contextWindow": "128K",
+    "highlight": "NVIDIA GTC 2025 发布，基于 Llama 3.1 的 253B 旗舰推理模型，动态思考深度调控，企业 Agent 开放权重标杆",
+    "keyTech": [
+      "Dynamic Reasoning Depth",
+      "Llama 3.1 Based",
+      "Enterprise Agent",
+      "Open Weights"
+    ],
     "era": "推理革命与智能体 2024Q4–2025"
   },
   {
@@ -4415,6 +6105,92 @@
     "era": "推理革命与智能体 2024Q4–2025"
   },
   {
+    "id": "midjourney-v7-2025",
+    "date": "2025-04",
+    "name": "Midjourney v7",
+    "company": "Midjourney",
+    "country": "US",
+    "countryGroup": "US",
+    "license": "Commercial SaaS",
+    "licenseType": "closed",
+    "entryType": "model",
+    "category": "图像生成",
+    "parameters": "未公开",
+    "contextWindow": "N/A",
+    "highlight": "架构级代际飞跃，Draft Mode 实现 10x 快速迭代，人体解剖学和手部准确性质变，默认个性化输出和 Omni Reference 高级引导。",
+    "keyTech": [
+      "Draft Mode 10x Speed",
+      "Anatomy Breakthrough",
+      "Default Personalization",
+      "Omni Reference"
+    ],
+    "era": "推理革命与智能体 2024Q4–2025"
+  },
+  {
+    "id": "gpt-image-1-2025",
+    "date": "2025-04",
+    "name": "GPT Image (gpt-image-1)",
+    "company": "OpenAI",
+    "country": "US",
+    "countryGroup": "US",
+    "license": "Proprietary / API",
+    "licenseType": "closed",
+    "entryType": "model",
+    "category": "图像生成",
+    "parameters": "未公开",
+    "contextWindow": "N/A",
+    "highlight": "OpenAI 原生多模态 Transformer 图像生成模型，取代 DALL-E 系列。首周用户生成 7 亿张图，文字渲染和布局遵循能力质变，吉卜力风格引爆全球病毒式传播。",
+    "keyTech": [
+      "Native Multimodal Transformer",
+      "Text Rendering",
+      "700M Images First Week",
+      "Ghibli Viral"
+    ],
+    "era": "推理革命与智能体 2024Q4–2025"
+  },
+  {
+    "id": "amazon-nova-premier-2025",
+    "date": "2025-04",
+    "name": "Amazon Nova Premier (复杂推理旗舰)",
+    "company": "Amazon AWS",
+    "country": "US",
+    "countryGroup": "US",
+    "license": "Proprietary (AWS Bedrock)",
+    "licenseType": "closed",
+    "entryType": "model",
+    "category": "Reasoning",
+    "parameters": "—",
+    "contextWindow": "1M",
+    "highlight": "Amazon Nova 家族最高端推理模型，2025 年 Q2 正式 GA，面向高复杂度企业推理与 Agent 工作流",
+    "keyTech": [
+      "Complex Reasoning",
+      "Enterprise Agents",
+      "1M Context"
+    ],
+    "era": "推理革命与智能体 2024Q4–2025"
+  },
+  {
+    "id": "sensetime-sensenova6-2025",
+    "date": "2025-04",
+    "name": "日日新 SenseNova V6 (多模态长思维链)",
+    "company": "商汤科技 (SenseTime)",
+    "country": "CN",
+    "countryGroup": "CN",
+    "license": "Proprietary",
+    "licenseType": "closed",
+    "entryType": "model",
+    "category": "Reasoning",
+    "parameters": "—",
+    "contextWindow": "—",
+    "highlight": "商汤 V6.0 核心聚焦多模态长思维链训练与强推理能力，大幅提升复杂任务交付表现",
+    "keyTech": [
+      "Multimodal CoT",
+      "Long Chain Reasoning",
+      "Agent Delivery"
+    ],
+    "era": "推理革命与智能体 2024Q4–2025"
+  },
+  {
     "id": "ai2-olmo3-2025",
     "date": "2025-05",
     "name": "Allen AI OLMo 3 / Olmo Hybrid",
@@ -4574,6 +6350,50 @@
     "era": "前沿演进 2025"
   },
   {
+    "id": "gemma3n-2025",
+    "date": "2025-05",
+    "name": "Gemma 3n (超轻量端侧多模态)",
+    "company": "Google DeepMind",
+    "country": "US",
+    "countryGroup": "US",
+    "license": "Open Weights",
+    "licenseType": "open",
+    "entryType": "model",
+    "category": "Efficiency/Edge",
+    "parameters": "E2B / E4B",
+    "contextWindow": "32K",
+    "highlight": "专为手机和笔记本打造的超轻量多模态模型，支持文本+图像+音频+视频四模态，2B 有效参数实现 4B 级性能。",
+    "keyTech": [
+      "Per-layer Routing",
+      "Four Modalities",
+      "Smartphone Optimized",
+      "2B Effective"
+    ],
+    "era": "前沿演进 2025"
+  },
+  {
+    "id": "medgemma-2025",
+    "date": "2025-05",
+    "name": "MedGemma (医疗专精开源模型)",
+    "company": "Google DeepMind",
+    "country": "US",
+    "countryGroup": "US",
+    "license": "Open Weights",
+    "licenseType": "open",
+    "entryType": "model",
+    "category": "领域特化",
+    "parameters": "4B / 27B",
+    "contextWindow": "32K",
+    "highlight": "基于 Gemma 3 架构的开源医疗 AI 模型，整合 Med-PaLM 研究成果，支持医学影像 (X 光/CT) 分析和临床文本理解。",
+    "keyTech": [
+      "Medical Imaging",
+      "Clinical Text",
+      "Med-PaLM Heritage",
+      "Open Medical AI"
+    ],
+    "era": "前沿演进 2025"
+  },
+  {
     "id": "apple-afm3-2025",
     "date": "2025-06",
     "name": "Apple Foundation Models 3 (AFM 3)",
@@ -4586,7 +6406,7 @@
     "category": "Efficiency/Edge",
     "parameters": "3B 稠密 + 20B 稀疏 MoE",
     "contextWindow": "32K",
-    "highlight": "苹果第三代自研端侧基础模型，采用端侧 3B 稠密与 20B 稀疏 MoE 异构架构，深度协同 Apple Silicon 神经网络引擎与私有云计算（PCC）。",
+    "highlight": "苹果自研端侧基础模型家族（3B 端侧稠密 + 20B 云端 MoE），2025 年引入多模态图文理解、原生工具调用与 Swift Foundation Models 开发者框架，协同 Apple Silicon 与私有云计算（PCC）。",
     "keyTech": [
       "Private Cloud Compute",
       "Apple Silicon NPU",
@@ -4664,8 +6484,8 @@
       "Multi-Token Prediction",
       "NIM Deployment"
     ],
-    "era": "前沿演进 2025",
-    "source": "https://research.nvidia.com"
+    "source": "https://research.nvidia.com",
+    "era": "前沿演进 2025"
   },
   {
     "id": "o3-pro-2025",
@@ -4693,7 +6513,7 @@
     "id": "glm45-2025",
     "date": "2025-07",
     "name": "GLM-4.5",
-    "company": "智谱 AI (Z.ai)",
+    "company": "智谱 AI / 清华大学",
     "country": "CN",
     "countryGroup": "CN",
     "license": "Open Weights (MIT)",
@@ -4948,7 +6768,7 @@
     "id": "qwen3-next-2025",
     "date": "2025-09",
     "name": "Qwen3-Next (下一代多模态探索)",
-    "company": "阿里巴巴 (Qwen)",
+    "company": "阿里巴巴 (Alibaba)",
     "country": "CN",
     "countryGroup": "CN",
     "license": "Open Weights (Apache 2.0)",
@@ -4995,7 +6815,7 @@
     "id": "seed-tts-2025",
     "date": "2025-10",
     "name": "Seed-TTS 2.0 (端到端低延迟拟真语音)",
-    "company": "字节跳动 (火山引擎)",
+    "company": "字节跳动 / 火山引擎",
     "country": "CN",
     "countryGroup": "CN",
     "license": "Proprietary / API",
@@ -5257,7 +7077,7 @@
     "id": "seedream-2025",
     "date": "2025-12",
     "name": "Seedream 5.0 (豆包文生图旗舰)",
-    "company": "字节跳动 (火山引擎)",
+    "company": "字节跳动 / 火山引擎",
     "country": "CN",
     "countryGroup": "CN",
     "license": "Proprietary / API",
@@ -5395,7 +7215,7 @@
     "id": "glm5-2026",
     "date": "2026-02",
     "name": "GLM-5",
-    "company": "智谱 AI (Z.ai)",
+    "company": "智谱 AI / 清华大学",
     "country": "CN",
     "countryGroup": "CN",
     "license": "Open Weights (MIT)",
@@ -5483,6 +7303,27 @@
       "Voice Cloning"
     ],
     "docLink": "docs/09-frontier-2025-2026-and-system1-decision.md",
+    "era": "超级模型与具身 2026"
+  },
+  {
+    "id": "claude-sonnet46-2026",
+    "date": "2026-02",
+    "name": "Claude Sonnet 4.6",
+    "company": "Anthropic",
+    "country": "US",
+    "countryGroup": "US",
+    "license": "Proprietary / Closed API",
+    "licenseType": "closed",
+    "entryType": "model",
+    "category": "Reasoning",
+    "parameters": "未公开",
+    "contextWindow": "200K",
+    "highlight": "与 Opus 4.6 同期发布，速度与智能的最优平衡，代码审查和结构化文档生成的企业首选。",
+    "keyTech": [
+      "Speed-Intelligence Balance",
+      "Code Review",
+      "Enterprise Workhorse"
+    ],
     "era": "超级模型与具身 2026"
   },
   {
@@ -5627,7 +7468,7 @@
     "id": "seedance-2026",
     "date": "2026-03",
     "name": "Seedance 2.0 (豆包视频生成旗舰)",
-    "company": "字节跳动 (火山引擎)",
+    "company": "字节跳动 / 火山引擎",
     "country": "CN",
     "countryGroup": "CN",
     "license": "Proprietary / API",
@@ -5649,7 +7490,7 @@
     "id": "deepseek-harness-2026",
     "date": "2026-04",
     "name": "DeepSeek Harness / dsh (开源模块化智能体运行时)",
-    "company": "深度求索 (DeepSeek)",
+    "company": "DeepSeek (深度求索)",
     "country": "CN",
     "countryGroup": "CN",
     "license": "Open Source (MIT)",
@@ -5720,7 +7561,7 @@
     "id": "muse-spark-2026",
     "date": "2026-04",
     "name": "Muse Spark",
-    "company": "Meta Superintelligence Labs",
+    "company": "Meta AI",
     "country": "US",
     "countryGroup": "US",
     "license": "Proprietary / Closed API",
@@ -5744,7 +7585,7 @@
     "id": "qwen36-2026",
     "date": "2026-04",
     "name": "Qwen3.6",
-    "company": "阿里巴巴 (Qwen)",
+    "company": "阿里巴巴 (Alibaba)",
     "country": "CN",
     "countryGroup": "CN",
     "license": "Open Weights (Apache 2.0)",
@@ -5790,6 +7631,27 @@
     "era": "超级模型与具身 2026"
   },
   {
+    "id": "claude-opus47-2026",
+    "date": "2026-04",
+    "name": "Claude Opus 4.7",
+    "company": "Anthropic",
+    "country": "US",
+    "countryGroup": "US",
+    "license": "Proprietary / Closed API",
+    "licenseType": "closed",
+    "entryType": "model",
+    "category": "Reasoning",
+    "parameters": "未公开",
+    "contextWindow": "1M",
+    "highlight": "百万 token 上下文窗口正式启用，长期自主任务执行能力进一步强化。",
+    "keyTech": [
+      "1M Context",
+      "Long-horizon Autonomy",
+      "ASL-3 Compliance"
+    ],
+    "era": "超级模型与具身 2026"
+  },
+  {
     "id": "chinese-embodied-2026",
     "date": "2026-05",
     "name": "中国具身智能先锋矩阵 (智元 GO-2 / 自变量 WALL-A)",
@@ -5816,7 +7678,7 @@
     "id": "deepseek-v41-flash-2026",
     "date": "2026-05",
     "name": "DeepSeek-V4.1-Flash (非对称因果编解码)",
-    "company": "深度求索 (DeepSeek)",
+    "company": "DeepSeek (深度求索)",
     "country": "CN",
     "countryGroup": "CN",
     "license": "Open Weights (MIT)",
@@ -5834,6 +7696,26 @@
     ],
     "source": "https://www.deepseek.com",
     "docLink": "docs/07-us-cn-and-open-closed-matrix.md",
+    "era": "超级模型与具身 2026"
+  },
+  {
+    "id": "claude-opus48-2026",
+    "date": "2026-05",
+    "name": "Claude Opus 4.8",
+    "company": "Anthropic",
+    "country": "US",
+    "countryGroup": "US",
+    "license": "Proprietary / Closed API",
+    "licenseType": "closed",
+    "entryType": "model",
+    "category": "Reasoning",
+    "parameters": "未公开",
+    "contextWindow": "1M",
+    "highlight": "Opus 4.x 系列收官之作，Claude 5 世代前的最终优化版本。",
+    "keyTech": [
+      "Final 4.x Optimization",
+      "Pre-5.0 Capstone"
+    ],
     "era": "超级模型与具身 2026"
   },
   {
@@ -6025,7 +7907,7 @@
     "id": "muse-spark-series-2026",
     "date": "2026-07",
     "name": "Meta Muse Spark 1.1 / 1.2 / 1.3",
-    "company": "Meta",
+    "company": "Meta AI",
     "country": "US",
     "countryGroup": "US",
     "license": "Proprietary / Closed API",
@@ -6072,7 +7954,7 @@
     "id": "glm53-2026",
     "date": "2026-08",
     "name": "GLM-5.3",
-    "company": "智谱 AI (Z.ai)",
+    "company": "智谱 AI / 清华大学",
     "country": "CN",
     "countryGroup": "CN",
     "license": "Open Weights (MIT)",
@@ -6120,7 +8002,7 @@
     "id": "muse-glimmer-2026",
     "date": "2026-08",
     "name": "Muse Glimmer (30B)",
-    "company": "Meta",
+    "company": "Meta AI",
     "country": "US",
     "countryGroup": "US",
     "license": "Open Weights (Apache 2.0)",
@@ -6267,7 +8149,7 @@
     "id": "muse-wonder-2026",
     "date": "2026-09",
     "name": "Meta Muse Wonder / Wonder Full",
-    "company": "Meta",
+    "company": "Meta AI",
     "country": "US",
     "countryGroup": "US",
     "license": "Proprietary / Closed API",
@@ -6665,6 +8547,318 @@
     ],
     "source": "https://huggingface.co/thinkingmachines",
     "docLink": "docs/09-frontier-2025-2026-and-system1-decision.md",
+    "era": "超级模型与具身 2026"
+  },
+  {
+    "id": "gpt-image-26-2026",
+    "date": "2026-11",
+    "name": "GPT Image 2.6 (Flare / Sunburst)",
+    "company": "OpenAI",
+    "country": "US",
+    "countryGroup": "US",
+    "license": "Proprietary / API",
+    "licenseType": "closed",
+    "entryType": "model",
+    "category": "图像生成",
+    "parameters": "未公开",
+    "contextWindow": "N/A",
+    "highlight": "OpenAI 于 2026 年 11 月 4 日发布的双档图像生成与编辑模型：Flare（低质量模式 6 秒极速出图）与 Sunburst（高精度多轮一致），新增 SVG 矢量导出、GIF 动图与涂鸦局部编辑。",
+    "keyTech": [
+      "SVG Export",
+      "GIF Animation",
+      "Markup-Guided Edit",
+      "Flare / Sunburst"
+    ],
+    "source": "https://openai.com/",
+    "docLink": "docs/09-frontier-2025-2026-and-system1-decision.md",
+    "era": "超级模型与具身 2026"
+  },
+  {
+    "id": "kimi-k31-pro-2026",
+    "date": "2026-11",
+    "name": "Kimi K3.1 Pro",
+    "company": "月之暗面 (Moonshot AI)",
+    "country": "CN",
+    "countryGroup": "CN",
+    "license": "Open Weights",
+    "licenseType": "open",
+    "entryType": "model",
+    "category": "MoE",
+    "parameters": "2.8T MoE",
+    "contextWindow": "1M",
+    "highlight": "月之暗面于 2026 年 11 月 4 日在 Hugging Face 全量开源的 K3 系列升级版（2.8T MoE / 1M 上下文），联合 vLLM/Inferact 实现 Day-Zero 生产级推理部署。",
+    "keyTech": [
+      "2.8T MoE",
+      "1M Context",
+      "Open Weights",
+      "Day-Zero vLLM"
+    ],
+    "source": "https://huggingface.co/moonshotai",
+    "docLink": "docs/09-frontier-2025-2026-and-system1-decision.md",
+    "era": "超级模型与具身 2026"
+  },
+  {
+    "id": "gemini-omni-12-flash-2026",
+    "date": "2026-11",
+    "name": "Gemini Omni 1.2 Flash",
+    "company": "Google DeepMind",
+    "country": "US",
+    "countryGroup": "US",
+    "license": "Proprietary / Closed API",
+    "licenseType": "closed",
+    "entryType": "model",
+    "category": "文生视频",
+    "parameters": "未公开",
+    "contextWindow": "N/A",
+    "highlight": "Google DeepMind 于 2026 年 11 月 5 日 GA 的音视频联合生成与编辑模型：支持最长 15 秒 4K 原生配音视频、对话式多轮局部重绘与跨镜头角色一致性，API 单价直降 30%。",
+    "keyTech": [
+      "15s 4K Video",
+      "Synchronized Audio",
+      "Conversational Editing",
+      "SynthID"
+    ],
+    "source": "https://blog.google/technology/google-deepmind/",
+    "docLink": "docs/09-frontier-2025-2026-and-system1-decision.md",
+    "era": "超级模型与具身 2026"
+  },
+  {
+    "id": "ernie-55-flash-2026",
+    "date": "2026-11",
+    "name": "文心 ERNIE 5.5 Flash",
+    "company": "百度 (Baidu)",
+    "country": "CN",
+    "countryGroup": "CN",
+    "license": "Open Weights",
+    "licenseType": "open",
+    "entryType": "model",
+    "category": "MoE",
+    "parameters": "280B Sparse MoE",
+    "contextWindow": "1M",
+    "highlight": "百度于 2026 年 11 月 5 日发布 Base 开放权重并于 11 月 11 日上线 Preview，采用 280B 稀疏 MoE 与 1M 上下文窗口，面向高频代码生成、3D 设计与智能体工作流优化。",
+    "keyTech": [
+      "280B Sparse MoE",
+      "1M Context",
+      "Open Weights",
+      "3D & Coding"
+    ],
+    "source": "https://yiyan.baidu.com/",
+    "docLink": "docs/07-us-cn-and-open-closed-matrix.md",
+    "era": "超级模型与具身 2026"
+  },
+  {
+    "id": "muse-ember-2026",
+    "date": "2026-11",
+    "name": "Meta Muse Ember (1.0)",
+    "company": "Meta AI",
+    "country": "US",
+    "countryGroup": "US",
+    "license": "Proprietary / Closed API",
+    "licenseType": "closed",
+    "entryType": "model",
+    "category": "Efficiency/Edge",
+    "parameters": "未公开",
+    "contextWindow": "1M",
+    "highlight": "Meta 于 2026 年 11 月 9 日推出的 Muse 系列最轻量极速成员，支持文本/图像/音频/视频/PDF 与 1M 上下文，以极低单价（$0.10/$0.50 per 1M tokens）承担子智能体高并发执行。",
+    "keyTech": [
+      "Sub-Agent Execution",
+      "1M Context",
+      "Ultra-Low Cost",
+      "Multimodal"
+    ],
+    "source": "https://ai.meta.com/",
+    "docLink": "docs/09-frontier-2025-2026-and-system1-decision.md",
+    "era": "超级模型与具身 2026"
+  },
+  {
+    "id": "minimax-h3-image-2026",
+    "date": "2026-11",
+    "name": "MiniMax H3-Image",
+    "company": "MiniMax",
+    "country": "CN",
+    "countryGroup": "CN",
+    "license": "Open Weights",
+    "licenseType": "open",
+    "entryType": "model",
+    "category": "图像生成",
+    "parameters": "未公开",
+    "contextWindow": "N/A",
+    "highlight": "MiniMax 于 2026 年 11 月 11 日开源的 H3 架构图像生成模型，可在 10 秒内生成 4K 分辨率图像，具备多参考图主体一致性与复杂文字精准排版渲染能力。",
+    "keyTech": [
+      "Open Weights",
+      "4K Under 10s",
+      "Multi-Reference",
+      "Text Rendering"
+    ],
+    "source": "https://www.minimax.io/",
+    "docLink": "docs/07-us-cn-and-open-closed-matrix.md",
+    "era": "超级模型与具身 2026"
+  },
+  {
+    "id": "qwen4-max-2026",
+    "date": "2026-11",
+    "name": "Qwen4-Max",
+    "company": "阿里巴巴 (Alibaba)",
+    "country": "CN",
+    "countryGroup": "CN",
+    "license": "Proprietary / Cloud API",
+    "licenseType": "closed",
+    "entryType": "model",
+    "category": "MoE",
+    "parameters": "2.4T MoE + 328B N-gram（激活 71B）",
+    "contextWindow": "1M",
+    "highlight": "阿里巴巴于 2026 年 11 月 16 日正式上线的通义千问第四代闭源旗舰，引入 328B N-gram 嵌入与默认思考模式，激活参数比上代降低 25%，复杂任务成本下降约 60%。",
+    "keyTech": [
+      "2.4T MoE",
+      "328B N-gram Embedding",
+      "71B Active",
+      "1M Context"
+    ],
+    "source": "https://www.alibabagroup.com/",
+    "docLink": "docs/09-frontier-2025-2026-and-system1-decision.md",
+    "era": "超级模型与具身 2026"
+  },
+  {
+    "id": "gpt62-2026",
+    "date": "2026-11",
+    "name": "GPT-6.2 Astra & Sol",
+    "company": "OpenAI",
+    "country": "US",
+    "countryGroup": "US",
+    "license": "Proprietary / Closed API",
+    "licenseType": "closed",
+    "entryType": "model",
+    "category": "Reasoning",
+    "parameters": "未公开",
+    "contextWindow": "1.05M",
+    "highlight": "OpenAI 于 2026 年 11 月 17 日发布的 GPT-6 系列旗舰更新（Astra 极限推理 / Sol 高效主力），支持 105 万上下文，大幅提升法律/金融专业格式遵循度与输出 Token 效率。",
+    "keyTech": [
+      "1.05M Context",
+      "Token Efficiency",
+      "ARC-AGI-2",
+      "Enterprise Formatting"
+    ],
+    "source": "https://openai.com/",
+    "docLink": "docs/09-frontier-2025-2026-and-system1-decision.md",
+    "era": "超级模型与具身 2026"
+  },
+  {
+    "id": "hunyuan-hy4-2026",
+    "date": "2026-11",
+    "name": "腾讯混元 Hy4 & Hy4 Flash",
+    "company": "腾讯 (Tencent)",
+    "country": "CN",
+    "countryGroup": "CN",
+    "license": "Open Weights",
+    "licenseType": "open",
+    "entryType": "model",
+    "category": "Multimodal",
+    "parameters": "Hy4 Flash 224B MoE（激活 12B）",
+    "contextWindow": "1M",
+    "highlight": "腾讯于 2026 年 11 月陆续发布并开源（11-20 全量开源 / 11-25 释出 GGUF）的新一代混元旗舰，原生支持视觉理解、桌面操作（Computer Use）与超百万上下文。",
+    "keyTech": [
+      "224B-A12B MoE",
+      "1M Context",
+      "Computer Use",
+      "Open Weights"
+    ],
+    "source": "https://hunyuan.tencent.com/",
+    "docLink": "docs/07-us-cn-and-open-closed-matrix.md",
+    "era": "超级模型与具身 2026"
+  },
+  {
+    "id": "glm54-2026",
+    "date": "2026-11",
+    "name": "GLM-5.4 (Loop Transformer)",
+    "company": "智谱 AI / 清华大学",
+    "country": "CN",
+    "countryGroup": "CN",
+    "license": "Proprietary / API (Open Weights Planned)",
+    "licenseType": "closed",
+    "entryType": "model",
+    "category": "Reasoning",
+    "parameters": "~750B Loop Transformer",
+    "contextWindow": "未公开",
+    "highlight": "智谱 AI 于 2026 年 11 月 23 日发布的新一代旗舰，采用权重共享循环层迭代架构（Loop Transformer），以约 750B 基座实现媲美 2T–3T 模型的通用编程与深度推理。",
+    "keyTech": [
+      "Loop Transformer",
+      "Weight-Shared Iteration",
+      "Generalized Coding",
+      "750B Base"
+    ],
+    "source": "https://z.ai/",
+    "docLink": "docs/09-frontier-2025-2026-and-system1-decision.md",
+    "era": "超级模型与具身 2026"
+  },
+  {
+    "id": "claude-ship-design-2026",
+    "date": "2026-11",
+    "name": "Claude Ship & Claude Design",
+    "company": "Anthropic",
+    "country": "US",
+    "countryGroup": "US",
+    "license": "Proprietary / Product",
+    "licenseType": "closed",
+    "entryType": "product",
+    "category": "Agent / 工具生态",
+    "parameters": "N/A",
+    "contextWindow": "N/A",
+    "highlight": "Anthropic 于 2026 年 11 月 23–24 日推出的自动化研发套件：Claude Ship（含 PR Steward / Approvals 与 /ship 命令）托管 GitHub PR 审查合并；Claude Design 基于 Opus 4.7 生成交互原型。",
+    "keyTech": [
+      "PR Steward",
+      "Automated Code Review",
+      "Claude Design",
+      "GitHub Integration"
+    ],
+    "source": "https://claude.com/",
+    "docLink": "docs/10-agent-mcp-and-tools-ecosystem.md",
+    "era": "超级模型与具身 2026"
+  },
+  {
+    "id": "bytedance-xiaodou-2026",
+    "date": "2026-11",
+    "name": "小豆 Xiaodou / Dola (个人 AI 助手)",
+    "company": "字节跳动 (ByteDance)",
+    "country": "CN",
+    "countryGroup": "CN",
+    "license": "Proprietary / Product",
+    "licenseType": "closed",
+    "entryType": "product",
+    "category": "Agent / 工具生态",
+    "parameters": "N/A",
+    "contextWindow": "N/A",
+    "highlight": "字节跳动于 2026 年 11 月 24 日公测的独立个人 AI 助手（海外版 Dola），主打长期个性化记忆、主动式任务规划与跨应用生态协同执行。",
+    "keyTech": [
+      "Long-Term Memory",
+      "Proactive Execution",
+      "Personal Agent",
+      "Dola"
+    ],
+    "source": "https://www.doubao.com/",
+    "docLink": "docs/10-agent-mcp-and-tools-ecosystem.md",
+    "era": "超级模型与具身 2026"
+  },
+  {
+    "id": "hunyuan-3d-36-2026",
+    "date": "2026-11",
+    "name": "混元 Hy3D 3.6",
+    "company": "腾讯 (Tencent)",
+    "country": "CN",
+    "countryGroup": "CN",
+    "license": "Proprietary / Open Source (3.0)",
+    "licenseType": "open",
+    "entryType": "model",
+    "category": "领域特化",
+    "parameters": "未公开",
+    "contextWindow": "N/A",
+    "highlight": "腾讯于 2026 年 11 月 27 日发布的专业级 3D 生成模型，大幅提升复杂几何拓扑、PBR 材质贴图精度与工业/游戏工作流可用性。",
+    "keyTech": [
+      "3D Generation",
+      "PBR Materials",
+      "Geometry Topology",
+      "Creation Workflow"
+    ],
+    "source": "https://hunyuan.tencent.com/",
+    "docLink": "docs/07-us-cn-and-open-closed-matrix.md",
     "era": "超级模型与具身 2026"
   }
 ]

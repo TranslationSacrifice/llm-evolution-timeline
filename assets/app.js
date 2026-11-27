@@ -19,11 +19,12 @@
     event: '事件'
   };
   var FLAGS = { CN: '🇨🇳', US: '🇺🇸', EU: '🇪🇺' };
-  var URL_KEYS = { country: 'c', license: 'l', type: 't', cat: 'cat', search: 'q' };
+  var URL_KEYS = { country: 'c', license: 'l', type: 't', cat: 'cat', search: 'q', sort: 's' };
   var FILTER_GROUPS = ['country', 'license', 'type', 'cat'];
+  var THEME_KEY = 'llm-atlas-theme';
 
   var DATA = [];
-  var state = { country: 'all', license: 'all', type: 'all', cat: 'all', search: '' };
+  var state = { country: 'all', license: 'all', type: 'all', cat: 'all', search: '', sort: 'asc' };
 
   function $(id) { return document.getElementById(id); }
 
@@ -157,6 +158,30 @@
       .forEach(function (node) { node.remove(); });
 
     var rows = DATA.filter(matches);
+    if (state.sort === 'desc') {
+      rows = rows.slice().reverse();
+    }
+    setText('matchCount', '显示 ' + rows.length + ' / ' + DATA.length + ' 条');
+
+    var yearNavRow = $('yearNavRow');
+    var yearNav = $('yearNav');
+    if (yearNav && yearNavRow) {
+      var years = [];
+      rows.forEach(function (record) {
+        var y = String(record.date || '').slice(0, 4);
+        if (y && years.indexOf(y) === -1) years.push(y);
+      });
+      if (years.length > 1) {
+        yearNav.innerHTML = years.map(function (y) {
+          return '<button class="year-pill" type="button" data-jump-year="' + esc(y) + '">' + esc(y) + '</button>';
+        }).join('');
+        yearNavRow.style.display = 'flex';
+      } else {
+        yearNav.innerHTML = '';
+        yearNavRow.style.display = 'none';
+      }
+    }
+
     if (!rows.length) {
       var empty = document.createElement('div');
       empty.className = 'empty-state';
@@ -175,6 +200,7 @@
         previousYear = year;
         var marker = document.createElement('div');
         marker.className = 'year-marker';
+        marker.setAttribute('data-year', year);
         marker.innerHTML = '<span>' + esc(year) + '</span>';
         fragment.appendChild(marker);
       }
@@ -220,7 +246,7 @@
     var tags = $('modalTags');
     if (tags) {
       tags.innerHTML = (record.keyTech || []).map(function (tag) {
-        return '<span class="tech-tag" style="font-size:0.85rem">' + esc(tag) + '</span>';
+        return '<button type="button" class="tech-tag tech-tag-btn" data-tag="' + esc(tag) + '" title="点击筛选此关键词">' + esc(tag) + '</button>';
       }).join('');
     }
 
@@ -285,11 +311,26 @@
     state.type = 'all';
     state.cat = 'all';
     state.search = '';
+    state.sort = 'asc';
     var input = $('searchInput');
     if (input) input.value = '';
+    updateSortButton();
     Array.prototype.forEach.call(document.querySelectorAll('.pill'), function (pill) {
       pill.classList.toggle('active', pill.getAttribute('data-val') === 'all');
     });
+    renderTimeline();
+    syncUrl();
+  }
+
+  function updateSortButton() {
+    var btn = $('sortBtn');
+    if (!btn) return;
+    btn.textContent = state.sort === 'desc' ? '⬆️ 最新优先' : '⬇️ 从旧到新';
+  }
+
+  function toggleSort() {
+    state.sort = state.sort === 'asc' ? 'desc' : 'asc';
+    updateSortButton();
     renderTimeline();
     syncUrl();
   }
@@ -298,7 +339,11 @@
     try {
       var params = new URLSearchParams();
       Object.keys(URL_KEYS).forEach(function (key) {
-        if (state[key] && state[key] !== 'all') params.set(URL_KEYS[key], state[key]);
+        if (key === 'sort') {
+          if (state.sort === 'desc') params.set(URL_KEYS.sort, 'desc');
+        } else if (state[key] && state[key] !== 'all') {
+          params.set(URL_KEYS[key], state[key]);
+        }
       });
       var query = params.toString();
       history.replaceState(null, '', query ? location.pathname + '?' + query : location.pathname);
@@ -315,6 +360,8 @@
     state.type = params.get(URL_KEYS.type) || 'all';
     state.cat = params.get(URL_KEYS.cat) || 'all';
     state.search = (params.get(URL_KEYS.search) || '').toLowerCase();
+    state.sort = params.get(URL_KEYS.sort) === 'desc' ? 'desc' : 'asc';
+    updateSortButton();
 
     FILTER_GROUPS.forEach(function (group) {
       var pills = document.querySelectorAll('.pill[data-filter="' + group + '"]');
@@ -339,12 +386,31 @@
     }
   }
 
+  function applyTheme(theme) {
+    var root = document.documentElement;
+    root.setAttribute('data-theme', theme);
+    var btn = $('themeBtn');
+    if (btn) btn.textContent = theme === 'light' ? '🌙 切换深色' : '☀️ 切换明亮';
+  }
+
+  function loadTheme() {
+    try {
+      var saved = localStorage.getItem(THEME_KEY);
+      if (saved === 'light' || saved === 'dark') applyTheme(saved);
+    } catch (err) {
+      /* ignore */
+    }
+  }
+
   function toggleTheme() {
     var root = document.documentElement;
     var next = root.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
-    root.setAttribute('data-theme', next);
-    var btn = $('themeBtn');
-    if (btn) btn.textContent = next === 'light' ? '🌙 切换深色' : '☀️ 切换明亮';
+    applyTheme(next);
+    try {
+      localStorage.setItem(THEME_KEY, next);
+    } catch (err) {
+      /* ignore */
+    }
   }
 
   function bindEvents() {
@@ -378,8 +444,47 @@
     var reset = $('resetBtn');
     if (reset) reset.addEventListener('click', resetFilters);
 
+    var sort = $('sortBtn');
+    if (sort) sort.addEventListener('click', toggleSort);
+
+    var yearNav = $('yearNav');
+    if (yearNav) {
+      yearNav.addEventListener('click', function (event) {
+        var btn = event.target.closest ? event.target.closest('[data-jump-year]') : null;
+        if (!btn) return;
+        var y = btn.getAttribute('data-jump-year');
+        var target = document.querySelector('.year-marker[data-year="' + y + '"]');
+        if (target && target.scrollIntoView) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    }
+
+    var modalTags = $('modalTags');
+    if (modalTags) {
+      modalTags.addEventListener('click', function (event) {
+        var tagBtn = event.target.closest ? event.target.closest('[data-tag]') : null;
+        if (!tagBtn) return;
+        var kw = tagBtn.getAttribute('data-tag');
+        var searchEl = $('searchInput');
+        if (searchEl) searchEl.value = kw;
+        closeModal();
+        applyFilters();
+      });
+    }
+
     var theme = $('themeBtn');
     if (theme) theme.addEventListener('click', toggleTheme);
+
+    var backToTop = $('backToTop');
+    if (backToTop) {
+      window.addEventListener('scroll', function () {
+        backToTop.classList.toggle('visible', window.scrollY > 500);
+      }, { passive: true });
+      backToTop.addEventListener('click', function () {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    }
 
     var modal = $('detailModal');
     if (modal) {
@@ -391,7 +496,14 @@
     }
 
     document.addEventListener('keydown', function (event) {
-      if (event.key === 'Escape') closeModal();
+      if (event.key === 'Escape') {
+        closeModal();
+      } else if (event.key === '/' && document.activeElement &&
+          !/^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement.tagName)) {
+        event.preventDefault();
+        var searchEl = $('searchInput');
+        if (searchEl) searchEl.focus();
+      }
     });
   }
 
@@ -407,6 +519,7 @@
   }
 
   function init() {
+    loadTheme();
     return loadData().then(function (rows) {
       DATA = rows;
       readUrl();

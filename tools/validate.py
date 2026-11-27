@@ -91,6 +91,19 @@ def main() -> int:
                 and row.get("category") not in NON_TEXT_CATEGORIES:
             warnings.append(f"{rid}: 模型的 contextWindow 为 N/A，建议补真实数值")
 
+    profiles_path = os.path.join(ROOT, "data", "company-profiles.json")
+    if os.path.exists(profiles_path):
+        profiles = json.load(open(profiles_path, encoding="utf-8"))
+        seen_pids = set()
+        for p in profiles:
+            pid = p.get("id", "<no-id>")
+            if pid in seen_pids:
+                errors.append(f"company-profiles: id 重复 {pid}")
+            seen_pids.add(pid)
+            for req in ("id", "name", "chineseName", "country", "flagshipModels"):
+                if not p.get(req):
+                    errors.append(f"company-profiles {pid}: 缺少字段 {req}")
+
     print(f"共 {len(rows)} 条记录：error {len(errors)}，warning {len(warnings)}")
     for item in errors:
         print("  [ERROR]", item)

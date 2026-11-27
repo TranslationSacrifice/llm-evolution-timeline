@@ -18,7 +18,8 @@
       "GPT-4.1",
       "GPT-5 (大一统内生推理)",
       "GPT-5.6 (Luna/Terra/Sol)",
-      "GPT-6 / 6.1",
+      "GPT-6 / 6.1 / 6.2 (Astra/Sol/Cyber)",
+      "GPT Image 2.6 (Flare / Sunburst)",
       "gpt-oss-20b/120b",
       "Sora 2",
       "Codex (代码基座)",
@@ -37,18 +38,21 @@
     "openSourceStrategy": "Hybrid (Gemini 主力闭源 API + Gemma 系列轻量开源)",
     "flagshipModels": [
       "Transformer (2017)",
-      "BERT",
-      "T5",
-      "LaMDA",
-      "Bard (防御性对话)",
+      "BERT / T5",
+      "LaMDA / Bard",
       "PaLM 2",
-      "Gemini 1.0/1.5/2.0",
-      "Gemma 1/2",
-      "Gemini 3 Pro",
-      "Gemini 4 (Hydrogen/Carbon/Argon)",
-      "Gemini Omni 1.2 Flash",
-      "Gemini Robotics 2",
-      "Genie 3"
+      "Gemini 1.0/1.5/2.0/2.5",
+      "Gemini 3 Pro / Deep Think",
+      "Gemini 4 (Hydrogen/Carbon/Argon/Neon)",
+      "Gemma 1/2/3/3n/4",
+      "AlphaFold 2/3",
+      "AlphaProof / AlphaGeometry (IMO 银牌)",
+      "AlphaProteo / AlphaChip",
+      "Veo 1/2/3 / Imagen 3/4",
+      "Gemini Robotics / ER 2",
+      "Genie 3/4",
+      "Project Astra / Mariner",
+      "NotebookLM / Audio Overview"
     ],
     "coreStrengths": "现代深度学习基础设施奠基者、全栈自研 TPU 芯片独立性、百万 Token 级长上下文、原生音视频多模态",
     "computeEcosystem": "自研 TPU v4 / TPU v5p / TPU v6e (Trillium) 超算集群"
@@ -63,9 +67,14 @@
     "flagshipModels": [
       "New Bing (Prometheus 架构)",
       "Microsoft 365 Copilot",
-      "Phi-1 / Phi-1.5",
-      "Phi-2 / Phi-3 / Phi-4",
-      "GitHub Copilot"
+      "Phi-1 / Phi-1.5 / Phi-2",
+      "Phi-3 / Phi-3.5",
+      "Phi-4 (14B 合成数据推理王)",
+      "Phi-4-mini (3.8B) / Phi-4-multimodal (5.6B)",
+      "GitHub Copilot / Copilot Workspace",
+      "WizardLM-2 (开源指令遵循)",
+      "AutoGen (多智能体框架)",
+      "Copilot+ PC / Recall"
     ],
     "coreStrengths": "全球领先的企业级软件与操作系统分发渠道、Prometheus 实时检索编排、教科书级高质量合成数据小模型 (SLM) 开创者",
     "computeEcosystem": "全球微软 Azure 超级 AI 计算网络、自研 Maia 100 芯片与深度绑定 OpenAI 集群"
@@ -78,14 +87,13 @@
     "type": "Tech Giant",
     "openSourceStrategy": "Historical Open Weights Leader -> 2026 Q1 Strategic Pivot (Llama 4 开源主力，继任者 Avocado 转向闭源商业化)",
     "flagshipModels": [
-      "RoBERTa",
-      "LLaMA 1",
-      "LLaMA 2",
-      "LLaMA 3",
-      "LLaMA 3.1 405B",
-      "LLaMA 3.2",
-      "Llama 4 (Scout/Maverick)",
-      "Avocado (2026 Q1 闭源旗舰)"
+      "RoBERTa / NLLB-200",
+      "LLaMA 1/2/3",
+      "LLaMA 3.1 405B / 3.2 / 3.3",
+      "Llama 4 (Scout/Maverick/Behemoth)",
+      "SAM / SAM 2",
+      "ImageBind / SeamlessM4T",
+      "Muse Spark / Glimmer / Wonder / Ember"
     ],
     "coreStrengths": "开源基础设施事实标准提供者、极高质量海量预训练、400B+ 超大尺寸开源攻坚、全球社区繁荣度、2026 开启开源与商业闭源双轨路线分化",
     "computeEcosystem": "NVIDIA H100 万卡分布式训练集群 (最高超 24,000 张 GPU 单一集群)"
@@ -107,7 +115,7 @@
       "Claude Sonnet 4.5",
       "Claude 5 (Fable/Opus/Sonnet)",
       "Claude Mythos 5.2 (网安与生科特化)",
-      "Claude Code (终端自主智能体)",
+      "Claude Code / Claude Ship / Claude Design",
       "MCP 协议 (Model Context Protocol)",
       "Computer Use (屏幕接管)"
     ],
@@ -149,8 +157,8 @@
       "Qwen3",
       "Qwen3.8-27B (Apache 2.0 原生多模态)",
       "Qwen3-Coder (Agentic 编码)",
-      "通义灵码 (TONGYI Lingma)",
-      "Qwen3-Coder"
+      "Qwen4-Max (2.4T MoE + 328B N-gram 旗舰)",
+      "通义灵码 (TONGYI Lingma)"
     ],
     "coreStrengths": "全球尺寸覆盖最全的开源模型库、18T 顶级多语言清洗语料、代码与数学专业基座标杆、阿里云全球算力支撑",
     "computeEcosystem": "阿里云异构超算、自研倚天/含光芯片与英伟达混合算力集群"
@@ -168,7 +176,8 @@
       "GLM-4 / 4V",
       "CogVideoX",
       "GLM-4-Voice",
-      "GLM-Zero"
+      "GLM-Zero",
+      "GLM-5.3 / GLM-5.4 (Loop Transformer)"
     ],
     "coreStrengths": "中国大模型普及启蒙者、GLM 双向自回归特色架构、单卡消费级 GPU 友好、全模态（文本/代码/多模态/语音/视频）全栈覆盖",
     "computeEcosystem": "国产算力适配 (华为昇腾/天数智芯等) 与英伟达算力混合调度"
@@ -184,7 +193,7 @@
       "Kimi Chat (20万字)",
       "Kimi 200万字无损上下文",
       "Kimi k1.5 (多模态强化推理)",
-      "Kimi K3 (2.8T MoE 超大基座)"
+      "Kimi K3 / K3.1 Pro (2.8T MoE 开源)"
     ],
     "coreStrengths": "超长上下文注意力架构优化、白领级生产力文档交互体验、多模态长程强化逻辑推理",
     "computeEcosystem": "主流公有云大规模弹性算力集群"
@@ -200,6 +209,7 @@
       "ERNIE 1.0/2.0/3.0",
       "文心一言 3.5",
       "文心大模型 4.0 / 4.0 Turbo",
+      "文心 ERNIE 5.5 Flash (280B MoE 开源)",
       "文心快码 (Baidu Comate)"
     ],
     "coreStrengths": "中国首个对话商业大模型、知识增强预训练、飞桨深度学习平台端到端协同、百度全线业务生态深度重构",
@@ -238,7 +248,8 @@
     "flagshipModels": [
       "混元大模型 (Hunyuan)",
       "Hunyuan-Large (389B MoE)",
-      "混元 3D / 图像生成",
+      "Hunyuan Hy4 / Hy4 Flash (224B-A12B 开源)",
+      "混元 3D / Hy3D 3.6",
       "腾讯云 AI 代码助手"
     ],
     "coreStrengths": "自研千亿/万亿稀疏混合专家架构、深度嵌入微信与数字内容生态、高保真 3D 生成与多模态",
@@ -299,8 +310,8 @@
     "type": "Enterprise AI Unicorn",
     "openSourceStrategy": "Hybrid (Aya 系列多语言完全开源 + Command 系列企业闭源云 API)",
     "flagshipModels": [
-      "Command R / R+ (企业级 RAG 与工具调用标杆)",
-      "Command A (111B 激活 23B 企业级 MoE)",
+      "Command R / R+ (企业级 RAG 旗舰)",
+      "Command A (111B 企业级 MoE)",
       "Aya 23 / Aya Expanse (多语言开源标杆)",
       "Embed v3 / Rerank"
     ],
@@ -347,8 +358,9 @@
     "type": "AI Giant / CV Leader",
     "openSourceStrategy": "Hybrid (开源部分模型 + 日日新商用云服务)",
     "flagshipModels": [
-      "日日新 SenseNova 1.0 - 5.5",
-      "SenseNova U1 Pro (复杂长程任务交付智能体)",
+      "日日新 SenseNova 1.0-5.5",
+      "日日新 SenseNova V6 (多模态长思维链)",
+      "SenseNova U1 Pro (长程任务交付智能体)",
       "书生·浦语参与共建",
       "秒画 / 如影数字人"
     ],
@@ -471,9 +483,9 @@
     "openSourceStrategy": "Proprietary Cloud Services (AWS Bedrock)",
     "flagshipModels": [
       "Amazon Titan 系列",
-      "Amazon Nova (Micro/Lite/Pro/Premier)",
-      "Amazon Nova 2",
-      "Amazon Nova 2.5 Sonic (端到端低时延语音)",
+      "Amazon Nova (Micro/Lite/Pro/Canvas/Reel)",
+      "Amazon Nova Premier (复杂推理)",
+      "Amazon Nova 2 / 2.5 Sonic",
       "Nova Act (UI 操控智能体)"
     ],
     "coreStrengths": "AWS Bedrock 全球企业级云基础设施、Trainium / Inferentia 自研 AI 芯片、深度企业数据隔离",
@@ -504,10 +516,152 @@
     "openSourceStrategy": "Proprietary On-Device + Private Cloud Compute (PCC)",
     "flagshipModels": [
       "Apple Intelligence (3B 端侧基座)",
-      "Apple Foundation Models 2/3 (AFM 3 稠密/稀疏混合)",
+      "Apple Foundation Models 2/3 (AFM 多模态/工具调用)",
+      "OpenELM (开源高效语言模型 270M-3B)",
       "Ferret (多模态指代与定位)"
     ],
     "coreStrengths": "Apple Silicon 软硬件深度协同、神经引擎（NPU）极致能耗比、私有云计算端侧隐私保护安全体系",
     "computeEcosystem": "Apple Silicon (M系列/A系列) 芯片服务器与数十亿终端设备端侧神经算力"
+  },
+  {
+    "id": "figure-ai",
+    "name": "Figure AI",
+    "chineseName": "Figure AI",
+    "country": "US",
+    "type": "Robotics / Embodied AI Startup",
+    "openSourceStrategy": "Proprietary",
+    "flagshipModels": [
+      "Figure 01 (OpenAI 合作对话人形机器人)",
+      "Figure 02 (BMW 工厂部署)",
+      "Helix VLA (视觉语言动作架构)"
+    ],
+    "coreStrengths": "OpenAI/微软/NVIDIA/贝索斯联合投资、端到端神经网络驱动人形机器人、VLA 架构将自然语言直接映射为运动控制",
+    "computeEcosystem": "NVIDIA GPU 集群与定制机载推理芯片"
+  },
+  {
+    "id": "tesla",
+    "name": "Tesla",
+    "chineseName": "特斯拉 (Tesla)",
+    "country": "US",
+    "type": "EV & Robotics Giant",
+    "openSourceStrategy": "Proprietary",
+    "flagshipModels": [
+      "Tesla Optimus Gen 1 / Gen 2 (人形机器人)",
+      "FSD (Full Self-Driving 完全自动驾驶)"
+    ],
+    "coreStrengths": "海量自动驾驶数据转化为空间智能、自研 FSD 芯片与 Dojo 超算、Giga 工厂规模部署",
+    "computeEcosystem": "自研 Dojo 超算集群与 NVIDIA H100 大规模训练集群"
+  },
+  {
+    "id": "1x-technologies",
+    "name": "1X Technologies",
+    "chineseName": "1X (原 Halodi Robotics)",
+    "country": "EU",
+    "type": "Home Robotics Startup",
+    "openSourceStrategy": "Proprietary",
+    "flagshipModels": [
+      "1X NEO (30kg 家庭仿生人形机器人)"
+    ],
+    "coreStrengths": "OpenAI 投资、软性仿生体安全共存设计、面向家庭消费级场景，$20,000 价位探索",
+    "computeEcosystem": "云端训练 + 端侧推理"
+  },
+  {
+    "id": "reka-ai",
+    "name": "Reka AI",
+    "chineseName": "Reka AI (前 DeepMind 研究者创立)",
+    "country": "US",
+    "type": "AI Startup / Multimodal Pioneer",
+    "openSourceStrategy": "Proprietary API",
+    "flagshipModels": [
+      "Reka Core (67B 原生四模态旗舰)",
+      "Reka Flash (21B 高效推理)",
+      "Reka Edge (7B 端侧部署)"
+    ],
+    "coreStrengths": "从零训练原生文本/图像/视频/音频四模态理解，128K 长上下文，对标 GPT-4V 视频理解",
+    "computeEcosystem": "云端大规模 GPU 集群"
+  },
+  {
+    "id": "snowflake",
+    "name": "Snowflake",
+    "chineseName": "Snowflake (雪花)",
+    "country": "US",
+    "type": "Cloud Data Platform",
+    "openSourceStrategy": "Apache 2.0 Open Weights",
+    "flagshipModels": [
+      "Snowflake Arctic (480B MoE 企业级开源)"
+    ],
+    "coreStrengths": "企业数据湖与 SQL 生成特化、极致成本效率、完全 Apache 2.0 开源",
+    "computeEcosystem": "Snowflake Cloud 计算平台"
+  },
+  {
+    "id": "abacus-ai",
+    "name": "Abacus.AI",
+    "chineseName": "Abacus.AI",
+    "country": "US",
+    "type": "AI Startup / ML Platform",
+    "openSourceStrategy": "Open Weights + Platform",
+    "flagshipModels": [
+      "Smaug-72B (HuggingFace 排行榜冠军)",
+      "Smaug-34B"
+    ],
+    "coreStrengths": "DPOP 偏好优化方法先驱、开源模型排行榜冠军缔造者",
+    "computeEcosystem": "云端大规模训练集群"
+  },
+  {
+    "id": "sourcegraph",
+    "name": "Sourcegraph",
+    "chineseName": "Sourcegraph",
+    "country": "US",
+    "type": "Developer Tools",
+    "openSourceStrategy": "Proprietary + Free Tier",
+    "flagshipModels": [
+      "Cody (代码搜索 AI 助手)"
+    ],
+    "coreStrengths": "代码搜索与图分析技术深厚积累、全仓库结构理解、灵活多 LLM 切换",
+    "computeEcosystem": "云端代码索引与推理基础设施"
+  },
+  {
+    "id": "augment",
+    "name": "Augment",
+    "chineseName": "Augment Code",
+    "country": "US",
+    "type": "AI Coding Startup",
+    "openSourceStrategy": "Proprietary",
+    "flagshipModels": [
+      "Augment Code (企业级代码上下文理解平台)"
+    ],
+    "coreStrengths": "大规模 Monorepo 代码库深度索引与上下文理解、企业级代码助手",
+    "computeEcosystem": "云端大规模代码索引集群"
+  },
+  {
+    "id": "kunlun-tech",
+    "name": "Kunlun Tech",
+    "chineseName": "昆仑万维 (Kunlun Tech)",
+    "country": "CN",
+    "type": "AI & Gaming Tech Giant",
+    "openSourceStrategy": "Hybrid (天工 3.0 开源 + 应用闭源)",
+    "flagshipModels": [
+      "天工 1.0/3.0 (千亿/4000 亿 MoE)",
+      "天工 AI 搜索",
+      "SkyReels (AI 短剧)",
+      "Skywork Super Agents"
+    ],
+    "coreStrengths": "国内首款大模型 AI 搜索、4000 亿 MoE 开源、AI 短剧与世界模型探索",
+    "computeEcosystem": "公有云大规模算力集群"
+  },
+  {
+    "id": "360-ai",
+    "name": "360 Group",
+    "chineseName": "三六零 (360)",
+    "country": "CN",
+    "type": "Internet Security & AI",
+    "openSourceStrategy": "Proprietary",
+    "flagshipModels": [
+      "360 智脑大模型 1.0-4.0+",
+      "360 AI 数字人",
+      "360 AI 搜索"
+    ],
+    "coreStrengths": "安全合规 AI 先行者、360 全家桶生态深度集成、首批通过国家大模型标准测试",
+    "computeEcosystem": "360 私有算力集群"
   }
 ]

@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LLM Evolution Atlas | 大模型演进全景谱系与时间线</title>
-  <meta name="description" content="从 2017 年 Transformer 到 2026 年前沿模型的中美欧大模型演进时间线：283 条结构化条目、18 类技术范式、可筛选可检索的交互式图谱。">
+  <meta name="description" content="从 2017 年 Transformer 到 2026 年前沿模型的中美欧大模型演进时间线：397 条结构化条目（322 个模型）、18 类技术范式、可筛选可检索的交互式图谱。">
   <meta property="og:title" content="LLM Evolution Atlas | 大模型演进全景图谱">
-  <meta property="og:description" content="2017–2026 全球大语言模型演进时间线，283 条结构化条目，支持范式、国别、授权属性交叉筛选。">
+  <meta property="og:description" content="2017–2026 全球大语言模型演进时间线，397 条结构化条目，支持范式、国别、授权属性交叉筛选与最新倒序浏览。">
   <meta property="og:type" content="website">
   <link rel="stylesheet" href="assets/style.css">
 </head>
@@ -46,9 +46,11 @@
 
   <div class="controls">
     <div class="filter-group-row">
-      <div class="search-box" style="flex:1 1 420px;">
-        <input type="text" id="searchInput" placeholder="搜索模型、机构或技术关键词（如 DeepSeek、RLHF、MLA、o1、MCP、FP8）…" aria-label="搜索">
+      <div class="search-box" style="flex:1 1 360px;">
+        <input type="text" id="searchInput" placeholder="搜索模型、机构或技术关键词（按 / 快速聚焦，如 GPT-6.2、Qwen4、RLHF、MCP）…" aria-label="搜索">
       </div>
+      <span class="match-count" id="matchCount"></span>
+      <button class="btn-reset" id="sortBtn" type="button" title="切换时间线正序/倒序">⬇️ 从旧到新</button>
       <button class="btn-reset" id="resetBtn" type="button">重置筛选</button>
     </div>
 
@@ -101,11 +103,18 @@
       <div class="pill" data-filter="cat" data-val="安全与对齐" role="button" tabindex="0">🛡️ 安全与对齐</div>
       <div class="pill" data-filter="cat" data-val="Infrastructure" role="button" tabindex="0">🏗️ 算力基础设施</div>
     </div>
+
+    <div class="filter-group-row" id="yearNavRow" style="display:none;">
+      <span class="filter-label">快速跳转:</span>
+      <div class="year-nav" id="yearNav"></div>
+    </div>
   </div>
 
   <main class="timeline-wrapper" id="timelineContainer">
     <div class="timeline-line"></div>
   </main>
+
+  <button class="back-to-top" id="backToTop" type="button" aria-label="回到顶部" title="回到顶部">↑ 顶部</button>
 
   <div class="modal-overlay" id="detailModal">
     <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modalTitle">

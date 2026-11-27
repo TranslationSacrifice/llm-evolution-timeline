@@ -3,8 +3,8 @@
 > **从 2017 年 Transformer 与 2018 年 GPT-1 起源，全面梳理全球大模型技术脉络、中美科技企业竞争格局、开源与闭源博弈、智能体 MCP 生态及未来智能范式展望（覆盖至 2026 年底）。**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Tracked Models: 255+](https://img.shields.io/badge/Tracked%20Models-255%2B-blueviolet.svg)](#-交互式时间线与数据资产)
-[![Total Entries: 297](https://img.shields.io/badge/Total%20Entries-297-success.svg)](#-交互式时间线与数据资产)
+[![Tracked Models: 322+](https://img.shields.io/badge/Tracked%20Models-322%2B-blueviolet.svg)](#-交互式时间线与数据资产)
+[![Total Entries: 397](https://img.shields.io/badge/Total%20Entries-397-success.svg)](#-交互式时间线与数据资产)
 [![Awesome](https://awesome.re/badge.svg)](https://github.com)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
@@ -12,12 +12,12 @@
 
 ## 📖 项目定位与导读
 
-本项目系统梳理了从 2017 年至今大语言模型（LLM）领域的全景发展脉络。全书分为**十章深度专题**、**一套收录 255 个关键模型（另含 42 条架构、基础设施、产品与协议条目，共 297 条记录）的结构化历史数据库**，以及一个**支持 GitHub Pages 与开箱即用的前端可视化时间线交互系统**。
+本项目系统梳理了从 2017 年至今大语言模型（LLM）领域的全景发展脉络。全书分为**十章深度专题**、**一套收录 322 个关键模型（另含 75 条架构、基础设施、产品与协议条目，共 397 条记录）的结构化历史数据库**，以及一个**支持 GitHub Pages 与开箱即用的前端可视化时间线交互系统**。
 
 ### 核心亮点
 - **四层立体结构**：清晰划分“模型家族 (model)”、“架构与算法 (architecture)”、“推理基础设施 (infrastructure)”与“产品协议 (product/protocol)”。
 - **时间主线清晰**：从序列建模危机、预训练范式奠基，到千亿尺度定律、对齐革命，再到 MoE、多模态、System 2 慢思考与 System 1 决策特化。
-- **中美欧企业全景**：系统梳理 29 家顶级机构演进历程，深度拆解 9 大核心企业演进树（OpenAI, Anthropic, Google, Meta, DeepSeek, 阿里通义千问, 字节跳动豆包, Mistral, xAI）。
+- **中美欧企业全景**：系统梳理 39 家顶级机构演进历程，深度拆解 9 大核心企业演进树（OpenAI, Anthropic, Google, Meta, DeepSeek, 阿里通义千问, 字节跳动豆包, Mistral, xAI）。
 - **底层架构全覆盖**：全面收录 Transformer 之外的状态空间（Mamba / Mamba-2）、循环网络（RWKV-7, xLSTM）、线性注意力（Gated DeltaNet, KDA）、神经长期记忆（Titans）、扩散语言模型（LLaDA, Mercury）与原生低比特（BitNet b1.58）。
 - **推理基础设施**：收录 FlashAttention 1-3、PagedAttention / vLLM、SGLang RadixAttention、Speculative Decoding 等现代推理服务关键底座。
 - **智能体与 MCP 生态**：专门设立第十章，全景剖析从 Copilot、Function Calling、Devin、Cursor、Cline、Nous Hermes 3、Claude Code、OpenCode、Pi / oh-my-pi、Factory Droid、OpenClaw 到 DeepSeek Harness、Google Antigravity 与 Model Context Protocol (MCP)。
@@ -65,7 +65,7 @@ GPT-1 (2018.06) ──> GPT-2 (2019.02) ──> GPT-3 (2020.05) ──> Instruct
          │
          └──> GPT-5 (2025.08, 内生自适应推理统一) ──> gpt-oss (2025.08, 本地权重)
                 │
-                └──> GPT-5.6 (Luna/Terra/Sol, 2026.07) ──> GPT-6 (Astra/Sol/Luna, 2026.09) ──> GPT-6 Cyber (2026.11)
+                └──> GPT-5.6 (2026.07) ──> GPT-6 / 6.1 (2026.09-11) ──> GPT-6.2 Astra & Sol (2026.11)
 ```
 
 ### 2. Anthropic (美国 · 宪政对齐与代码王座)
@@ -96,7 +96,7 @@ Transformer (2017) ──> BERT / T5 (2018-2019) ──> Chinchilla / PaLM (2022
          │
          └──> Gemini 2.0 (Flash/Thinking, 2024.12) ──> Gemini 3 Pro / Flash (2026)
                 │
-                └──> Gemini 4 元素矩阵 (Argon 2026.09 / Carbon 2026.11 / Hydrogen 2026.11 / Neon 2026.11) ──> Gemini Omni (2026.05)
+                └──> Gemini 4 元素矩阵 (Argon 2026.09 / Carbon / Hydrogen / Neon 2026.11) ──> Gemini Omni 1.2 Flash (2026.11)
 ```
 
 ### 4. Meta (美国 · 开源主力到 Muse Spark 闭源转折)
@@ -109,7 +109,7 @@ LLaMA 1 (2023.02, 7B-65B 学术开源) ──> LLaMA 2 (2023.07, 商用许可/GQ
          ├──> Llama 4 Scout / Maverick (2025-2026, 开放权重主力基座)
          │
          ├──> ★ 路线转向: Muse Spark (2026.04, 内部代号 Avocado; 原 Llama 5 继任者转向闭源商业 API)
-         │      └──> Muse Wonder / Wonder Full (2026.09, 闭源多模态扩展)
+         │      └──> Muse Wonder / Wonder Full (2026.09) & Muse Ember (2026.11, 低成本子智能体)
          └──> Muse Glimmer (2026.08, 30B 端侧 Agentic 开源 Apache 2.0)
 ```
 
@@ -136,11 +136,11 @@ Qwen-7B / 14B / 72B (2023.08-11) ──> Qwen 1.5 (2024.02) ──> Qwen 2 (2024
          │
          ├──> QwQ-32B-Preview (2024.11, 开源慢思考推理) ──> Qwen 2.5-Max (2025.01, 闭源旗舰)
          │
-         └──> Qwen3 / Qwen3.8 系列 (2026)
+         └──> Qwen3 / Qwen3.8 / Qwen4 系列 (2025-2026)
                 │
-                ├──> Qwen3.8-27B (2026, Apache 2.0 协议, 原生高保真多模态)
+                ├──> Qwen3.8-27B (2026.08, Apache 2.0, 原生高保真多模态)
                 ├──> Qwen3-Coder (2025.07, 480B-A35B, Agentic 编码基座)
-                └──> Qwen3.x Thinking (2026, 全尺寸覆盖的深度思考变体)
+                └──> Qwen4-Max (2026.11, 2.4T MoE + 328B N-gram 旗舰)
 ```
 
 ### 7. 字节跳动 豆包 / ByteDance (中国 · 流量吞吐、极低单价与 Seed 全模态)
@@ -271,14 +271,14 @@ Grok-0 (2023.07) ──> Grok-1 (2023.11 / 2024.03 开源 314B 稀疏 MoE, Apach
 仓库提供完整、结构化的大模型历史数据库与开箱即用的前端交互式系统：
 
 - **结构化历史数据**（字段定义见 `data/schema.md`，校验脚本 `tools/validate.py`）：
-  - `data/timeline.json`：收录 255 个关键模型（另含 42 条架构、底层基础设施、产品与协议条目，共 297 条记录）的完整元数据（模型名、机构、发布年月、国别、开源/闭源、参数规模、上下文窗口、关键技术点与历史意义）。
+  - `data/timeline.json`：收录 322 个关键模型（另含 75 条架构、底层基础设施、产品与协议/事件条目，共 397 条记录）的完整元数据（模型名、机构、发布年月、国别、开源/闭源、参数规模、上下文窗口、关键技术点与历史意义）。
   - `data/timeline.js`：适配浏览器本地离线运行的轻量数据载体。
-  - `data/company-profiles.json`：29 家全球顶尖大模型研发机构与企业的战略定位、算力集群与产品矩阵。
+  - `data/company-profiles.json`：39 家全球顶尖大模型研发机构与企业的战略定位、算力集群与产品矩阵。
 - **可视化时间线交互界面**：
   - `index.html`（根目录直出，直接支持 GitHub Pages）与 `visualizer/index.html`。
   - **18 种技术范式筛选**：基础理论 (Foundation)、稠密基座 (Dense)、混合专家 (MoE)、深度推理 (Reasoning)、System 1 纯决策 (Jev)、原生多模态 (Multimodal)、智能体/工具 (Agent/MCP)、代码专精、文生视频、图像生成、语音音频、具身智能、世界模型、极致效率端侧 (SLM)、垂直特化 (Science/Bio)、向量检索 (Embedding)、安全与对齐、算力基础设施。
   - **国别与授权过滤**：中国 (CN) / 美国 (US) / 欧洲 (EU) / 其他，以及开源权重、专有闭源、协议论文三类授权属性交叉分析。
-  - **全文实时检索**：按模型名、企业、技术关键词（如 `MLA`, `RLHF`, `FP8`, `o1`, `GRPO`, `Jev`, `MCP`, `Mamba`, `vLLM`）秒级搜索。
+  - **高效探索交互**：支持年份快速跳转导航、时间正序/最新优先一键切换、实时匹配计数、全文实时检索（按 `/` 快捷聚焦）与技术标签点击联动过滤。
 
 ### 运行方式
 - **GitHub Pages 在线访问**：[https://translationsacrifice.github.io/llm-evolution-timeline/](https://translationsacrifice.github.io/llm-evolution-timeline/)
